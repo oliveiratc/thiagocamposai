@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Campos | Portfólio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#2563eb', dark: '#0f172a', light: '#f8fafc' },
+                    fontFamily: { sans: ['Roboto', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light text-slate-800 font-sans antialiased">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 md:h-24 items-center">
+                <a href="#" class="shrink-0 relative flex items-center overflow-hidden" style="width: 360px; height: 90px;">
+                    <img src="logo-tc.jpg" alt="Thiago Campos" class="absolute mix-blend-multiply w-full max-w-none" style="top: 50%; left: 0; transform: translateY(-50%);">
+                </a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#sobre" class="text-slate-600 hover:text-primary font-medium">Perfil</a>
+                    <a href="#projetos" class="text-slate-600 hover:text-primary font-medium">Projetos</a>
+                    <a href="#contato" class="bg-primary text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-24 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <p class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Empreendedor</p>
+                <h1 class="text-5xl lg:text-6xl font-black text-dark leading-tight mb-6">Inovação e eficiência para o mercado B2B.</h1>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed text-justify">Especialista em criar e escalar soluções corporativas (B2B) impulsionadas por Inteligência Artificial. Transformo problemas operacionais complexos em produtos eficientes e inovadores.</p>
+                <a href="#projetos" class="inline-block border-2 border-dark text-dark px-8 py-3 font-bold hover:bg-dark hover:text-white transition-colors">Conhecer Projetos</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="profile.png" alt="Thiago Campos" class="w-72 md:w-80 h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-10 md:p-16 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-black text-dark mb-4">Sobre mim</h2>
+                    <div class="w-12 h-1 bg-primary mb-6"></div>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/thiagocampossp/" class="text-slate-400 hover:text-primary text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/thiagocamposssp/" class="text-slate-400 hover:text-primary text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-slate-600 mb-6 text-justify">
+                        Com forte perfil empreendedor, foco em identificar gargalos operacionais e criar soluções tecnológicas que gerem valor imediato. Acredito na Inteligência Artificial não apenas como inovação teórica, mas como uma ferramenta prática para transformar e escalar negócios reais.
+                    </p>
+                    <p class="text-lg text-slate-600 text-justify">
+                        Minha trajetória é marcada pelo desenvolvimento e validação de produtos B2B. Atuo na liderança estratégica e na concepção de plataformas, conectando a visão de mercado à tecnologia de ponta para automatizar, prever e resolver processos altamente complexos da indústria.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white border-t border-gray-100" id="expertises">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl font-black text-dark mb-12 text-center">Principais Áreas de Atuação</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-light rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary flex items-center justify-center rounded-lg text-2xl mb-6">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Inteligência Artificial B2B</h4>
+                    <p class="text-slate-600">Implementação de IA aplicada ao mundo real para automatizar tarefas e gerar predições precisas.</p>
+                </div>
+                <div class="p-6 bg-light rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary flex items-center justify-center rounded-lg text-2xl mb-6">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Visão Estratégica de Produto</h4>
+                    <p class="text-slate-600">Da identificação da dor do mercado até a validação e escalabilidade de soluções tecnológicas eficientes.</p>
+                </div>
+                <div class="p-6 bg-light rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-primary flex items-center justify-center rounded-lg text-2xl mb-6">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Otimização de Processos</h4>
+                    <p class="text-slate-600">Reestruturação de fluxos operacionais, reduzindo erros corporativos e mitigando custos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 bg-light border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-black text-center text-dark mb-16">Projetos</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-slate-100 p-8 rounded-xl flex items-center justify-center min-h-[400px]">
+                        <div class="text-center flex flex-col items-center">
+                            <img src="logo-pecamatch.jpg" alt="Logo Peça Match AI" class="w-full max-w-[280px] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <p class="text-slate-500 mt-6 font-medium bg-white px-4 py-1 rounded-full shadow-sm text-sm border border-slate-200">Plataforma em funcionamento</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-dark mb-4">Revolucionando a busca por autopeças</h3>
+                    <p class="text-lg text-slate-600 mb-6 text-justify">Uma plataforma que utiliza IA para entregar assertividade na busca por componentes de veículos pesados. Otimização de tempo, redução de custos e inovação no mercado automotivo.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700">Diminuição drástica de devoluções de peças erradas.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700">Aumento da eficiência de oficinas e frotas.</span></li>
+                    </ul>
+                    <a href="https://www.pecamatchai.com.br/" class="bg-primary text-white px-8 py-3 rounded font-bold hover:bg-blue-700 transition shadow-lg inline-block">Acessar a Plataforma</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mt-12">
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-sm aspect-square bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center justify-center text-slate-300 shadow-inner">
+                        <i class="fa-solid fa-network-wired text-8xl mb-4 text-primary/80"></i>
+                        <span class="text-xl font-bold text-slate-400">RPA & Automação</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-black text-dark mb-4">Arquitetura e Liderança RPA</h3>
+                    <p class="text-lg text-slate-600 mb-6 text-justify">
+                        Forte atuação corporativa liderando e estruturando Centros de Excelência (CoE) em Automação Robótica de Processos (RPA) para gigantes do mercado, como Boa Vista e Wipro Limited.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>CoE Leader (Boa Vista):</strong> Definição de prioridades de automação e evangelização da tecnologia RPA na companhia.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Tech Lead (Wipro):</strong> Arquitetura corporativa e implementação de soluções escaláveis de automação de processos de negócios.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Analista Funcional RPA (Indra):</strong> Colaboração estratégica entre áreas de negócio e equipe técnica, elaborando planejamento e especificação de soluções.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Governança de TI:</strong> Entrega de projetos complexos mitigando riscos e garantindo alto impacto na operação.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mt-12">
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-full max-w-sm aspect-square bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center justify-center text-slate-300 shadow-inner">
+                        <i class="fa-solid fa-sitemap text-8xl mb-4 text-primary/80"></i>
+                        <span class="text-xl font-bold text-slate-400">BPM & ECM</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-black text-dark mb-4">Gestão e Implantação de Sistemas (TOTVS)</h3>
+                    <p class="text-lg text-slate-600 mb-6 text-justify">
+                        Sólida trajetória atuando desde a consultoria e arquitetura de soluções até a coordenação de projetos envolvendo plataformas BPM e ECM (Fluig).
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Coordenador de Projetos e Especialista BPM (Fluig):</strong> Liderança de equipes multidisciplinares e gestão de projetos tecnológicos focados em soluções corporativas.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Arquiteto de Soluções:</strong> Apoio técnico à equipe comercial no levantamento de requisitos e desenho de soluções inovadoras.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-primary mt-1 mr-3"></i> <span class="text-slate-700"><strong>Consultoria e Relacionamento:</strong> Mapeamento, modelagem e implantação de portais corporativos (TOTVS ECM e Fluig) em todo o território nacional, impulsionando novos negócios.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="contato" class="py-20 bg-light border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-black text-dark mb-6">Tem um gargalo operacional complexo na sua empresa?</h2>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Vamos conversar sobre como a Inteligência Artificial e a estruturação inteligente de produto podem resolver isso.</p>
+            <div class="flex justify-center flex-wrap gap-6">
+                <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" class="w-14 h-14 bg-white text-[#0A66C2] rounded-full flex items-center justify-center text-3xl shadow-md hover:scale-110 hover:shadow-lg transition-all"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/5511915447878" target="_blank" class="w-14 h-14 bg-white text-[#25D366] rounded-full flex items-center justify-center text-3xl shadow-md hover:scale-110 hover:shadow-lg transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/thiagocamposssp/" target="_blank" class="w-14 h-14 bg-white text-[#E4405F] rounded-full flex items-center justify-center text-3xl shadow-md hover:scale-110 hover:shadow-lg transition-all"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/oliveiratco" target="_blank" class="w-14 h-14 bg-white text-[#1877F2] rounded-full flex items-center justify-center text-3xl shadow-md hover:scale-110 hover:shadow-lg transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-slate-400 mb-4 text-base">© 2026 Thiago Campos. Construindo negócios reais.</p>
+            <p class="text-slate-500 text-xs max-w-4xl mx-auto leading-relaxed">
+                <strong>Aviso Legal:</strong> As marcas, logotipos e nomes de empresas mencionados neste site (como TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A citação a estas marcas possui caráter estritamente descritivo para fins de demonstração de portfólio e histórico profissional (uso nominativo), não implicando em patrocínio, endosso ou afiliação comercial direta com as detentoras atuais das marcas.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
