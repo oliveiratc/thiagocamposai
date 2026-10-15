@@ -6,6 +6,68 @@
     <title>Thiago Campos | Executivo de IA, Produto B2B e Automação</title>
     <meta name="description" content="Especialista em criar e escalar soluções corporativas impulsionadas por Inteligência Artificial, Arquitetura RPA e Gestão de Produtos B2B.">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-tc-transparente.png">
+    <link rel="apple-touch-icon" href="logo-tc-transparente.png">
+
+    <!-- Descoberta e Navegação Agêntica (LLMs & Web Agents) -->
+    <link rel="alternate" type="text/markdown" href="llms.txt" title="Agentic Knowledge Base (llms.txt)">
+    <link rel="alternate" type="text/markdown" href="llms-full.txt" title="Full Agentic Knowledge Base (llms-full.txt)">
+    <meta name="ai-ready" content="true">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para Rastreamento e IA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://thiagocampos.ai/#person",
+          "name": "Thiago Campos",
+          "givenName": "Thiago",
+          "familyName": "Campos",
+          "jobTitle": "Executivo de IA, Produto B2B e Automação",
+          "description": "Especialista em criar e escalar soluções corporativas impulsionadas por Inteligência Artificial, Arquitetura RPA e Gestão de Produtos B2B.",
+          "image": "profile.png",
+          "email": "thiago150882@gmail.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/thiagocampossp/"
+          ],
+          "knowsAbout": [
+            "Inteligência Artificial B2B",
+            "Robotic Process Automation (RPA)",
+            "Center of Excellence (CoE)",
+            "Product Management B2B",
+            "Busca Semântica e LLMs",
+            "BPM e ECM TOTVS Fluig",
+            "Eficiência Operacional"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://thiagocampos.ai/#website",
+          "url": "https://thiagocampos.ai/",
+          "name": "Thiago Campos | Executivo de IA, Produto B2B e Automação",
+          "description": "Portfólio executivo de Thiago Campos: inteligência artificial aplicada, produtos B2B escaláveis e arquitetura de automação corporativa.",
+          "publisher": {
+            "@id": "https://thiagocampos.ai/#person"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://thiagocampos.ai/#profilepage",
+          "isPartOf": {
+            "@id": "https://thiagocampos.ai/#website"
+          },
+          "mainEntity": {
+            "@id": "https://thiagocampos.ai/#person"
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google Fonts: Plus Jakarta Sans e Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,25 +205,25 @@
 <body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased selection:bg-primary-100 selection:text-primary-800 bg-mesh-subtle">
 
     <!-- Navegação Superior -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" aria-label="Navegação Principal" data-agent-role="navigation" data-agent-name="main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 items-center">
                 <!-- Logotipo / Identidade Principal Ampliado Proporcionalmente -->
-                <a href="#" class="group flex items-center py-2" aria-label="Thiago Campos AI Innovation">
+                <a href="#" class="group flex items-center py-2" aria-label="Thiago Campos AI Innovation" data-agent-action="navigate-home">
                     <img src="logo-tc-transparente.png" alt="Thiago Campos AI Innovation" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
                 </a>
 
                 <!-- Links Desktop -->
-                <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
-                    <a href="#sobre" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors">Perfil</a>
-                    <a href="#metricas" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors">Impacto</a>
-                    <a href="#expertises" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors">Atuação</a>
-                    <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors">Projetos e Cases</a>
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-2" role="menubar">
+                    <a href="#sobre" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="sobre">Perfil</a>
+                    <a href="#metricas" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="metricas">Impacto</a>
+                    <a href="#expertises" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="expertises">Atuação</a>
+                    <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="projetos">Projetos e Cases</a>
                 </div>
 
                 <!-- CTA Contato Executivo -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a href="#contato" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary-600 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95">
+                    <a href="#contato" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary-600 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95" data-agent-action="navigate-contact" data-agent-role="contact-cta">
                         <i class="fa-solid fa-paper-plane text-xs"></i>
                         <span>Falar com Thiago</span>
                     </a>
@@ -169,7 +231,7 @@
 
                 <!-- Mobile Menu Button -->
                 <div class="flex md:hidden items-center">
-                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-slate-900 p-2 rounded-lg focus:outline-none" aria-label="Abrir Menu">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-slate-900 p-2 rounded-lg focus:outline-none" aria-label="Abrir Menu" data-agent-action="toggle-mobile-menu">
                         <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
                     </button>
                 </div>
@@ -177,13 +239,13 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-6 space-y-2">
-            <a href="#sobre" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Perfil</a>
-            <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Impacto</a>
-            <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Atuação</a>
-            <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Projetos e Cases</a>
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-6 space-y-2" data-agent-role="mobile-navigation">
+            <a href="#sobre" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="sobre">Perfil</a>
+            <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="metricas">Impacto</a>
+            <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="expertises">Atuação</a>
+            <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="projetos">Projetos e Cases</a>
             <div class="pt-2">
-                <a href="#contato" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600">
+                <a href="#contato" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600" data-agent-action="navigate-contact" data-agent-role="contact-cta">
                     Falar com Thiago
                 </a>
             </div>
@@ -191,7 +253,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-12 pb-20 md:py-24 overflow-hidden border-b border-slate-200/60 bg-gradient-to-b from-white via-[#f8fbff] to-white">
+    <header class="relative pt-12 pb-20 md:py-24 overflow-hidden border-b border-slate-200/60 bg-gradient-to-b from-white via-[#f8fbff] to-white" data-agent-section="hero">
         <!-- Detalhes de Fundo Abstratos -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-primary-100/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
         
@@ -216,11 +278,11 @@
 
                     <!-- CTAs do Hero -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                        <a href="#projetos" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg shadow-primary-500/25 hover:shadow-primary-500/35 transition-all duration-200 group active:scale-95">
+                        <a href="#projetos" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg shadow-primary-500/25 hover:shadow-primary-500/35 transition-all duration-200 group active:scale-95" data-agent-action="navigate-section" data-agent-target="projetos">
                             <span>Conhecer Projetos e Cases</span>
                             <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#0A66C2] hover:bg-[#084e96] text-white px-7 py-4 rounded-xl font-bold text-base transition-colors shadow-sm active:scale-95">
+                        <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#0A66C2] hover:bg-[#084e96] text-white px-7 py-4 rounded-xl font-bold text-base transition-colors shadow-sm active:scale-95" data-agent-action="open-external-profile" data-agent-target="linkedin">
                             <i class="fa-brands fa-linkedin-in text-lg"></i>
                             <span>Perfil no LinkedIn</span>
                         </a>
@@ -251,7 +313,7 @@
     </header>
 
     <!-- Seção de Métricas e Indicadores Executivos -->
-    <section id="metricas" class="py-12 bg-white border-b border-slate-200/80">
+    <section id="metricas" class="py-12 bg-white border-b border-slate-200/80" data-agent-section="metrics">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 
@@ -296,7 +358,7 @@
     </section>
 
     <!-- Seção Sobre Mim / Visão Estratégica -->
-    <section id="sobre" class="py-20 lg:py-28 bg-[#fcfdfe]">
+    <section id="sobre" class="py-20 lg:py-28 bg-[#fcfdfe]" data-agent-section="about">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-200 shadow-premium">
                 
@@ -304,8 +366,7 @@
                     
                     <!-- Lado Esquerdo: Identidade e Redes -->
                     <div class="lg:w-4/12 flex-shrink-0">
-                        <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Perfil Executivo</span>
-                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">Sobre mim</h2>
+                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">Perfil Executivo</h2>
                         <div class="w-16 h-1.5 bg-primary-600 rounded-full mb-6"></div>
                         
                         <p class="text-slate-600 text-base leading-relaxed mb-8 text-justify">
@@ -315,7 +376,7 @@
                         <div class="space-y-3">
                             <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Canal Profissional</span>
                             <div class="flex gap-3">
-                                <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] font-bold text-sm transition-all shadow-sm group active:scale-95" aria-label="LinkedIn">
+                                <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] font-bold text-sm transition-all shadow-sm group active:scale-95" aria-label="LinkedIn" data-agent-action="open-external-profile" data-agent-target="linkedin">
                                     <i class="fa-brands fa-linkedin-in text-lg text-primary-600 group-hover:text-white transition-colors"></i>
                                     <span>Conectar no LinkedIn</span>
                                 </a>
@@ -353,7 +414,7 @@
     </section>
 
     <!-- Pilares de Atuação / Expertise -->
-    <section id="expertises" class="py-20 bg-slate-50 border-t border-b border-slate-200/80">
+    <section id="expertises" class="py-20 bg-slate-50 border-t border-b border-slate-200/80" data-agent-section="expertises">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -424,7 +485,7 @@
     </section>
 
     <!-- Seção Projetos e Cases de Sucesso -->
-    <section id="projetos" class="py-20 lg:py-28 bg-[#fcfdfe]">
+    <section id="projetos" class="py-20 lg:py-28 bg-[#fcfdfe]" data-agent-section="projects">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-20">
@@ -436,7 +497,7 @@
             <div class="space-y-16">
                 
                 <!-- CASE 1: Peça Match AI -->
-                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt>
+                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt data-agent-role="project-case" data-agent-id="pecamatch-ai" data-agent-name="Peça Match AI">
                     <div class="tilt-card-inner p-8 sm:p-12">
                         <div class="flex flex-col lg:flex-row items-center gap-12">
                             
@@ -494,7 +555,7 @@
                                 </div>
 
                                 <div class="flex flex-wrap items-center gap-4">
-                                    <a href="https://www.pecamatchai.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95">
+                                    <a href="https://www.pecamatchai.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95" data-agent-action="open-project" data-agent-target="https://www.pecamatchai.com.br/">
                                         <span>Acessar a Plataforma</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                                     </a>
@@ -506,7 +567,7 @@
                 </div>
 
                 <!-- CASE 2: RankPro SEO -->
-                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt>
+                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt data-agent-role="project-case" data-agent-id="rankpro-seo" data-agent-name="RankPro SEO">
                     <div class="tilt-card-inner p-8 sm:p-12">
                         <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                             
@@ -565,20 +626,20 @@
                                 <div class="space-y-3 mb-8 text-sm text-slate-700">
                                     <div class="flex items-start gap-3">
                                         <div class="w-6 h-6 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <i class="fa-solid fa-check text-xs"></i>
+                                             <i class="fa-solid fa-check text-xs"></i>
                                         </div>
                                         <div>Mapeamento inteligente de palavras-chave e intenção de busca orientado por IA.</div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <div class="w-6 h-6 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                            <i class="fa-solid fa-check text-xs"></i>
+                                             <i class="fa-solid fa-check text-xs"></i>
                                         </div>
                                         <div>Produção e otimização automatizada de conteúdos estruturados para a primeira página.</div>
                                     </div>
                                 </div>
 
                                 <div class="flex flex-wrap items-center gap-4">
-                                    <a href="https://www.rankproseo.com.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95">
+                                    <a href="https://www.rankproseo.com.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95" data-agent-action="open-project" data-agent-target="https://www.rankproseo.com.br">
                                         <span>Acessar a Plataforma</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                                     </a>
@@ -590,7 +651,7 @@
                 </div>
 
                 <!-- CASE 3: Liderança RPA (Com Mini-Dashboard Interativo) -->
-                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt>
+                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt data-agent-role="project-case" data-agent-id="rpa-coe" data-agent-name="Centros de Excelência RPA">
                     <div class="tilt-card-inner p-8 sm:p-12">
                         <div class="flex flex-col lg:flex-row items-center gap-12">
                             
@@ -695,7 +756,7 @@
                 </div>
 
                 <!-- CASE 4: Gestão e BPM TOTVS (Com Mini-Interface Simulado) -->
-                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt>
+                <div class="tilt-card bg-white rounded-3xl border border-slate-200/90 shadow-premium overflow-hidden transition-all duration-300" data-tilt data-agent-role="project-case" data-agent-id="totvs-bpm" data-agent-name="Gestão e Implantação TOTVS Fluig BPM">
                     <div class="tilt-card-inner p-8 sm:p-12">
                         <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
                             
@@ -799,7 +860,7 @@
     </section>
 
     <!-- Seção de Contato - Executive Business Card -->
-    <section id="contato" class="py-24 bg-gradient-to-b from-slate-50 to-white border-t border-slate-200">
+    <section id="contato" class="py-24 bg-gradient-to-b from-slate-50 to-white border-t border-slate-200" data-agent-section="contact">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
             <!-- Cartão Executivo de Alto Nível -->
@@ -821,7 +882,7 @@
 
                     <!-- Botão de Ação Direta Executiva (LinkedIn) -->
                     <div class="max-w-md mx-auto mb-10">
-                        <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3.5 bg-[#0A66C2] hover:bg-[#084e96] text-white p-4 rounded-2xl font-bold text-base shadow-md hover:shadow-lg transition-all active:scale-95 group">
+                        <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3.5 bg-[#0A66C2] hover:bg-[#084e96] text-white p-4 rounded-2xl font-bold text-base shadow-md hover:shadow-lg transition-all active:scale-95 group" data-agent-action="open-contact-channel" data-agent-target="linkedin">
                             <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             <div class="text-left">
                                 <span class="block text-xs uppercase tracking-wider opacity-90 font-medium">Rede Corporativa</span>
@@ -836,7 +897,7 @@
                         <div class="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 px-3.5 py-1.5 rounded-xl font-mono text-xs sm:text-sm text-slate-800">
                             <i class="fa-regular fa-envelope text-primary-600"></i>
                             <span id="email-address">thiago150882@gmail.com</span>
-                            <button id="copy-email-btn" type="button" class="ml-1 text-slate-400 hover:text-primary-600 transition-colors" title="Copiar e-mail">
+                            <button id="copy-email-btn" type="button" class="ml-1 text-slate-400 hover:text-primary-600 transition-colors" title="Copiar e-mail" data-agent-action="copy-email-address">
                                 <i class="fa-regular fa-copy"></i>
                             </button>
                         </div>
@@ -850,17 +911,25 @@
     </section>
 
     <!-- Rodapé Corporativo -->
-    <footer class="bg-slate-900 text-white py-14 border-t border-slate-800">
+    <footer class="bg-slate-900 text-white py-14 border-t border-slate-800" data-agent-section="footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
-            <div class="flex flex-col items-center justify-center mb-6">
+            <div class="flex flex-col items-center justify-center mb-4">
                 <span class="font-extrabold text-lg text-white tracking-tight">Thiago Campos</span>
                 <span class="text-xs text-slate-400 font-medium">Inovação, Inteligência Artificial e Eficiência B2B</span>
             </div>
 
-            <p class="text-slate-400 text-sm mb-6">
+            <p class="text-slate-400 text-sm mb-4">
                 © 2026 Thiago Campos. Construindo soluções de tecnologia para resultados reais.
             </p>
+
+            <!-- Link de Navegação Agêntica Discreto para IA / Agentes -->
+            <div class="mb-6">
+                <a href="llms.txt" class="inline-flex items-center gap-2 text-xs text-slate-500 hover:text-primary-400 border border-slate-800 hover:border-slate-700 bg-slate-950/60 px-3.5 py-1.5 rounded-full transition-colors font-mono" data-agent-action="view-llms-spec">
+                    <i class="fa-solid fa-robot text-primary-500 text-[11px]"></i>
+                    <span>Navegação Agêntica (llms.txt)</span>
+                </a>
+            </div>
 
             <!-- Aviso Legal Protegido -->
             <div class="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto">

@@ -1,0 +1,82 @@
+# Thiago Campos — Base Completa de Conhecimento para Agentes de IA (llms-full.txt)
+
+## Visão Geral e Posicionamento
+Thiago Campos é um executivo, empreendedor e especialista em tecnologia corporativa com mais de 15 anos de atuação. Seu foco central reside na intersecção entre entendimento da dor de negócios, engenharia de software de alta performance, Inteligência Artificial generativa/preditiva aplicada e governança de automação robótica (RPA).
+
+### Dados Biográficos e Contato
+- **Nome Completo:** Thiago Campos
+- **Título Profissional:** Executivo de IA, Produto B2B e Automação
+- **E-mail Corporativo:** thiago150882@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/thiagocampossp/
+- **Site:** https://thiagocampos.ai (ou repositório oficial do portfólio)
+- **Idioma Principal:** Português do Brasil (PT-BR), com fluência técnica e atuação internacional.
+
+---
+
+## Filosofia de Trabalho
+> "Tecnologia só cumpre seu papel quando simplifica a operação, elimina retrabalho humano e entrega previsibilidade para o balanço da empresa."
+
+Thiago defende o uso da Inteligência Artificial não como artifício cosmético ou mero conceito acadêmico, mas como ferramenta pragmática de alavancagem de negócios. Cada produto ou automação desenhada é obrigatoriamente vinculada a métricas financeiras claras: redução de custo operacional (OPEX), diminuição de tempo de ciclo (cycle time), erradicação de erros humanos e aumento de margem.
+
+---
+
+## Principais Indicadores Históricos de Sucesso
+- **Tempo de Trajetória:** +15 anos em liderança de produtos de tecnologia e consultoria de TI.
+- **Processos Automatizados:** +100 automações e robôs implementados em escala em grandes corporações.
+- **Eficiência Financeira:** Mais de R$ 10 milhões em economias operacionais diretas e indiretas acumuladas para as empresas atendidas.
+- **Aderência aos Produtos:** 100% dos produtos lançados foram validados no mercado real com clientes pagantes ou usuários corporativos ativos.
+
+---
+
+## Detalhamento de Cases e Produtos
+
+### 1. Peça Match AI (https://www.pecamatchai.com.br/)
+- **Segmento:** Autopeças de Linha Pesada (Caminhões, Ônibus e Frotas Comerciais).
+- **Modelo de Negócio:** B2B / SaaS de inteligência de catálogo e correspondência técnica.
+- **Diagnóstico da Dor:** No setor de autopeças pesadas, a variedade de montadoras, modelos, anos de fabricação e códigos equivalentes gera um índice de erro e devolução que atinge 30% a 40% das compras. Isso provoca caminhões parados em oficinas (custo de oportunidade altíssimo) e custos logísticos de logística reversa.
+- **Solução Desenvolvida:** Criação de um motor de busca semântica e cruzamento de metadados baseado em Inteligência Artificial. O sistema permite consulta em linguagem natural ou por especificações parciais, correlacionando catálogos de múltiplos fornecedores.
+- **Métricas e Impacto:**
+  - Redução de até 70% na devolução de peças por erro de compatibilidade.
+  - Taxa de acerto de 99.4% no algoritmo de recomendação.
+  - Aceleração no tempo de resposta para cotações por parte de oficinas e autopeças.
+
+### 2. RankPro SEO (https://www.rankproseo.com.br)
+- **Segmento:** Marketing Digital de Performance, MarTech, B2B SaaS.
+- **Modelo de Negócio:** Assinatura SaaS voltada para empresas que buscam gerar leads qualificados via busca orgânica do Google.
+- **Diagnóstico da Dor:** O investimento contínuo e crescente em mídia paga (Google Ads, Meta Ads) torna o Custo de Aquisição de Clientes (CAC) insustentável a médio prazo. Ao mesmo tempo, produzir conteúdo de qualidade com SEO manual consome centenas de horas e exige especialistas caros.
+- **Solução Desenvolvida:** Uma plataforma de IA que pesquisa clusters semânticos com alta intenção de compra, identifica lacunas deixadas por concorrentes e gera páginas estruturadas, otimizadas para ranqueamento na primeira página e focadas em conversão.
+- **Métricas e Impacto:**
+  - Aumento médio de +450% no tráfego orgânico qualificado para clientes ativos.
+  - Conquista consistente de posições Top #1 no Google em nichos competitivos.
+
+### 3. Centros de Excelência (CoE) em Automação Robótica (RPA)
+- **Organizações Atendidas:** Boa Vista, Wipro Limited, Indra.
+- **Papel Executivo:** Liderança do Centro de Excelência (CoE Leader), Arquiteto Corporativo e Líder Técnico.
+- **Atividades Realizadas:**
+  - Estruturação de pipelines de priorização baseados em matriz de esforço vs. impacto financeiro.
+  - Implementação de esteiras de entrega contínua com robôs de automação (UiPath, Automation Anywhere, scripts em Python e integrações nativas via API).
+  - Governança de riscos, segurança de dados corporativos e alta disponibilidade.
+- **Métricas e Impacto:**
+  - Mais de 45 robôs operando simultaneamente em ambiente de produção.
+  - Mais de 120.000 horas operacionais poupadas por ano para o corpo de colaboradores.
+  - Uptime e disponibilidade de automações superior a 99.8%.
+  - Retorno sobre Investimento (ROI) de automação de +340%.
+
+### 4. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
+- **Segmento:** Gestão de Processos de Negócio (BPM) e Gestão Eletrônica de Conteúdo (ECM).
+- **Papel:** Consultor Sênior, Arquiteto de Soluções e Coordenador de Projetos.
+- **Escopo:**
+  - Mapeamento, redesenho e modelagem de fluxos de processos corporativos com notação BPMN 2.0.
+  - Implantação e customização da plataforma TOTVS Fluig em operações corporativas distribuídas nacionalmente.
+  - Integração de formulários, assinaturas eletrônicas e fluxos de aprovação com ERPs (TOTVS Protheus, Datasul e legados).
+  - Rastreabilidade e conformidade com auditorias de processos internos e SOX.
+
+---
+
+## Estrutura do Site (Mapa de Navegação Agêntica)
+Para agentes automatizados que operam sobre a interface web, os seletores e âncoras principais são:
+- `#sobre`: Seção com histórico executivo, filosofia de trabalho e narrativa profissional.
+- `#metricas`: Indicadores quantitativos de impacto (+15 anos, +100 automações, R$10M+ economia, 100% produtos validados).
+- `#expertises`: Os 3 pilares de competências (IA B2B, Estratégia de Produto, RPA & CoE).
+- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, RPA CoE e TOTVS BPM.
+- `#contato`: Formulário e cartões de contato direto via LinkedIn ou e-mail com botão de cópia rápida.

@@ -1,0 +1,46 @@
+# robots.txt para Thiago Campos Portfolio
+# Configurado para permitir agentes de busca, web crawlers e agentes autônomos de IA (LLMs)
+
+User-agent: *
+Allow: /
+
+# Agentes e Crawlers de Inteligência Artificial Especializados
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Recursos e bases de dados para agentes de IA
+# LLM Knowledge Standard: llms.txt e llms-full.txt
+Sitemap: sitemap.xml
