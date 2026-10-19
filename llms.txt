@@ -8,6 +8,7 @@
 - **Trajetória:** +15 anos liderando soluções de tecnologia corporativa
 - **Impacto Comprovado:** +100 robôs/processos automatizados em escala, +R$ 10M em economia operacional gerada, redução de 70% em erros de especificação
 - **Contato Principal:** thiago150882@gmail.com
+- **WhatsApp:** +55 11 95832-5848 (https://wa.me/5511958325848)
 - **LinkedIn:** https://www.linkedin.com/in/thiagocampossp/
 - **Localização:** Brasil
 
@@ -51,6 +52,13 @@
 - **Solução:** Aplicação web progressiva (PWA) 100% acessível integrada com IA Gemini para análise de voz e estado motor, testes motores digitais (tapping), diário de medicação e carteirinha digital de emergência.
 - **Resultados:** Acompanhamento longitudinal estruturado, telemetria funcional para apoio médico e segurança emergencial para pacientes e cuidadores.
 - **URL:** https://firmeza-parkinson.web.app/
+
+### Auditia (Plataforma TaxTech de Inteligência Fiscal e Blindagem IBS/CBS)
+- **Status:** Projeto em andamento ativo com forte tração no mercado corporativo e contábil.
+- **Problema:** Complexidade extrema da transição da Reforma Tributária (IBS e CBS), riscos de glosa de créditos na Apuração Assistida e gargalos no processamento de milhares de DF-e.
+- **Solução:** Captura autônoma na SEFAZ com Certificado Digital A1, extração multimodal via Visão LLM e validação preventiva por Consenso Dual-IA.
+- **Resultados:** 99.8% de assertividade na conciliação fiscal e proteção contínua de créditos tributários para empresas e escritórios contábeis.
+- **Acesso:** Disponibilização restrita a clientes em piloto e apresentações executivas.
 
 ### Liderança de Centros de Excelência em RPA (Corporativo)
 - **Atuação:** Liderança e arquitetura de automação em grandes organizações (Boa Vista, Wipro Limited, Indra).

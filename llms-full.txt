@@ -7,6 +7,7 @@ Thiago Campos é um executivo, empreendedor e especialista em tecnologia corpora
 - **Nome Completo:** Thiago Campos
 - **Título Profissional:** Executivo de IA, Produto B2B e Automação
 - **E-mail Corporativo:** thiago150882@gmail.com
+- **WhatsApp:** +55 11 95832-5848 (https://wa.me/5511958325848)
 - **LinkedIn:** https://www.linkedin.com/in/thiagocampossp/
 - **Site:** https://thiagocampos.ai (ou repositório oficial do portfólio)
 - **Idioma Principal:** Português do Brasil (PT-BR), com fluência técnica e atuação internacional.
@@ -50,7 +51,7 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Conquista consistente de posições Top #1 no Google em nichos competitivos.
 
 ### 3. Firmeza (https://firmeza-parkinson.web.app/)
-- **Segmento:** HealthTech, Saúde Digital, Acessibilidade & Inteligência Artificial.
+- **Segmento:** HealthTech, Saúde Digital, Acessibilidade e Inteligência Artificial.
 - **Modelo de Negócio:** Aplicação Web Progressiva (PWA) de apoio e monitoramento diário para pacientes com Parkinson e Síndromes Parkinsonianas.
 - **Diagnóstico da Dor:** Pessoas diagnosticadas com Parkinson enfrentam flutuações motoras diárias ("ON/OFF"), dificuldade para lembrar horários rígidos de medicação e ausência de registros objetivos entre consultas médicas, além do risco em episódios emergenciais.
 - **Solução Desenvolvida:** Aplicação acessível integrando IA (Gemini) para processamento multimodal/sintomas, check-in diário com classificação de estado motor, testes de destreza motora (tapping), diário de medicação e carteirinha digital de emergência.
@@ -59,7 +60,17 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Telemetria de sintomas e adesão medicamentosa para apoiar a conduta médica nas consultas.
   - Carteirinha de emergência com dados clínicos essenciais para socorristas.
 
-### 4. Centros de Excelência (CoE) em Automação Robótica (RPA)
+### 4. Auditia — Inteligência Fiscal Autônoma e Blindagem Tributária IBS/CBS
+- **Segmento:** TaxTech, Inteligência Fiscal, IA Corporativa e Finanças.
+- **Status de Mercado:** Projeto em andamento ativo com forte tração e validação operacional em escritórios contábeis e médias empresas.
+- **Diagnóstico da Dor:** A Reforma Tributária (Emenda Constitucional 132/2023 e LC 68/2024) introduz a não-cumulatividade plena com IBS e CBS, gerando risco severo de glosa de créditos fiscais caso notas e apurações apresentem inconsistências na Apuração Assistida da Receita Federal.
+- **Solução Desenvolvida:** Arquitetura autônoma com captura contínua na SEFAZ via cofre seguro para Certificado Digital A1, extração multimodal inteligente de documentos fiscais e motor de validação por Consenso Dual-IA em conformidade regulatória.
+- **Métricas e Impacto:**
+  - 99.8% de assertividade nas auditorias preventivas de DF-e (NF-e, NFS-e, CT-e).
+  - Tração acelerada de adesão e proteção de milhões de reais em créditos tributários legítimos.
+  - Disponibilização em ambiente fechado para clientes estratégicos e apresentações executivas.
+
+### 5. Centros de Excelência (CoE) em Automação Robótica (RPA)
 - **Organizações Atendidas:** Boa Vista, Wipro Limited, Indra.
 - **Papel Executivo:** Liderança do Centro de Excelência (CoE Leader), Arquiteto Corporativo e Líder Técnico.
 - **Atividades Realizadas:**
@@ -72,7 +83,7 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Uptime e disponibilidade de automações superior a 99.8%.
   - Retorno sobre Investimento (ROI) de automação de +340%.
 
-### 5. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
+### 6. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
 - **Segmento:** Gestão de Processos de Negócio (BPM) e Gestão Eletrônica de Conteúdo (ECM).
 - **Papel:** Consultor Sênior, Arquiteto de Soluções e Coordenador de Projetos.
 - **Escopo:**
@@ -87,6 +98,6 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
 Para agentes automatizados que operam sobre a interface web, os seletores e âncoras principais são:
 - `#sobre`: Seção com histórico executivo, filosofia de trabalho e narrativa profissional.
 - `#metricas`: Indicadores quantitativos de impacto (+15 anos, +100 automações, R$10M+ economia, 100% produtos validados).
-- `#expertises`: Os 3 pilares de competências (IA B2B, Estratégia de Produto, RPA & CoE).
-- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, Firmeza Parkinson, RPA CoE e TOTVS BPM.
-- `#contato`: Formulário e cartões de contato direto via LinkedIn ou e-mail com botão de cópia rápida.
+- `#expertises`: Os 3 pilares de competências (IA B2B, Estratégia de Produto, RPA e CoE).
+- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, Firmeza Parkinson, Auditia Inteligência Fiscal, RPA CoE e TOTVS BPM.
+- `#contato`: Formulário e cartões de contato direto via LinkedIn, WhatsApp ou e-mail com botão de cópia rápida.
