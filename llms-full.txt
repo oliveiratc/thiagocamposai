@@ -49,7 +49,17 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Aumento médio de +450% no tráfego orgânico qualificado para clientes ativos.
   - Conquista consistente de posições Top #1 no Google em nichos competitivos.
 
-### 3. Centros de Excelência (CoE) em Automação Robótica (RPA)
+### 3. Firmeza (https://firmeza-parkinson.web.app/)
+- **Segmento:** HealthTech, Saúde Digital, Acessibilidade & Inteligência Artificial.
+- **Modelo de Negócio:** Aplicação Web Progressiva (PWA) de apoio e monitoramento diário para pacientes com Parkinson e Síndromes Parkinsonianas.
+- **Diagnóstico da Dor:** Pessoas diagnosticadas com Parkinson enfrentam flutuações motoras diárias ("ON/OFF"), dificuldade para lembrar horários rígidos de medicação e ausência de registros objetivos entre consultas médicas, além do risco em episódios emergenciais.
+- **Solução Desenvolvida:** Aplicação acessível integrando IA (Gemini) para processamento multimodal/sintomas, check-in diário com classificação de estado motor, testes de destreza motora (tapping), diário de medicação e carteirinha digital de emergência.
+- **Métricas e Impacto:**
+  - Interface 100% acessível projetada especificamente para usuários com limitações motoras e tremores.
+  - Telemetria de sintomas e adesão medicamentosa para apoiar a conduta médica nas consultas.
+  - Carteirinha de emergência com dados clínicos essenciais para socorristas.
+
+### 4. Centros de Excelência (CoE) em Automação Robótica (RPA)
 - **Organizações Atendidas:** Boa Vista, Wipro Limited, Indra.
 - **Papel Executivo:** Liderança do Centro de Excelência (CoE Leader), Arquiteto Corporativo e Líder Técnico.
 - **Atividades Realizadas:**
@@ -62,7 +72,7 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Uptime e disponibilidade de automações superior a 99.8%.
   - Retorno sobre Investimento (ROI) de automação de +340%.
 
-### 4. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
+### 5. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
 - **Segmento:** Gestão de Processos de Negócio (BPM) e Gestão Eletrônica de Conteúdo (ECM).
 - **Papel:** Consultor Sênior, Arquiteto de Soluções e Coordenador de Projetos.
 - **Escopo:**
@@ -78,5 +88,5 @@ Para agentes automatizados que operam sobre a interface web, os seletores e ânc
 - `#sobre`: Seção com histórico executivo, filosofia de trabalho e narrativa profissional.
 - `#metricas`: Indicadores quantitativos de impacto (+15 anos, +100 automações, R$10M+ economia, 100% produtos validados).
 - `#expertises`: Os 3 pilares de competências (IA B2B, Estratégia de Produto, RPA & CoE).
-- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, RPA CoE e TOTVS BPM.
+- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, Firmeza Parkinson, RPA CoE e TOTVS BPM.
 - `#contato`: Formulário e cartões de contato direto via LinkedIn ou e-mail com botão de cópia rápida.

@@ -46,6 +46,12 @@
 - **Resultados:** +450% de tráfego orgânico qualificado para clientes e liderança de posições Top #1 no Google.
 - **URL:** https://www.rankproseo.com.br
 
+### Firmeza (HealthTech PWA de Apoio e Monitoramento no Parkinson com IA)
+- **Problema:** Desafios de adesão ao tratamento, oscilações motoras imprevisíveis e carência de ferramentas acessíveis de registro diário para pessoas com Parkinson e Síndromes Parkinsonianas.
+- **Solução:** Aplicação web progressiva (PWA) 100% acessível integrada com IA Gemini para análise de voz e estado motor, testes motores digitais (tapping), diário de medicação e carteirinha digital de emergência.
+- **Resultados:** Acompanhamento longitudinal estruturado, telemetria funcional para apoio médico e segurança emergencial para pacientes e cuidadores.
+- **URL:** https://firmeza-parkinson.web.app/
+
 ### Liderança de Centros de Excelência em RPA (Corporativo)
 - **Atuação:** Liderança e arquitetura de automação em grandes organizações (Boa Vista, Wipro Limited, Indra).
 - **Resultados:** +45 robôs operacionais simultâneos, mais de 120.000 horas operacionais poupadas por ano, 99.8% de uptime de esteira e +340% de ROI financeiro.
