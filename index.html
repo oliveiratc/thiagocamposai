@@ -1120,26 +1120,63 @@
                 © 2026 Thiago Campos. Construindo soluções de tecnologia para resultados reais.
             </p>
 
-            <!-- Link de Navegação Agêntica Discreto para IA / Agentes -->
-            <div class="mb-6">
-                <a href="llms.txt" class="inline-flex items-center gap-2 text-xs text-slate-500 hover:text-primary-400 border border-slate-800 hover:border-slate-700 bg-slate-950/60 px-3.5 py-1.5 rounded-full transition-colors font-mono" data-agent-action="view-llms-spec">
-                    <i class="fa-solid fa-robot text-primary-500 text-[11px]"></i>
+            <!-- Links Jurídicos e de Governança (LGPD) -->
+            <div class="mb-6 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
+                <a href="privacidade.html" class="hover:text-white transition-colors underline">Privacidade e LGPD</a>
+                <span>•</span>
+                <a href="termos.html" class="hover:text-white transition-colors underline">Termos de Uso</a>
+                <span>•</span>
+                <a href="llms.txt" class="inline-flex items-center gap-1.5 text-slate-500 hover:text-primary-400 border border-slate-800 hover:border-slate-700 bg-slate-950/60 px-3 py-1 rounded-full transition-colors font-mono" data-agent-action="view-llms-spec">
+                    <i class="fa-solid fa-robot text-primary-500 text-[10px]"></i>
                     <span>Navegação Agêntica (llms.txt)</span>
                 </a>
             </div>
 
             <!-- Aviso Legal Protegido -->
-            <div class="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto">
+            <div class="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto space-y-3">
                 <p class="text-slate-500 text-xs leading-relaxed text-justify">
-                    <strong>Aviso Legal:</strong> As marcas, logotipos e nomes de empresas mencionados neste site (como TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A citação a estas marcas possui caráter estritamente descritivo para fins de demonstração de portfólio e histórico profissional (uso nominativo), não implicando em patrocínio, endosso ou afiliação comercial direta com as detentoras atuais das marcas.
+                    <strong>Aviso Legal e Uso Nominativo de Marcas:</strong> As marcas, logotipos e nomes corporativos citados neste site (como TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A referência a tais marcas possui finalidade estritamente descritiva para identificação de histórico profissional, atuações anteriores e demonstração de portfólio (uso nominativo nos termos do Art. 132 da Lei nº 9.279/1996), não implicando patrocínio, endosso ou vínculo corporativo direto.
+                </p>
+                <p class="text-slate-500 text-xs leading-relaxed text-justify">
+                    <strong>Conformidade LGPD:</strong> Este portal respeita a sua privacidade e adota o princípio de Privacy by Design (Lei nº 13.709/2018), operando sem cookies invasivos de rastreamento de terceiros. Para mais informações ou exercer direitos de titular, consulte nosso <a href="privacidade.html" class="text-primary-400 hover:underline">Aviso de Privacidade</a>.
                 </p>
             </div>
 
         </div>
     </footer>
 
+    <!-- Banner LGPD de Consentimento e Privacidade -->
+    <aside id="lgpd-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-50 bg-slate-900/95 backdrop-blur-md text-white p-5 rounded-2xl border border-slate-700/80 shadow-2xl transition-all duration-300 hidden" aria-label="Aviso de Privacidade e LGPD" role="dialog">
+        <div class="flex items-start gap-3">
+            <div class="w-8 h-8 rounded-xl bg-primary-600/20 text-primary-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-halved text-sm"></i>
+            </div>
+            <div class="flex-1 text-xs text-slate-300 leading-relaxed text-justify">
+                <strong class="text-white block font-bold mb-1">Privacidade e Proteção de Dados (LGPD)</strong>
+                Este portfólio valoriza a sua privacidade e foi desenvolvido com foco em minimização de dados, sem cookies invasivos de rastreamento de terceiros. Saiba mais no nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.
+            </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-end gap-2.5">
+            <button id="lgpd-accept-btn" type="button" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-sm">
+                Entendido
+            </button>
+        </div>
+    </aside>
+
     <!-- JavaScript Interativo: 3D Tilt, Counters, Menu e E-mail -->
     <script>
+        // 0. Banner LGPD
+        const lgpdBanner = document.getElementById('lgpd-banner');
+        const lgpdAcceptBtn = document.getElementById('lgpd-accept-btn');
+        if (lgpdBanner && lgpdAcceptBtn) {
+            if (!localStorage.getItem('tc_lgpd_accepted')) {
+                lgpdBanner.classList.remove('hidden');
+            }
+            lgpdAcceptBtn.addEventListener('click', () => {
+                localStorage.setItem('tc_lgpd_accepted', 'true');
+                lgpdBanner.classList.add('hidden');
+            });
+        }
         // 1. Mobile Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
