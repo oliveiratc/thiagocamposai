@@ -60,6 +60,13 @@
 - **Resultados:** 99.8% de assertividade na conciliação fiscal e proteção contínua de créditos tributários para empresas e escritórios contábeis.
 - **Acesso:** Disponibilização restrita a clientes em piloto e apresentações executivas.
 
+### VaiLotar (SaaS B2B de Inteligência Preditiva de Demanda Turística)
+- **Status:** Plataforma em produção ativa com previsões públicas abertas e planos por assinatura.
+- **Problema:** Incerteza de ocupação e demanda para hotéis, pousadas, restaurantes, estacionamentos e transportes no polo turístico regional, gerando custos de ociosidade ou perdas por falta de suprimentos e equipe em picos.
+- **Solução:** Modelos preditivos LightGBM calibrados com séries históricas de grandes parques, dados climáticos horários, tendências de busca (Google Trends), calendário escolar e telemetria rodoviária (SP-280 e SP-075).
+- **Resultados:** F1 Score de 92.4% em backtests com ~80% de precisão dentro de ±1 nível de pico, horizontes de 7 a 60 dias de antecedência e arquitetura agêntica nativa (OpenAPI 3.1, Agent Card e LLMs.txt).
+- **URL:** https://vailotar.com.br/
+
 ### Liderança de Centros de Excelência em RPA (Corporativo)
 - **Atuação:** Liderança e arquitetura de automação em grandes organizações (Boa Vista, Wipro Limited, Indra).
 - **Resultados:** +45 robôs operacionais simultâneos, mais de 120.000 horas operacionais poupadas por ano, 99.8% de uptime de esteira e +340% de ROI financeiro.

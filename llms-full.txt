@@ -70,7 +70,17 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Tração acelerada de adesão e proteção de milhões de reais em créditos tributários legítimos.
   - Disponibilização em ambiente fechado para clientes estratégicos e apresentações executivas.
 
-### 5. Centros de Excelência (CoE) em Automação Robótica (RPA)
+### 5. VaiLotar — Inteligência Preditiva de Demanda Turística (https://vailotar.com.br/)
+- **Segmento:** TravelTech, Hospitalidade, SaaS B2B, Inteligência Preditiva e Machine Learning.
+- **Modelo de Negócio:** Assinatura SaaS B2B recorrente (Planos Starter, Pro, Pro+ e Enterprise) voltada para hotéis, pousadas, restaurantes, agências receptivas, estacionamentos e anunciantes do polo turístico (SP-280 / SP-075 e entorno do Cacau Park).
+- **Diagnóstico da Dor:** Gestores de hospitalidade e gastronomia sofrem com volatilidade severa e imprevisibilidade de fluxo turístico. A incapacidade de prever lotação com dias de antecedência gera ou desperdício de insumos e ociosidade de equipes em dias fracos, ou filas caóticas, perda de faturamento e colapso de atendimento em picos não previstos.
+- **Solução Desenvolvida:** Plataforma preditiva fundamentada em modelos LightGBM calibrados a partir de histórico de parques de referência nacionais, variáveis meteorológicas horárias (Open-Meteo), dados de busca e interesse (Google Trends), sazonalidade escolar/feriados e telemetria rodoviária. A plataforma traduz a probabilidade em uma Escala Universal de 5 Níveis de Demanda com recomendações operacionais práticas de estoque e escala de pessoal.
+- **Métricas e Impacto:**
+  - F1 Score de 92.4% em backtests com ~80% de precisão dentro da margem de ±1 nível de pico.
+  - Horizontes preditivos de 7 dias (previsão aberta pública), 14 dias (Starter), 30 dias (Pro) e 60 dias (Pro+/Enterprise).
+  - Pronto para a Web Agêntica: endpoints REST `/api/forecast`, especificação OpenAPI 3.1, A2A Agent Card (`/.well-known/agent.json`) e documentação agêntica (`llms.txt`).
+
+### 6. Centros de Excelência (CoE) em Automação Robótica (RPA)
 - **Organizações Atendidas:** Boa Vista, Wipro Limited, Indra.
 - **Papel Executivo:** Liderança do Centro de Excelência (CoE Leader), Arquiteto Corporativo e Líder Técnico.
 - **Atividades Realizadas:**
@@ -83,7 +93,7 @@ Thiago defende o uso da Inteligência Artificial não como artifício cosmético
   - Uptime e disponibilidade de automações superior a 99.8%.
   - Retorno sobre Investimento (ROI) de automação de +340%.
 
-### 6. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
+### 7. Gestão e Implantação de Plataformas Corporativas (TOTVS Fluig / BPM / ECM)
 - **Segmento:** Gestão de Processos de Negócio (BPM) e Gestão Eletrônica de Conteúdo (ECM).
 - **Papel:** Consultor Sênior, Arquiteto de Soluções e Coordenador de Projetos.
 - **Escopo:**
@@ -99,5 +109,5 @@ Para agentes automatizados que operam sobre a interface web, os seletores e ânc
 - `#sobre`: Seção com histórico executivo, filosofia de trabalho e narrativa profissional.
 - `#metricas`: Indicadores quantitativos de impacto (+15 anos, +100 automações, R$10M+ economia, 100% produtos validados).
 - `#expertises`: Os 3 pilares de competências (IA B2B, Estratégia de Produto, RPA e CoE).
-- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, Firmeza Parkinson, Auditia Inteligência Fiscal, RPA CoE e TOTVS BPM.
+- `#projetos`: Apresentação completa dos cases Peça Match AI, RankPro SEO, Firmeza Parkinson, Auditia Inteligência Fiscal, VaiLotar Demanda Preditiva, RPA CoE e TOTVS BPM.
 - `#contato`: Formulário e cartões de contato direto via LinkedIn, WhatsApp ou e-mail com botão de cópia rápida.
