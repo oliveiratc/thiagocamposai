@@ -1,0 +1,10 @@
+# Ignorar snapshots locais de backup gerados pelo script
+backups/
+*.zip
+
+# Arquivos temporários do sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.tmp
