@@ -1,10 +1,10 @@
-# robots.txt para Thiago Campos Portfolio
-# Configurado para permitir agentes de busca, web crawlers e agentes autônomos de IA (LLMs)
+# robots.txt para TCAI Corp (www.tcaicorp.online)
+# Configurado para permitir agentes de busca, web crawlers e agentes autonomos de IA (LLMs)
 
 User-agent: *
 Allow: /
 
-# Agentes e Crawlers de Inteligência Artificial Especializados
+# Agentes e Crawlers de Inteligencia Artificial Especializados
 User-agent: GPTBot
 Allow: /
 
@@ -43,4 +43,4 @@ Allow: /
 
 # Recursos e bases de dados para agentes de IA
 # LLM Knowledge Standard: llms.txt e llms-full.txt
-Sitemap: sitemap.xml
+Sitemap: https://www.tcaicorp.online/sitemap.xml
