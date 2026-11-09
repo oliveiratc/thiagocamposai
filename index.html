@@ -28,9 +28,11 @@
     <meta name="twitter:description" content="Soluções corporativas de alta eficiência impulsionadas por Inteligência Artificial, microsserviços e produtos B2B escaláveis.">
     <meta name="twitter:image" content="https://www.tcaicorp.online/logo-tc.jpg">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo-tc-transparente.png">
-    <link rel="apple-touch-icon" href="logo-tc-transparente.png">
+    <!-- Favicon e Ícones Multiplataforma (Sem Quebra) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
     <!-- Descoberta e Navegação Agêntica (LLMs e Web Agents) -->
     <link rel="alternate" type="text/markdown" href="llms.txt" title="Agentic Knowledge Base (llms.txt)">
@@ -217,14 +219,24 @@
             color: #1d4ed8;
         }
 
-        /* Justificação de textos em todo o documento */
-        p, .text-justify-all {
-            text-align: justify;
+        /* Justificação rigorosa de todos os textos informativos e parágrafos */
+        p, li, article, .text-justify, .text-justify-all {
+            text-align: justify !important;
             text-justify: inter-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+
+        /* Prevenção de overflow horizontal para responsividade perfeita em todas as telas */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
     </style>
 </head>
-<body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased selection:bg-primary-100 selection:text-primary-800 bg-mesh-subtle">
+<body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased selection:bg-primary-100 selection:text-primary-800 bg-mesh-subtle overflow-x-hidden w-full">
 
     <!-- Navegação Superior -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" aria-label="Navegação Principal" data-agent-role="navigation" data-agent-name="main-nav">
@@ -324,10 +336,10 @@
 
                 <!-- Coluna de Identidade Corporativa e Telemetria -->
                 <div class="lg:w-5/12 flex justify-center relative w-full">
-                    <div class="relative w-80 sm:w-96">
+                    <div class="relative w-full max-w-[340px] sm:max-w-sm sm:w-96">
                         <!-- Aura e moldura institucional -->
                         <div class="absolute inset-0 bg-gradient-to-tr from-primary-600/25 via-blue-500/15 to-cyan-400/20 rounded-3xl -rotate-2 scale-95 blur-md"></div>
-                        <div class="relative bg-slate-950 p-8 rounded-3xl shadow-2xl border border-slate-800 text-white overflow-hidden group">
+                        <div class="relative bg-slate-950 p-6 sm:p-8 rounded-3xl shadow-2xl border border-slate-800 text-white overflow-hidden group">
                             <!-- Feixe Laser de IA -->
                             <div class="ai-scanner-beam"></div>
 
@@ -1370,39 +1382,100 @@
         </div>
     </section>
 
-    <!-- Rodapé Corporativo -->
-    <footer class="bg-slate-900 text-white py-14 border-t border-slate-800" data-agent-section="footer">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Rodapé Corporativo Reorganizado da TCAI Corp -->
+    <footer class="bg-slate-900 text-white pt-16 pb-12 border-t border-slate-800" data-agent-section="footer">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex flex-col items-center justify-center mb-4">
-                <span class="font-extrabold text-lg text-white tracking-tight">TCAI Corp</span>
-                <span class="text-xs text-slate-400 font-medium">Soluções Corporativas em Inteligência Artificial e Produtos Digitais B2B</span>
+            <!-- Grade Principal de 4 Colunas no Desktop, 2 no Tablet, 1 no Mobile -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                
+                <!-- Coluna 1: Identidade Institucional e Missão -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo-tc-transparente.png" alt="TCAI Corp" class="h-10 w-auto object-contain">
+                        <span class="font-extrabold text-xl text-white tracking-tight">TCAI Corp</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed text-justify">
+                        Soluções corporativas de alta eficiência impulsionadas por Inteligência Artificial, microsserviços para agentes autônomos e produtos digitais B2B escaláveis.
+                    </p>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-[11px] text-emerald-400 font-mono">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot"></span>
+                        <span>Infraestrutura Operacional</span>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Soluções e Produtos -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Soluções e Produtos</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li><a href="https://grid402.online" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Grid402 (HTTP 402 Hub)</a></li>
+                        <li><a href="https://www.pecamatchai.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Peça Match AI</a></li>
+                        <li><a href="https://www.rankproseo.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> RankPro SEO</a></li>
+                        <li><a href="https://vailotar.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> VaiLotar TravelTech</a></li>
+                        <li><a href="#projetos" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px]"></i> Auditia e TaxTech</a></li>
+                        <li><a href="#projetos" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px]"></i> Centros de Excelência RPA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Institucional e Governança -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Institucional e Governança</h4>
+                    <ul class="space-y-2.5 text-xs text-slate-400">
+                        <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a TCAI Corp</a></li>
+                        <li><a href="#metricas" class="hover:text-white transition-colors">Impacto Operacional</a></li>
+                        <li><a href="#expertises" class="hover:text-white transition-colors">Pilares de Atuação</a></li>
+                        <li><a href="privacidade.html" class="hover:text-white transition-colors">Privacidade e LGPD</a></li>
+                        <li><a href="termos.html" class="hover:text-white transition-colors">Termos de Uso</a></li>
+                        <li><a href="llms.txt" class="hover:text-primary-400 transition-colors font-mono">llms.txt (IA Agêntica)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Canais Oficiais de Atendimento -->
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Canais de Contato</h4>
+                    <ul class="space-y-3 text-xs text-slate-400">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-envelope text-primary-400 mt-0.5"></i>
+                            <a href="mailto:contato@tcaicorp.online" class="hover:text-white transition-colors font-mono break-all">contato@tcaicorp.online</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 mt-0.5"></i>
+                            <a href="https://wa.me/5511958325848" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">+55 (11) 95832-5848</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-linkedin-in text-primary-400 mt-0.5"></i>
+                            <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Perfil Institucional no LinkedIn</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-globe text-primary-400 mt-0.5"></i>
+                            <a href="https://www.tcaicorp.online" class="hover:text-white transition-colors font-mono">www.tcaicorp.online</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-            <p class="text-slate-400 text-sm mb-4">
-                © 2026 TCAI Corp (www.tcaicorp.online). Construindo produtos e infraestrutura de tecnologia para resultados reais.
-            </p>
-
-            <!-- Links Jurídicos e de Governança (LGPD) -->
-            <div class="mb-6 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-400">
-                <a href="privacidade.html" class="hover:text-white transition-colors underline">Privacidade e LGPD</a>
-                <span>•</span>
-                <a href="termos.html" class="hover:text-white transition-colors underline">Termos de Uso</a>
-                <span>•</span>
-                <a href="llms.txt" class="inline-flex items-center gap-1.5 text-slate-500 hover:text-primary-400 border border-slate-800 hover:border-slate-700 bg-slate-950/60 px-3 py-1 rounded-full transition-colors font-mono" data-agent-action="view-llms-spec">
-                    <i class="fa-solid fa-robot text-primary-500 text-[10px]"></i>
-                    <span>Navegação Agêntica (llms.txt)</span>
-                </a>
-            </div>
-
-            <!-- Aviso Legal Protegido -->
-            <div class="pt-6 border-t border-slate-800/80 max-w-4xl mx-auto space-y-3">
-                <p class="text-slate-500 text-xs leading-relaxed text-justify">
-                    <strong>Aviso Legal e Uso Nominativo de Marcas:</strong> As marcas, logotipos e nomes corporativos citados neste site (como Grid402, TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A referência a tais marcas possui finalidade estritamente descritiva para identificação de competências tecnológicas, histórico profissional e demonstração de portfólio (uso nominativo nos termos do Art. 132 da Lei nº 9.279/1996), não implicando patrocínio, endosso ou vínculo corporativo direto onde não aplicável.
-                </p>
-                <p class="text-slate-500 text-xs leading-relaxed text-justify">
-                    <strong>Conformidade LGPD:</strong> Este portal respeita a sua privacidade e adota o princípio de Privacy by Design (Lei nº 13.709/2018), operando sem cookies invasivos de rastreamento de terceiros. Para mais informações ou exercer direitos de titular, consulte nosso <a href="privacidade.html" class="text-primary-400 hover:underline">Aviso de Privacidade</a>.
-                </p>
+            <!-- Divisória e Rodapé Inferior -->
+            <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 space-y-4">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                    <p>© 2026 TCAI Corp. Todos os direitos reservados. Portal oficial sob www.tcaicorp.online.</p>
+                    <div class="flex items-center gap-4 text-slate-400">
+                        <a href="privacidade.html" class="hover:text-white transition-colors">Privacidade</a>
+                        <span>•</span>
+                        <a href="termos.html" class="hover:text-white transition-colors">Termos</a>
+                        <span>•</span>
+                        <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 text-slate-500 leading-relaxed text-justify text-[11px] pt-4 border-t border-slate-800/60">
+                    <p>
+                        <strong>Aviso Legal e Uso Nominativo de Marcas:</strong> As marcas e logotipos citados neste site (como Grid402, TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A referência possui finalidade descritiva de histórico e demonstração técnica (Art. 132 da Lei nº 9.279/1996), não implicando patrocínio ou vínculo direto onde não aplicável.
+                    </p>
+                    <p>
+                        <strong>Conformidade LGPD:</strong> A TCAI Corp respeita a sua privacidade e opera sob os princípios da Lei nº 13.709/2018 (LGPD), sem utilização de cookies invasivos de rastreamento. Para mais detalhes, consulte nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.
+                    </p>
+                </div>
             </div>
 
         </div>
