@@ -442,30 +442,42 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" aria-label="Navegação Principal" data-agent-role="navigation" data-agent-name="main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-24 items-center">
-                <!-- Logotipo / Identidade Principal Ampliado Proporcionalmente -->
+                <!-- Logotipo / Identidade Principal Ampliado com Cores Destacadas -->
                 <a href="#" class="group flex items-center py-2" aria-label="TCAI Corp - Soluções em Inteligência Artificial e Produtos B2B" data-agent-action="navigate-home">
-                    <img src="logo-tc-transparente.png" alt="TCAI Corp - Inteligência Artificial e Soluções B2B" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
+                    <img src="logo-tc-vibrante.png" alt="TCAI Corp - Inteligência Artificial e Soluções B2B" class="h-12 sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-105">
                 </a>
 
                 <!-- Links Desktop -->
                 <div class="hidden md:flex items-center space-x-1 lg:space-x-2" role="menubar">
-                    <a href="#sobre" rel="about" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="sobre">Sobre Nós</a>
-                    <a href="#metricas" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="metricas">Impacto Operacional</a>
-                    <a href="#expertises" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="expertises">Pilares e Soluções</a>
-                    <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="projetos">Produtos e Cases</a>
-                    <a href="#contato" rel="contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="contato">Contato</a>
+                    <a href="#sobre" rel="about" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="sobre" data-i18n="nav_about">Sobre Nós</a>
+                    <a href="#metricas" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="metricas" data-i18n="nav_metrics">Impacto Operacional</a>
+                    <a href="#expertises" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="expertises" data-i18n="nav_pillars">Pilares e Soluções</a>
+                    <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="projetos" data-i18n="nav_projects">Produtos e Cases</a>
+                    <a href="#contato" rel="contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="contato" data-i18n="nav_contact">Contato</a>
                 </div>
 
-                <!-- CTA Contato Executivo -->
+                <!-- CTA Contato Executivo e Seletor de Idioma Bilíngue -->
                 <div class="hidden md:flex items-center gap-3">
+                    <!-- Seletor de Idioma PT | EN -->
+                    <div class="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold shadow-inner" role="group" aria-label="Seletor de idioma / Language selector">
+                        <button type="button" class="lang-btn-pt px-2.5 py-1 rounded-lg transition-all duration-200 bg-white text-primary-600 shadow-sm font-extrabold" onclick="setLanguage('pt')" aria-label="Português">PT</button>
+                        <button type="button" class="lang-btn-en px-2.5 py-1 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 font-semibold" onclick="setLanguage('en')" aria-label="English">EN</button>
+                    </div>
+
                     <a href="#contato" rel="contact" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary-600 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95" data-agent-action="navigate-contact" data-agent-role="contact-cta">
                         <i class="fa-solid fa-paper-plane text-xs"></i>
-                        <span>Falar com a TCAI Corp</span>
+                        <span data-i18n="nav_cta">Falar com a TCAI Corp</span>
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="flex md:hidden items-center">
+                <div class="flex md:hidden items-center gap-2">
+                    <!-- Seletor de Idioma Compacto no Topo Mobile -->
+                    <div class="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold shadow-inner">
+                        <button type="button" class="lang-btn-pt px-2 py-0.5 rounded-lg transition-all duration-200 bg-white text-primary-600 shadow-sm font-extrabold" onclick="setLanguage('pt')" aria-label="Português">PT</button>
+                        <button type="button" class="lang-btn-en px-2 py-0.5 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 font-semibold" onclick="setLanguage('en')" aria-label="English">EN</button>
+                    </div>
+
                     <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-slate-900 p-2 rounded-lg focus:outline-none" aria-label="Abrir Menu" data-agent-action="toggle-mobile-menu">
                         <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
                     </button>
@@ -475,13 +487,13 @@
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-6 space-y-2" data-agent-role="mobile-navigation">
-            <a href="#sobre" rel="about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="sobre">Sobre Nós</a>
-            <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="metricas">Impacto Operacional</a>
-            <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="expertises">Pilares e Soluções</a>
-            <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="projetos">Produtos e Cases</a>
-            <a href="#contato" rel="contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="contato">Contato</a>
+            <a href="#sobre" rel="about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="sobre" data-i18n="nav_about">Sobre Nós</a>
+            <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="metricas" data-i18n="nav_metrics">Impacto Operacional</a>
+            <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="expertises" data-i18n="nav_pillars">Pilares e Soluções</a>
+            <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="projetos" data-i18n="nav_projects">Produtos e Cases</a>
+            <a href="#contato" rel="contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="contato" data-i18n="nav_contact">Contato</a>
             <div class="pt-2">
-                <a href="#contato" rel="contact" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600" data-agent-action="navigate-contact" data-agent-role="contact-cta">
+                <a href="#contato" rel="contact" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600" data-agent-action="navigate-contact" data-agent-role="contact-cta" data-i18n="nav_cta">
                     Falar com a TCAI Corp
                 </a>
             </div>
@@ -499,22 +511,22 @@
                 <!-- Badge de Posicionamento -->
                 <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full badge-sapphire text-xs sm:text-sm font-bold tracking-wide uppercase mb-6 shadow-sm">
                     <span class="w-2 h-2 rounded-full bg-primary-600 animate-pulse-dot"></span>
-                    TCAI Corp • Soluções Corporativas e Produtos B2B
+                    <span data-i18n="hero_badge">TCAI Corp • Soluções Corporativas e Produtos B2B</span>
                 </div>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15] mb-6">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15] mb-6" data-i18n-html="hero_title_html">
                     Construindo o futuro da eficiência com <span class="text-gradient">Inteligência Artificial e Produtos B2B</span>.
                 </h1>
 
-                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10 font-normal text-center">
+                <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10 font-normal text-center" data-i18n="hero_desc">
                     Desenvolvemos plataformas escaláveis de Inteligência Artificial, arquiteturas de microsserviços para agentes inteligentes e automações corporativas para empresas que exigem excelência operacional, governança e rentabilidade.
                 </p>
 
                 <!-- Micro-Tags de Confiança -->
                 <div class="pt-8 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm font-semibold text-slate-500">
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary-600"></i> Inteligência Artificial Corporativa</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary-600"></i> Microsserviços e Agentes Autônomos</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-primary-600"></i> Governança e Escala B2B</span>
+                    <span class="flex items-center gap-2" data-i18n-html="hero_tag_1_html"><i class="fa-solid fa-circle-check text-primary-600"></i> Inteligência Artificial Corporativa</span>
+                    <span class="flex items-center gap-2" data-i18n-html="hero_tag_2_html"><i class="fa-solid fa-circle-check text-primary-600"></i> Microsserviços e Agentes Autônomos</span>
+                    <span class="flex items-center gap-2" data-i18n-html="hero_tag_3_html"><i class="fa-solid fa-circle-check text-primary-600"></i> Governança e Escala B2B</span>
                 </div>
 
             </div>
@@ -531,8 +543,8 @@
                     <div class="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 mb-2">
                         +<span class="counter" data-target="15">0</span>
                     </div>
-                    <div class="text-sm font-bold text-slate-800">Anos de Engenharia</div>
-                    <div class="text-xs text-slate-500 mt-1">Liderança em tecnologia corporativa</div>
+                    <div class="text-sm font-bold text-slate-800" data-i18n="metric_1_label">Anos de Engenharia</div>
+                    <div class="text-xs text-slate-500 mt-1" data-i18n="metric_1_sub">Liderança em tecnologia corporativa</div>
                 </div>
 
                 <!-- Métrica 2 -->
@@ -540,17 +552,17 @@
                     <div class="font-display text-4xl sm:text-5xl font-extrabold text-primary-600 mb-2">
                         +<span class="counter" data-target="100">0</span>
                     </div>
-                    <div class="text-sm font-bold text-slate-800">Soluções e Automações</div>
-                    <div class="text-xs text-slate-500 mt-1">Sistemas, robôs e agentes de IA</div>
+                    <div class="text-sm font-bold text-slate-800" data-i18n="metric_2_label">Soluções e Automações</div>
+                    <div class="text-xs text-slate-500 mt-1" data-i18n="metric_2_sub">Sistemas, robôs e agentes de IA</div>
                 </div>
 
                 <!-- Métrica 3 -->
                 <div class="p-6 rounded-2xl bg-card border border-slate-200/80 text-center hover:border-primary-300 transition-colors">
                     <div class="font-display text-4xl sm:text-5xl font-extrabold text-slate-900 mb-2">
-                        R$<span class="counter" data-target="10">0</span>M+
+                        <span data-i18n="metric_3_prefix">R$</span><span class="counter" data-target="10">0</span>M+
                     </div>
-                    <div class="text-sm font-bold text-slate-800">Valor e Economia Gerada</div>
-                    <div class="text-xs text-slate-500 mt-1">Otimização de custos operacionais</div>
+                    <div class="text-sm font-bold text-slate-800" data-i18n="metric_3_label">Valor e Economia Gerada</div>
+                    <div class="text-xs text-slate-500 mt-1" data-i18n="metric_3_sub">Otimização de custos operacionais</div>
                 </div>
 
                 <!-- Métrica 4 -->
@@ -558,8 +570,8 @@
                     <div class="font-display text-4xl sm:text-5xl font-extrabold text-primary-600 mb-2">
                         <span class="counter" data-target="100">0</span>%
                     </div>
-                    <div class="text-sm font-bold text-slate-800">Foco em Solução Real</div>
-                    <div class="text-xs text-slate-500 mt-1">Produtos validados em produção</div>
+                    <div class="text-sm font-bold text-slate-800" data-i18n="metric_4_label">Foco em Solução Real</div>
+                    <div class="text-xs text-slate-500 mt-1" data-i18n="metric_4_sub">Produtos validados em produção</div>
                 </div>
 
             </div>
@@ -575,46 +587,32 @@
                     
                     <!-- Lado Esquerdo: Identidade Institucional -->
                     <div class="lg:w-4/12 flex-shrink-0">
-                        <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-2">Visão Institucional</span>
-                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">Sobre a TCAI Corp</h2>
+                        <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-2" data-i18n="about_badge">Visão Institucional</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4" data-i18n="about_title">Sobre a TCAI Corp</h2>
                         <div class="w-16 h-1.5 bg-primary-600 rounded-full mb-6"></div>
                         
-                        <p class="text-slate-600 text-base leading-relaxed mb-8 text-justify">
+                        <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n="about_lead">
                             Conectando o entendimento profundo da dor operacional com a mais sofisticada engenharia de Inteligência Artificial e produtos B2B.
                         </p>
-
-                        <div class="space-y-4">
-                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Canais Institucionais</span>
-                            <div class="flex flex-col gap-2.5">
-                                <a href="https://wa.me/5511958325848" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:text-white hover:bg-[#25D366] hover:border-[#25D366] font-bold text-sm transition-all shadow-sm group active:scale-95">
-                                    <i class="fa-brands fa-whatsapp text-lg text-emerald-600 group-hover:text-white transition-colors"></i>
-                                    <span>Atendimento WhatsApp</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] font-bold text-sm transition-all shadow-sm group active:scale-95" aria-label="LinkedIn" data-agent-action="open-external-profile" data-agent-target="linkedin">
-                                    <i class="fa-brands fa-linkedin-in text-lg text-primary-600 group-hover:text-white transition-colors"></i>
-                                    <span>Canal no LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- Lado Direito: Narrativa Institucional da Empresa -->
+                    <!-- Lado Direito: Narrativa Institucional da Empresa em Linguagem Natural -->
                     <div class="lg:w-8/12 space-y-6 text-slate-600 text-base sm:text-lg leading-relaxed">
-                        <p class="text-justify">
+                        <p class="text-justify" data-i18n-html="about_p1_html">
                             A <strong>TCAI Corp</strong> é uma empresa de tecnologia focada em conceber, construir e escalar soluções corporativas impulsionadas por <strong>Inteligência Artificial de ponta</strong>, microsserviços para agentes autônomos e arquiteturas de alta eficiência operacional.
                         </p>
-                        <p class="text-justify">
+                        <p class="text-justify" data-i18n-html="about_p2_html">
                             Nossa atuação concentra-se em <strong>identificar gargalos crônicos do ecossistema produtivo</strong> e transformá-los em produtos digitais robustos, gerando retorno financeiro mensurável, redução de custos e escala imediata para os nossos clientes e parceiros.
                         </p>
-                        <p class="text-justify">
-                            Acreditamos na <strong>Inteligência Artificial como uma alavanca prática</strong> para o mundo dos negócios. Desenvolvemos desde infraestruturas inovadoras de microsserviços sob o protocolo HTTP 402 com oráculos criptográficos (como o <strong>Grid402</strong>) até plataformas inteligentes validadas no mercado (como o <strong>Peça Match AI</strong> e o <strong>RankPro SEO</strong>) e Centros de Excelência em Automação (CoE).
+                        <p class="text-justify" data-i18n-html="about_p3_html">
+                            Acreditamos na <strong>Inteligência Artificial como uma ferramenta prática e transformadora</strong> para os negócios. Criamos soluções completas que vão desde plataformas de dados e serviços para sistemas modernos de IA até produtos inteligentes já consolidados no mercado e estruturas dedicadas à automação de rotinas complexas.
                         </p>
 
                         <!-- Box de Filosofia de Trabalho -->
                         <div class="pt-4">
                             <div class="bg-slate-50 border-l-4 border-primary-600 p-6 rounded-r-2xl">
-                                <h4 class="text-sm font-extrabold uppercase text-slate-900 tracking-wider mb-1">Princípio de Atuação da TCAI Corp</h4>
-                                <p class="text-sm sm:text-base text-slate-700 italic text-justify">
+                                <h4 class="text-sm font-extrabold uppercase text-slate-900 tracking-wider mb-1" data-i18n="about_principle_title">Princípio de Atuação da TCAI Corp</h4>
+                                <p class="text-sm sm:text-base text-slate-700 italic text-justify" data-i18n="about_principle_quote">
                                     "Tecnologia só cumpre seu papel quando simplifica a operação, elimina ineficiências e entrega previsibilidade para o balanço financeiro da empresa."
                                 </p>
                             </div>
@@ -627,14 +625,20 @@
         </div>
     </section>
 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Pilares de Atuação / Expertise -->
     <section id="expertises" class="py-20 bg-slate-50 border-t border-b border-slate-200/80" data-agent-section="expertises">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-3">Competências e Especialidades</span>
-                <h3 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">Principais Áreas de Atuação</h3>
-                <p class="text-slate-600 text-base sm:text-lg text-justify">Três pilares estratégicos que sustentam projetos de alta complexidade e eficiência comprovada.</p>
+                <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-3" data-i18n="pillars_badge">Competências e Especialidades</span>
+                <h3 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4" data-i18n="pillars_title">Principais Áreas de Atuação</h3>
+                <p class="text-slate-600 text-base sm:text-lg text-justify" data-i18n="pillars_desc">Três pilares estratégicos que sustentam projetos de alta complexidade e eficiência comprovada.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -645,14 +649,14 @@
                         <div class="w-14 h-14 rounded-2xl bg-blue-50 text-primary-600 flex items-center justify-center text-2xl mb-6 mx-auto group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-microchip"></i>
                         </div>
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center">Inteligência Artificial e Agentes Autônomos</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left">
+                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_1_title">Inteligência Artificial e Agentes Autônomos</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_1_desc">
                             Desenvolvimento de microsserviços corporativos, integração de modelos de linguagem e agentes inteligentes projetados para automatizar fluxos complexos e conectar ecossistemas de negócios com alta segurança e disponibilidade.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-primary-600"></i> Infraestrutura para agentes inteligentes de IA</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-primary-600"></i> Integrações via Model Context Protocol (MCP) e APIs abertas</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-primary-600"></i> Algoritmos preditivos e busca semântica corporativa</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_1_item_1_html"><i class="fa-solid fa-check text-primary-600"></i> Infraestrutura para agentes inteligentes de IA</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_1_item_2_html"><i class="fa-solid fa-check text-primary-600"></i> Integrações via Model Context Protocol (MCP) e APIs abertas</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_1_item_3_html"><i class="fa-solid fa-check text-primary-600"></i> Algoritmos preditivos e busca semântica corporativa</li>
                         </ul>
                     </div>
                 </div>
@@ -663,14 +667,14 @@
                         <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 mx-auto group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center">Produtos Digitais B2B Escaláveis</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left">
+                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_2_title">Produtos Digitais B2B Escaláveis</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_2_desc">
                             Concepção, arquitetura e escala de plataformas SaaS e produtos digitais orientados a valor, transformando desafios operacionais complexos em soluções corporativas robustas com alto retorno sobre investimento.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Validação executiva e desenvolvimento ágil contínuo</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Arquitetura escalável com foco em eficiência e ROI</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-600"></i> Engenharia moderna, segurança e conformidade regulatória</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_2_item_1_html"><i class="fa-solid fa-check text-indigo-600"></i> Validação executiva e desenvolvimento ágil contínuo</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_2_item_2_html"><i class="fa-solid fa-check text-indigo-600"></i> Arquitetura escalável com foco em eficiência e ROI</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_2_item_3_html"><i class="fa-solid fa-check text-indigo-600"></i> Engenharia moderna, segurança e conformidade regulatória</li>
                         </ul>
                     </div>
                 </div>
@@ -681,14 +685,14 @@
                         <div class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl mb-6 mx-auto group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-gears"></i>
                         </div>
-                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center">Automação e Centros de Excelência (CoE)</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left">
+                        <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_3_title">Automação e Centros de Excelência (CoE)</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_3_desc">
                             Estruturação completa de Centros de Excelência (CoE) em automação de processos (RPA), integrando esteiras inteligentes a sistemas legados e ERPs corporativos com governança contínua.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-600"></i> Otimização de tempo e eliminação de gargalos operacionais</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-600"></i> Integração fluida com ERPs e legados corporativos</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-600"></i> Governança de riscos e acordos de nível de serviço (SLA)</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_3_item_1_html"><i class="fa-solid fa-check text-sky-600"></i> Otimização de tempo e eliminação de gargalos operacionais</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_3_item_2_html"><i class="fa-solid fa-check text-sky-600"></i> Integração fluida com ERPs e legados corporativos</li>
+                            <li class="flex items-center gap-2" data-i18n-html="pillar_3_item_3_html"><i class="fa-solid fa-check text-sky-600"></i> Governança de riscos e acordos de nível de serviço (SLA)</li>
                         </ul>
                     </div>
                 </div>
@@ -703,9 +707,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-20">
-                <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-3">Portfólio TCAI Corp</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">Produtos Digitais e Soluções em Escala</h2>
-                <p class="text-slate-600 text-base sm:text-lg text-justify">Plataformas reais desenvolvidas pela TCAI Corp que unem Inteligência Artificial prática, microsserviços modernos e alto retorno operacional.</p>
+                <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-3" data-i18n="projects_badge">Portfólio TCAI Corp</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4" data-i18n="projects_title">Produtos Digitais e Soluções em Escala</h2>
+                <p class="text-slate-600 text-base sm:text-lg text-justify" data-i18n="projects_desc">Plataformas reais desenvolvidas pela TCAI Corp que unem Inteligência Artificial prática, microsserviços modernos e alto retorno operacional.</p>
             </div>
 
             <div class="space-y-16">
@@ -755,10 +759,10 @@
                                 </div>
                             </div>
 
-                            <!-- Texto e Detalhes do Grid402 -->
+                            <!-- Texto e Detalhes do Grid402 em Linguagem Natural -->
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
-                                    <span class="px-2.5 py-1 rounded-md bg-blue-100 text-primary-700 text-xs font-bold uppercase flex items-center gap-1.5">
+                                    <span class="px-2.5 py-1 rounded-md bg-blue-100 text-primary-700 text-xs font-bold uppercase flex items-center gap-1.5" data-i18n-html="grid402_tag_infra_html">
                                         <span class="w-2 h-2 rounded-full bg-primary-600 animate-pulse-dot"></span> Infraestrutura de IA
                                     </span>
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold">Protocolo HTTP 402</span>
@@ -766,24 +770,24 @@
                                     <span class="px-2.5 py-1 rounded-md bg-indigo-100 text-indigo-800 text-xs font-semibold">Model Context Protocol</span>
                                 </div>
 
-                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4" data-i18n="grid402_title">
                                     Grid402: Hub de microsserviços e dados abertos para agentes autônomos de IA
                                 </h3>
                                 
-                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify">
-                                    O <strong>Grid402</strong> (desenvolvido e operado pela TCAI Corp) é uma plataforma de infraestrutura pública para agentes inteligentes e aplicações máquina-a-máquina (M2M). Sob a especificação HTTP 402 com liquidação financeira por requisição em USDC na rede Base, o hub fornece verificação de oráculos criptográficos em menos de 1 ms, APIs de conformidade cadastral (CNPJ, Sanções, Simples), indicadores de mercado (Forex, Crypto, Selic, CDI) e inteligência de rede (DNS, ASN, SSL) com arquitetura Zero-DB de alta resiliência.
+                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n-html="grid402_desc_html">
+                                    O <strong>Grid402</strong>, desenvolvido e operado pela TCAI Corp, é uma plataforma moderna de dados e serviços em tempo real voltada a agentes inteligentes e sistemas autônomos. Com liquidação rápida por requisição sob o padrão HTTP 402, a infraestrutura oferece verificações criptográficas imediatas, consultas cadastrais, indicadores econômicos e inteligência de rede, unindo total privacidade a uma arquitetura estável e de alta disponibilidade.
                                 </p>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
                                         <div class="text-primary-600 font-extrabold text-xl mb-1">&lt; 1 ms</div>
-                                        <div class="text-xs font-bold text-slate-700">Verificação Criptográfica</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Oráculos e provas sem estado em tempo real</p>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="grid402_stat_1_title">Verificação Criptográfica</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="grid402_stat_1_desc">Oráculos e provas sem estado em tempo real</p>
                                     </div>
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
                                         <div class="text-emerald-600 font-extrabold text-xl mb-1">Zero-DB</div>
-                                        <div class="text-xs font-bold text-slate-700">Privacidade e Alta Resiliência</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Zero retenção de dados sensíveis e alta vazão</p>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="grid402_stat_2_title">Privacidade e Alta Resiliência</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="grid402_stat_2_desc">Zero retenção de dados sensíveis e alta vazão</p>
                                     </div>
                                 </div>
 
@@ -792,24 +796,24 @@
                                         <div class="w-6 h-6 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                                              <i class="fa-solid fa-check text-xs"></i>
                                         </div>
-                                        <div>Servidor MCP oficial (<code>grid402-mcp</code>) para Claude Desktop, Cursor e agentes LLM com descoberta SEP-1649.</div>
+                                        <div data-i18n-html="grid402_feat_1_html">Servidor MCP oficial (<code>grid402-mcp</code>) para Claude Desktop, Cursor e agentes LLM com descoberta SEP-1649.</div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <div class="w-6 h-6 rounded-lg bg-blue-50 text-primary-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                                              <i class="fa-solid fa-check text-xs"></i>
                                         </div>
-                                        <div>SDKs publicados no PyPI (Python) e npm (TypeScript/Node.js), além de provedores para Coinbase AgentKit.</div>
+                                        <div data-i18n-html="grid402_feat_2_html">SDKs publicados no PyPI (Python) e npm (TypeScript/Node.js), além de provedores para Coinbase AgentKit.</div>
                                     </div>
                                 </div>
 
                                 <div class="flex flex-wrap items-center gap-3">
                                     <a href="https://grid402.online" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95" data-agent-action="open-project" data-agent-target="https://grid402.online">
-                                        <span>Acessar o Grid402</span>
+                                        <span data-i18n="grid402_btn_access">Acessar o Grid402</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                                     </a>
                                     <a href="https://grid402.online/agents" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all active:scale-95">
                                         <i class="fa-solid fa-robot text-xs text-primary-400"></i>
-                                        <span>Central de Agentes</span>
+                                        <span data-i18n="grid402_btn_agents">Central de Agentes</span>
                                     </a>
                                     <a href="https://grid402.online/openapi.json" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-200 px-5 py-3 rounded-xl font-semibold text-xs transition-all active:scale-95">
                                         <i class="fa-solid fa-code text-xs text-slate-600"></i>
@@ -854,35 +858,35 @@
                             <!-- Texto e Detalhes do Produto -->
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
-                                    <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase">Produto Próprio B2B</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold">Inteligência Artificial</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold">Setor Automotivo</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase" data-i18n="peca_tag_type">Produto Próprio B2B</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold" data-i18n="peca_tag_ai">Inteligência Artificial</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold" data-i18n="peca_tag_sector">Setor Automotivo</span>
                                 </div>
 
-                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4" data-i18n="peca_title">
                                     Revolucionando a busca por autopeças pesadas com IA
                                 </h3>
                                 
-                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify">
+                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n-html="peca_desc_html">
                                     A <strong>Peça Match AI</strong> resolve um dos maiores problemas de frotas e oficinas do Brasil: a alta taxa de erro e devolução na compra de componentes para linha pesada. A plataforma utiliza IA avançada para cruzar especificações técnicas e entregar assertividade cirúrgica.
                                 </p>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
                                         <div class="text-primary-600 font-extrabold text-xl mb-1">-70%</div>
-                                        <div class="text-xs font-bold text-slate-700">Devolução de Peças</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Eliminação de erros de especificação</p>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="peca_stat_1_title">Devolução de Peças</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="peca_stat_1_desc">Eliminação de erros de especificação</p>
                                     </div>
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
-                                        <div class="text-primary-600 font-extrabold text-xl mb-1">Velocidade</div>
-                                        <div class="text-xs font-bold text-slate-700">Eficiência de Orçamento</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Redução do tempo parado de caminhões</p>
+                                        <div class="text-primary-600 font-extrabold text-xl mb-1" data-i18n="peca_stat_2_val">Velocidade</div>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="peca_stat_2_title">Eficiência de Orçamento</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="peca_stat_2_desc">Redução do tempo parado de caminhões</p>
                                     </div>
                                 </div>
 
                                 <div class="flex flex-wrap items-center gap-4">
                                     <a href="https://www.pecamatchai.com.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95" data-agent-action="open-project" data-agent-target="https://www.pecamatchai.com.br/">
-                                        <span>Acessar a Plataforma</span>
+                                        <span data-i18n="peca_btn_visit">Acessar a Plataforma</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                                     </a>
                                 </div>
@@ -923,29 +927,29 @@
                             <!-- Texto e Detalhes do Produto -->
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
-                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100/80 text-emerald-800 text-xs font-bold uppercase">Plataforma SaaS B2B</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase">Inteligência Artificial</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold">SEO e Ranqueamento</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100/80 text-emerald-800 text-xs font-bold uppercase" data-i18n="rankpro_tag_saas">Plataforma SaaS B2B</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase" data-i18n="rankpro_tag_ai">Inteligência Artificial</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold" data-i18n="rankpro_tag_seo">SEO e Ranqueamento</span>
                                 </div>
 
-                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4" data-i18n="rankpro_title">
                                     SEO + IA que vende: Conquistando o topo do Google com precisão algorítmica
                                 </h3>
                                 
-                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify">
+                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n-html="rankpro_desc_html">
                                     O <strong>RankPro SEO</strong> é uma plataforma SaaS inteligente projetada para transformar pesquisas orgânicas em clientes e receita recorrente. Unindo inteligência artificial generativa, mineração semântica e estratégias de SEO de alta conversão, a solução gera autoridade digital e posicionamento dominante nas buscas.
                                 </p>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
                                         <div class="text-emerald-600 font-extrabold text-xl mb-1">+450%</div>
-                                        <div class="text-xs font-bold text-slate-700">Tráfego Orgânico Qualificado</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Clusters semânticos orientados a intenção</p>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="rankpro_stat_1_title">Tráfego Orgânico Qualificado</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="rankpro_stat_1_desc">Clusters semânticos orientados a intenção</p>
                                     </div>
                                     <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
                                         <div class="text-primary-600 font-extrabold text-xl mb-1">Top #1</div>
-                                        <div class="text-xs font-bold text-slate-700">Conversão e Vendas</div>
-                                        <p class="text-[11px] text-slate-500 mt-0.5">Artigos calibrados para decisão de compra</p>
+                                        <div class="text-xs font-bold text-slate-700" data-i18n="rankpro_stat_2_title">Conversão e Vendas</div>
+                                        <p class="text-[11px] text-slate-500 mt-0.5" data-i18n="rankpro_stat_2_desc">Artigos calibrados para decisão de compra</p>
                                     </div>
                                 </div>
 
@@ -954,19 +958,19 @@
                                         <div class="w-6 h-6 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                                              <i class="fa-solid fa-check text-xs"></i>
                                         </div>
-                                        <div>Mapeamento inteligente de palavras-chave e intenção de busca orientado por IA.</div>
+                                        <div data-i18n="rankpro_feat_1">Mapeamento inteligente de palavras-chave e intenção de busca orientado por IA.</div>
                                     </div>
                                     <div class="flex items-start gap-3">
                                         <div class="w-6 h-6 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
                                              <i class="fa-solid fa-check text-xs"></i>
                                         </div>
-                                        <div>Produção e otimização automatizada de conteúdos estruturados para a primeira página.</div>
+                                        <div data-i18n="rankpro_feat_2">Produção e otimização automatizada de conteúdos estruturados para a primeira página.</div>
                                     </div>
                                 </div>
 
                                 <div class="flex flex-wrap items-center gap-4">
                                     <a href="https://www.rankproseo.com.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md transition-all active:scale-95" data-agent-action="open-project" data-agent-target="https://www.rankproseo.com.br">
-                                        <span>Acessar a Plataforma</span>
+                                        <span data-i18n="rankpro_btn_visit">Acessar a Plataforma</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                                     </a>
                                 </div>
@@ -1323,11 +1327,11 @@
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold">Centros de Excelência (CoE)</span>
                                 </div>
 
-                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4" data-i18n="rpa_title">
                                     Arquitetura e Liderança de Centros de Excelência em RPA
                                 </h3>
                                 
-                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify">
+                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n="rpa_desc">
                                     Histórico corporativo expressivo na estruturação e liderança de estratégias de automação robótica para referências de mercado, garantindo governança rígida, mitigação de riscos e impacto direto nos custos operacionais.
                                 </p>
 
@@ -1422,11 +1426,11 @@
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold">Ecossistema TOTVS</span>
                                 </div>
 
-                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">
+                                <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4" data-i18n="totvs_title">
                                     Gestão e Implantação de Plataformas Corporativas (TOTVS)
                                 </h3>
                                 
-                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify">
+                                <p class="text-slate-600 text-base leading-relaxed mb-6 text-justify" data-i18n="totvs_desc">
                                     Sólida trajetória desde a consultoria e arquitetura técnica até a coordenação de projetos envolvendo plataformas de BPM e ECM (Fluig), liderando squads multidisciplinares e conectando TI ao objetivo comercial.
                                 </p>
 
@@ -1471,14 +1475,14 @@
                     
                     <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full badge-sapphire text-xs font-bold uppercase tracking-wider mb-6">
                         <span class="w-2 h-2 rounded-full bg-primary-600 animate-pulse-dot"></span>
-                        TCAI Corp • Atendimento Corporativo e Parcerias
+                        <span data-i18n="contact_badge">TCAI Corp • Atendimento Corporativo e Parcerias</span>
                     </span>
 
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 max-w-2xl mx-auto">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 max-w-2xl mx-auto" data-i18n="contact_title">
                         Pronto para transformar a eficiência operacional da sua empresa?
                     </h2>
                     
-                    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed text-justify">
+                    <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed text-justify" data-i18n="contact_desc">
                         Converse com a equipe de engenharia e produto da TCAI Corp. Desenvolvemos soluções personalizadas em Inteligência Artificial, microsserviços e automações que aceleram o crescimento e a rentabilidade do seu negócio.
                     </p>
 
@@ -1487,7 +1491,7 @@
                         <a href="https://wa.me/5511958325848" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3.5 bg-[#25D366] hover:bg-[#1faa4b] text-white p-4 rounded-2xl font-bold text-base shadow-md hover:shadow-lg transition-all active:scale-95 group" data-agent-action="open-contact-channel" data-agent-target="whatsapp">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                             <div class="text-left">
-                                <span class="block text-xs uppercase tracking-wider opacity-90 font-medium">WhatsApp Corporativo</span>
+                                <span class="block text-xs uppercase tracking-wider opacity-90 font-medium" data-i18n="contact_wa_label">WhatsApp Corporativo</span>
                                 <span class="block text-sm sm:text-base font-extrabold leading-tight">+55 11 95832-5848</span>
                             </div>
                         </a>
@@ -1495,15 +1499,15 @@
                         <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3.5 bg-[#0A66C2] hover:bg-[#084e96] text-white p-4 rounded-2xl font-bold text-base shadow-md hover:shadow-lg transition-all active:scale-95 group" data-agent-action="open-contact-channel" data-agent-target="linkedin">
                             <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             <div class="text-left">
-                                <span class="block text-xs uppercase tracking-wider opacity-90 font-medium">Canal Corporativo</span>
-                                <span class="block text-sm sm:text-base font-extrabold leading-tight">Perfil no LinkedIn</span>
+                                <span class="block text-xs uppercase tracking-wider opacity-90 font-medium" data-i18n="contact_linkedin_label">Canal Corporativo</span>
+                                <span class="block text-sm sm:text-base font-extrabold leading-tight" data-i18n="contact_linkedin_desc">Perfil no LinkedIn</span>
                             </div>
                         </a>
                     </div>
 
                     <!-- Botão de E-mail Institucional com Cópia com 1 Clique -->
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-slate-600">
-                        <span class="font-medium">E-mail institucional:</span>
+                        <span class="font-medium" data-i18n="contact_email_label">E-mail institucional:</span>
                         <div class="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 px-3.5 py-1.5 rounded-xl font-mono text-xs sm:text-sm text-slate-800">
                             <i class="fa-regular fa-envelope text-primary-600"></i>
                             <span id="email-address">contato@tcaicorp.online</span>
@@ -1511,7 +1515,7 @@
                                 <i class="fa-regular fa-copy"></i>
                             </button>
                         </div>
-                        <span id="copy-feedback" class="text-xs font-bold text-emerald-600 hidden">Copiado!</span>
+                        <span id="copy-feedback" class="text-xs font-bold text-emerald-600 hidden" data-i18n="contact_copy_feedback">Copiado!</span>
                     </div>
 
                 </div>
@@ -1520,7 +1524,7 @@
         </div>
     </section>
 
-    <!-- Rodapé Corporativo Reorganizado da TCAI Corp -->
+    <!-- Rodapé Corporativo Reorganizado da TCAI Corp com Logotipo Destacado -->
     <footer class="bg-slate-900 text-white pt-16 pb-12 border-t border-slate-800" data-agent-section="footer">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -1530,20 +1534,20 @@
                 <!-- Coluna 1: Identidade Institucional e Missão -->
                 <div class="space-y-4">
                     <div class="flex items-center">
-                        <img src="logo-tc-transparente.png" alt="TCAI Corp" class="h-10 w-auto object-contain">
+                        <img src="logo-tc-darkbg.png" alt="TCAI Corp" class="h-11 w-auto object-contain transition-transform duration-200 hover:scale-105">
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed text-justify">
+                    <p class="text-xs text-slate-400 leading-relaxed text-justify" data-i18n="footer_mission">
                         Soluções corporativas de alta eficiência impulsionadas por Inteligência Artificial, microsserviços para agentes autônomos e produtos digitais B2B escaláveis.
                     </p>
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-[11px] text-emerald-400 font-mono">
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot"></span>
-                        <span>Infraestrutura Operacional</span>
+                        <span data-i18n="footer_status">Infraestrutura Operacional</span>
                     </div>
                 </div>
 
                 <!-- Coluna 2: Soluções e Produtos -->
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Soluções e Produtos</h4>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer_col_solutions">Soluções e Produtos</h4>
                     <ul class="space-y-2.5 text-xs text-slate-400">
                         <li><a href="https://grid402.online" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Grid402 (HTTP 402 Hub)</a></li>
                         <li><a href="https://www.pecamatchai.com.br/" target="_blank" rel="noopener noreferrer" class="hover:text-primary-400 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Peça Match AI</a></li>
@@ -1556,14 +1560,14 @@
 
                 <!-- Coluna 3: Institucional e Governança -->
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Institucional e Governança</h4>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer_col_gov">Institucional e Governança</h4>
                     <ul class="space-y-2.5 text-xs text-slate-400">
-                        <li><a href="#sobre" rel="about" class="hover:text-white transition-colors">Sobre a TCAI Corp (About)</a></li>
-                        <li><a href="#contato" rel="contact" class="hover:text-white transition-colors">Canais de Contato (Contact)</a></li>
-                        <li><a href="#metricas" class="hover:text-white transition-colors">Impacto Operacional</a></li>
-                        <li><a href="#expertises" class="hover:text-white transition-colors">Pilares de Atuação</a></li>
-                        <li><a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors">Política de Privacidade (Privacy)</a></li>
-                        <li><a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors">Termos de Uso (Terms)</a></li>
+                        <li><a href="#sobre" rel="about" class="hover:text-white transition-colors" data-i18n="footer_about">Sobre a TCAI Corp (About)</a></li>
+                        <li><a href="#contato" rel="contact" class="hover:text-white transition-colors" data-i18n="footer_contact_page">Canais de Contato (Contact)</a></li>
+                        <li><a href="#metricas" class="hover:text-white transition-colors" data-i18n="footer_metrics">Impacto Operacional</a></li>
+                        <li><a href="#expertises" class="hover:text-white transition-colors" data-i18n="footer_pillars">Pilares de Atuação</a></li>
+                        <li><a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors" data-i18n="footer_privacy">Política de Privacidade (Privacy)</a></li>
+                        <li><a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso (Terms)</a></li>
                         <li><a href="llms.txt" class="hover:text-primary-400 transition-colors font-mono">llms.txt (IA Agêntica)</a></li>
                         <li><a href=".well-known/mcp/server-card.json" class="hover:text-primary-400 transition-colors font-mono">MCP Server Card (SEP-1649)</a></li>
                     </ul>
@@ -1571,7 +1575,7 @@
 
                 <!-- Coluna 4: Canais Oficiais de Atendimento -->
                 <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Canais de Contato</h4>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer_col_contact">Canais de Contato</h4>
                     <ul class="space-y-3 text-xs text-slate-400">
                         <li class="flex items-start gap-2.5">
                             <i class="fa-regular fa-envelope text-primary-400 mt-0.5"></i>
@@ -1583,7 +1587,7 @@
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-brands fa-linkedin-in text-primary-400 mt-0.5"></i>
-                            <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Perfil Institucional no LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/thiagocampossp/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" data-i18n="footer_linkedin_link">Perfil Institucional no LinkedIn</a>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-globe text-primary-400 mt-0.5"></i>
@@ -1591,7 +1595,7 @@
                         </li>
                         <li class="pt-1">
                             <a href="#contato" rel="contact" class="inline-flex items-center gap-1.5 text-xs text-primary-400 hover:text-white transition-colors font-semibold">
-                                <i class="fa-solid fa-paper-plane text-[10px]"></i> Página de Contato (Contact)
+                                <i class="fa-solid fa-paper-plane text-[10px]"></i> <span data-i18n="footer_contact_link">Página de Contato (Contact)</span>
                             </a>
                         </li>
                     </ul>
@@ -1602,28 +1606,32 @@
             <!-- Divisória e Rodapé Inferior -->
             <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 space-y-4">
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                    <p>© 2026 TCAI Corp. Todos os direitos reservados. Portal oficial sob www.tcaicorp.online.</p>
+                    <p data-i18n="footer_copyright">© 2026 TCAI Corp. Todos os direitos reservados. Portal oficial sob www.tcaicorp.online.</p>
                     <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-slate-400">
-                        <a href="#sobre" rel="about" class="hover:text-white transition-colors">Sobre Nós (About)</a>
+                        <a href="#sobre" rel="about" class="hover:text-white transition-colors" data-i18n="footer_about">Sobre Nós (About)</a>
                         <span>•</span>
-                        <a href="#contato" rel="contact" class="hover:text-white transition-colors">Contato (Contact)</a>
+                        <a href="#contato" rel="contact" class="hover:text-white transition-colors" data-i18n="footer_contact_page">Contato (Contact)</a>
                         <span>•</span>
-                        <a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors">Termos de Uso (Terms)</a>
+                        <a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso (Terms)</a>
                         <span>•</span>
-                        <a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors">Privacidade (Privacy)</a>
+                        <a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors" data-i18n="footer_privacy">Privacidade (Privacy)</a>
                         <span>•</span>
                         <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
                     </div>
                 </div>
                 
                 <div class="space-y-2 text-slate-500 leading-relaxed text-justify text-[11px] pt-4 border-t border-slate-800/60">
-                    <p>
+                    <p data-i18n-html="footer_legal_disclaimer_html">
                         <strong>Aviso Legal e Uso Nominativo de Marcas:</strong> As marcas e logotipos citados neste site (como Grid402, TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A referência possui finalidade descritiva de histórico e demonstração técnica (Art. 132 da Lei nº 9.279/1996), não implicando patrocínio ou vínculo direto onde não aplicável.
                     </p>
-                    <p>
+                    <p data-i18n-html="footer_lgpd_disclaimer_html">
                         <strong>Conformidade LGPD:</strong> A TCAI Corp respeita a sua privacidade e opera sob os princípios da Lei nº 13.709/2018 (LGPD), sem utilização de cookies invasivos de rastreamento. Para mais detalhes, consulte nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.
                     </p>
                 </div>
+            </div>
+
+        </div>
+    </footer>
             </div>
 
         </div>
@@ -1636,12 +1644,12 @@
                 <i class="fa-solid fa-shield-halved text-sm"></i>
             </div>
             <div class="flex-1 text-xs text-slate-300 leading-relaxed text-justify">
-                <strong class="text-white block font-bold mb-1">Privacidade e Proteção de Dados (LGPD)</strong>
-                A TCAI Corp valoriza a sua privacidade e desenvolveu este portal com foco em minimização de dados, sem cookies invasivos de rastreamento de terceiros. Saiba mais no nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.
+                <strong class="text-white block font-bold mb-1" data-i18n="lgpd_title">Privacidade e Proteção de Dados (LGPD)</strong>
+                <span data-i18n-html="lgpd_text_html">A TCAI Corp valoriza a sua privacidade e desenvolveu este portal com foco em minimização de dados, sem cookies invasivos de rastreamento de terceiros. Saiba mais no nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.</span>
             </div>
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-end gap-2.5">
-            <button id="lgpd-accept-btn" type="button" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-sm">
+            <button id="lgpd-accept-btn" type="button" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-sm" data-i18n="lgpd_accept">
                 Entendido
             </button>
         </div>
@@ -1661,9 +1669,324 @@
         <button type="submit">Enviar Solicitação</button>
     </form>
 
-    <!-- JavaScript Interativo: 3D Tilt, Counters, Menu e E-mail -->
+    <!-- JavaScript Interativo: Sistema Bilíngue (PT/EN), 3D Tilt, Counters, Menu e E-mail -->
     <script>
-        // 0. Banner LGPD
+        // ==========================================
+        // 0. Sistema Bilíngue Completo (PT / EN)
+        // ==========================================
+        const translations = {
+            pt: {
+                doc_title: "TCAI Corp | Soluções Corporativas em Inteligência Artificial e Produtos Digitais B2B",
+                doc_desc: "TCAI Corp: Soluções corporativas de alta eficiência impulsionadas por Inteligência Artificial, arquitetura de microsserviços, agentes autônomos e produtos digitais B2B escaláveis.",
+                nav_about: "Sobre Nós",
+                nav_metrics: "Impacto Operacional",
+                nav_pillars: "Pilares e Soluções",
+                nav_projects: "Produtos e Cases",
+                nav_contact: "Contato",
+                nav_cta: "Falar com a TCAI Corp",
+                hero_badge: "TCAI Corp • Soluções Corporativas e Produtos B2B",
+                hero_title_html: 'Construindo o futuro da eficiência com <span class="text-gradient">Inteligência Artificial e Produtos B2B</span>.',
+                hero_desc: "Desenvolvemos plataformas escaláveis de Inteligência Artificial, arquiteturas de microsserviços para agentes inteligentes e automações corporativas para empresas que exigem excelência operacional, governança e rentabilidade.",
+                hero_tag_1_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Inteligência Artificial Corporativa',
+                hero_tag_2_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Microsserviços e Agentes Autônomos',
+                hero_tag_3_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Governança e Escala B2B',
+                metric_1_label: "Anos de Engenharia",
+                metric_1_sub: "Liderança em tecnologia corporativa",
+                metric_2_label: "Soluções e Automações",
+                metric_2_sub: "Sistemas, robôs e agentes de IA",
+                metric_3_prefix: "R$",
+                metric_3_label: "Valor e Economia Gerada",
+                metric_3_sub: "Otimização de custos operacionais",
+                metric_4_label: "Foco em Solução Real",
+                metric_4_sub: "Produtos validados em produção",
+                about_badge: "Visão Institucional",
+                about_title: "Sobre a TCAI Corp",
+                about_lead: "Conectando o entendimento profundo da dor operacional com a mais sofisticada engenharia de Inteligência Artificial e produtos B2B.",
+                about_p1_html: "A <strong>TCAI Corp</strong> é uma empresa de tecnologia focada em conceber, construir e escalar soluções corporativas impulsionadas por <strong>Inteligência Artificial de ponta</strong>, microsserviços para agentes autônomos e arquiteturas de alta eficiência operacional.",
+                about_p2_html: "Nossa atuação concentra-se em <strong>identificar gargalos crônicos do ecossistema produtivo</strong> e transformá-los em produtos digitais robustos, gerando retorno financeiro mensurável, redução de custos e escala imediata para os nossos clientes e parceiros.",
+                about_p3_html: "Acreditamos na <strong>Inteligência Artificial como uma ferramenta prática e transformadora</strong> para os negócios. Criamos soluções completas que vão desde plataformas de dados e serviços para sistemas modernos de IA até produtos inteligentes já consolidados no mercado e estruturas dedicadas à automação de rotinas complexas.",
+                about_principle_title: "Princípio de Atuação da TCAI Corp",
+                about_principle_quote: '"Tecnologia só cumpre seu papel quando simplifica a operação, elimina ineficiências e entrega previsibilidade para o balanço financeiro da empresa."',
+                pillars_badge: "Competências e Especialidades",
+                pillars_title: "Principais Áreas de Atuação",
+                pillars_desc: "Três pilares estratégicos que sustentam projetos de alta complexidade e eficiência comprovada.",
+                pillar_1_title: "Inteligência Artificial e Agentes Autônomos",
+                pillar_1_desc: "Desenvolvimento de microsserviços corporativos, integração de modelos de linguagem e agentes inteligentes projetados para automatizar fluxos complexos e conectar ecossistemas de negócios com alta segurança e disponibilidade.",
+                pillar_1_item_1_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Infraestrutura para agentes inteligentes de IA',
+                pillar_1_item_2_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Integrações via Model Context Protocol (MCP) e APIs abertas',
+                pillar_1_item_3_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Algoritmos preditivos e busca semântica corporativa',
+                pillar_2_title: "Produtos Digitais B2B Escaláveis",
+                pillar_2_desc: "Concepção, arquitetura e escala de plataformas SaaS e produtos digitais orientados a valor, transformando desafios operacionais complexos em soluções corporativas robustas com alto retorno sobre investimento.",
+                pillar_2_item_1_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Validação executiva e desenvolvimento ágil contínuo',
+                pillar_2_item_2_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Arquitetura escalável com foco em eficiência e ROI',
+                pillar_2_item_3_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Engenharia moderna, segurança e conformidade regulatória',
+                pillar_3_title: "Automação e Centros de Excelência (CoE)",
+                pillar_3_desc: "Estruturação completa de Centros de Excelência (CoE) em automação de processos (RPA), integrando esteiras inteligentes a sistemas legados e ERPs corporativos com governança contínua.",
+                pillar_3_item_1_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Otimização de tempo e eliminação de gargalos operacionais',
+                pillar_3_item_2_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Integração fluida com ERPs e legados corporativos',
+                pillar_3_item_3_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Governança de riscos e acordos de nível de serviço (SLA)',
+                projects_badge: "Portfólio TCAI Corp",
+                projects_title: "Produtos Digitais e Soluções em Escala",
+                projects_desc: "Plataformas reais desenvolvidas pela TCAI Corp que unem Inteligência Artificial prática, microsserviços modernos e alto retorno operacional.",
+                grid402_tag_infra_html: '<span class="w-2 h-2 rounded-full bg-primary-600 animate-pulse-dot mr-1.5"></span> Infraestrutura de IA',
+                grid402_title: "Grid402: Hub de microsserviços e dados abertos para agentes autônomos de IA",
+                grid402_desc_html: "O <strong>Grid402</strong>, desenvolvido e operado pela TCAI Corp, é uma plataforma moderna de dados e serviços em tempo real voltada a agentes inteligentes e sistemas autônomos. Com liquidação rápida por requisição sob o padrão HTTP 402, a infraestrutura oferece verificações criptográficas imediatas, consultas cadastrais, indicadores econômicos e inteligência de rede, unindo total privacidade a uma arquitetura estável e de alta disponibilidade.",
+                grid402_stat_1_title: "Verificação Criptográfica",
+                grid402_stat_1_desc: "Oráculos e provas sem estado em tempo real",
+                grid402_stat_2_title: "Privacidade e Alta Resiliência",
+                grid402_stat_2_desc: "Zero retenção de dados sensíveis e alta vazão",
+                grid402_feat_1_html: 'Servidor MCP oficial (<code>grid402-mcp</code>) para Claude Desktop, Cursor e agentes LLM com descoberta SEP-1649.',
+                grid402_feat_2_html: 'SDKs publicados no PyPI (Python) e npm (TypeScript/Node.js), além de provedores para Coinbase AgentKit.',
+                grid402_btn_access: "Acessar o Grid402",
+                grid402_btn_agents: "Central de Agentes",
+                peca_tag_type: "Produto Próprio B2B",
+                peca_tag_ai: "Inteligência Artificial",
+                peca_tag_sector: "Setor Automotivo",
+                peca_title: "Revolucionando a busca por autopeças pesadas com IA",
+                peca_desc_html: "A <strong>Peça Match AI</strong> resolve um dos maiores problemas de frotas e oficinas do Brasil: a alta taxa de erro e devolução na compra de componentes para linha pesada. A plataforma utiliza IA avançada para cruzar especificações técnicas e entregar assertividade cirúrgica.",
+                peca_stat_1_title: "Devolução de Peças",
+                peca_stat_1_desc: "Eliminação de erros de especificação",
+                peca_stat_2_val: "Velocidade",
+                peca_stat_2_title: "Eficiência de Orçamento",
+                peca_stat_2_desc: "Redução do tempo parado de caminhões",
+                peca_btn_visit: "Acessar a Plataforma",
+                rankpro_tag_saas: "Plataforma SaaS B2B",
+                rankpro_tag_ai: "Inteligência Artificial",
+                rankpro_tag_seo: "SEO e Ranqueamento",
+                rankpro_title: "SEO + IA que vende: Conquistando o topo do Google com precisão algorítmica",
+                rankpro_desc_html: "O <strong>RankPro SEO</strong> é uma plataforma SaaS inteligente projetada para transformar pesquisas orgânicas em clientes e receita recorrente. Unindo inteligência artificial generativa, mineração semântica e estratégias de SEO de alta conversão, a solução gera autoridade digital e posicionamento dominante nas buscas.",
+                rankpro_stat_1_title: "Tráfego Orgânico Qualificado",
+                rankpro_stat_1_desc: "Clusters semânticos orientados a intenção",
+                rankpro_stat_2_title: "Conversão e Vendas",
+                rankpro_stat_2_desc: "Artigos calibrados para decisão de compra",
+                rankpro_feat_1: "Mapeamento inteligente de palavras-chave e intenção de busca orientado por IA.",
+                rankpro_feat_2: "Produção e otimização automatizada de conteúdos estruturados para a primeira página.",
+                rankpro_btn_visit: "Acessar a Plataforma",
+                rpa_tag_lead: "Liderança Executiva",
+                rpa_tag_rpa: "Automação Robótica (RPA)",
+                rpa_tag_coe: "Centros de Excelência (CoE)",
+                rpa_title: "Arquitetura e Liderança de Centros de Excelência em RPA",
+                rpa_desc: "Histórico corporativo expressivo na estruturação e liderança de estratégias de automação robótica para referências de mercado, garantindo governança rígida, mitigação de riscos e impacto direto nos custos operacionais.",
+                rpa_item_1_html: "<strong>CoE Leader (Boa Vista):</strong> Definição estratégica da esteira de priorização de automações, evangelização da cultura RPA e garantia de ROI financeiro.",
+                rpa_item_2_html: "<strong>Tech Lead (Wipro Limited):</strong> Arquitetura corporativa e implementação de ecossistemas escaláveis de automação para clientes de grande porte.",
+                rpa_item_3_html: "<strong>Analista Funcional RPA (Indra):</strong> Conexão estratégica entre demandas de negócios e equipe de engenharia com foco em especificações assertivas.",
+                totvs_title: "Gestão e Implantação de Plataformas Corporativas (TOTVS)",
+                totvs_desc: "Sólida trajetória desde a consultoria e arquitetura técnica até a coordenação de projetos envolvendo plataformas de BPM e ECM (Fluig), liderando squads multidisciplinares e conectando TI ao objetivo comercial.",
+                contact_badge: "TCAI Corp • Atendimento Corporativo e Parcerias",
+                contact_title: "Pronto para transformar a eficiência operacional da sua empresa?",
+                contact_desc: "Converse com a equipe de engenharia e produto da TCAI Corp. Desenvolvemos soluções personalizadas em Inteligência Artificial, microsserviços e automações que aceleram o crescimento e a rentabilidade do seu negócio.",
+                contact_wa_label: "WhatsApp Corporativo",
+                contact_linkedin_label: "Canal Corporativo",
+                contact_linkedin_desc: "Perfil no LinkedIn",
+                contact_email_label: "E-mail institucional:",
+                contact_copy_feedback: "Copiado!",
+                footer_mission: "Soluções corporativas de alta eficiência impulsionadas por Inteligência Artificial, microsserviços para agentes autônomos e produtos digitais B2B escaláveis.",
+                footer_status: "Infraestrutura Operacional",
+                footer_col_solutions: "Soluções e Produtos",
+                footer_col_gov: "Institucional e Governança",
+                footer_col_contact: "Canais de Contato",
+                footer_about: "Sobre a TCAI Corp (About)",
+                footer_contact_page: "Canais de Contato (Contact)",
+                footer_metrics: "Impacto Operacional",
+                footer_pillars: "Pilares de Atuação",
+                footer_privacy: "Política de Privacidade (Privacy)",
+                footer_terms: "Termos de Uso (Terms)",
+                footer_linkedin_link: "Perfil Institucional no LinkedIn",
+                footer_contact_link: "Página de Contato (Contact)",
+                footer_copyright: "© 2026 TCAI Corp. Todos os direitos reservados. Portal oficial sob www.tcaicorp.online.",
+                footer_legal_disclaimer_html: "<strong>Aviso Legal e Uso Nominativo de Marcas:</strong> As marcas e logotipos citados neste site (como Grid402, TOTVS, Fluig, Wipro, Indra, Boa Vista e Peça Match AI) são de propriedade exclusiva de seus respectivos titulares. A referência possui finalidade descritiva de histórico e demonstração técnica (Art. 132 da Lei nº 9.279/1996), não implicando patrocínio ou vínculo direto onde não aplicável.",
+                footer_lgpd_disclaimer_html: '<strong>Conformidade LGPD:</strong> A TCAI Corp respeita a sua privacidade e opera sob os princípios da Lei nº 13.709/2018 (LGPD), sem utilização de cookies invasivos de rastreamento. Para mais detalhes, consulte nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.',
+                lgpd_title: "Privacidade e Proteção de Dados (LGPD)",
+                lgpd_text_html: 'A TCAI Corp valoriza a sua privacidade e desenvolveu este portal com foco em minimização de dados, sem cookies invasivos de rastreamento de terceiros. Saiba mais no nosso <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Aviso de Privacidade</a>.',
+                lgpd_accept: "Entendido"
+            },
+            en: {
+                doc_title: "TCAI Corp | Enterprise Artificial Intelligence and Scalable B2B Digital Products",
+                doc_desc: "TCAI Corp: High-efficiency corporate solutions driven by Artificial Intelligence, microservice architectures, autonomous agents, and scalable B2B digital products.",
+                nav_about: "About Us",
+                nav_metrics: "Operational Impact",
+                nav_pillars: "Pillars and Solutions",
+                nav_projects: "Products and Cases",
+                nav_contact: "Contact",
+                nav_cta: "Talk to TCAI Corp",
+                hero_badge: "TCAI Corp • Enterprise AI and B2B Products",
+                hero_title_html: 'Building the future of efficiency with <span class="text-gradient">Artificial Intelligence and B2B Products</span>.',
+                hero_desc: "We develop scalable Artificial Intelligence platforms, microservice architectures for intelligent agents, and corporate automations for enterprises that demand operational excellence, governance, and profitability.",
+                hero_tag_1_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Enterprise Artificial Intelligence',
+                hero_tag_2_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Microservices and Autonomous Agents',
+                hero_tag_3_html: '<i class="fa-solid fa-circle-check text-primary-600 mr-2"></i>Governance and B2B Scale',
+                metric_1_label: "Years of Engineering",
+                metric_1_sub: "Leadership in enterprise technology",
+                metric_2_label: "Solutions and Automations",
+                metric_2_sub: "Systems, bots and AI agents",
+                metric_3_prefix: "$",
+                metric_3_label: "Value and Savings Generated",
+                metric_3_sub: "Operational cost optimization",
+                metric_4_label: "Focus on Real Solutions",
+                metric_4_sub: "Products validated in production",
+                about_badge: "Corporate Vision",
+                about_title: "About TCAI Corp",
+                about_lead: "Bridging the deep understanding of operational pain points with cutting-edge Artificial Intelligence engineering and B2B products.",
+                about_p1_html: "<strong>TCAI Corp</strong> is a technology enterprise focused on conceiving, building, and scaling corporate solutions powered by <strong>cutting-edge Artificial Intelligence</strong>, microservices for autonomous agents, and high-efficiency operational architectures.",
+                about_p2_html: "Our core focus is on <strong>identifying persistent operational bottlenecks</strong> and turning them into robust digital products, generating measurable financial returns, cost reductions, and immediate scale for our clients and partners.",
+                about_p3_html: "We believe in <strong>Artificial Intelligence as a practical and transformative asset</strong> for modern business. We engineer comprehensive solutions spanning high-performance data infrastructure for autonomous AI systems, established enterprise platforms, and dedicated Centers of Excellence in automation.",
+                about_principle_title: "TCAI Corp Guiding Principle",
+                about_principle_quote: '"Technology fulfills its true purpose only when it simplifies operations, eliminates inefficiencies, and delivers predictability to the company\'s financial balance sheet."',
+                pillars_badge: "Competencies and Expertise",
+                pillars_title: "Core Strategic Pillars",
+                pillars_desc: "Three strategic pillars underpinning high-complexity projects with proven business efficiency.",
+                pillar_1_title: "Artificial Intelligence and Autonomous Agents",
+                pillar_1_desc: "Development of enterprise microservices, large language model integrations, and intelligent agents designed to automate complex workflows and connect business ecosystems with high security and availability.",
+                pillar_1_item_1_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Infrastructure for autonomous AI agents',
+                pillar_1_item_2_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Integrations via Model Context Protocol (MCP) and open APIs',
+                pillar_1_item_3_html: '<i class="fa-solid fa-check text-primary-600 mr-2"></i>Predictive algorithms and corporate semantic search',
+                pillar_2_title: "Scalable B2B Digital Products",
+                pillar_2_desc: "Conception, architecture, and scaling of SaaS platforms and value-oriented digital products, transforming complex operational hurdles into robust corporate solutions with high ROI.",
+                pillar_2_item_1_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Executive validation and continuous agile engineering',
+                pillar_2_item_2_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Scalable architecture focused on operational efficiency and ROI',
+                pillar_2_item_3_html: '<i class="fa-solid fa-check text-indigo-600 mr-2"></i>Modern engineering, security, and regulatory compliance',
+                pillar_3_title: "Automation and Centers of Excellence (CoE)",
+                pillar_3_desc: "End-to-end structuring of Robotic Process Automation (RPA) Centers of Excellence, seamlessly integrating intelligent pipelines with legacy systems and corporate ERPs.",
+                pillar_3_item_1_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Time optimization and elimination of operational bottlenecks',
+                pillar_3_item_2_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Seamless integration with ERPs and enterprise legacy software',
+                pillar_3_item_3_html: '<i class="fa-solid fa-check text-sky-600 mr-2"></i>Risk governance and mission-critical SLAs',
+                projects_badge: "TCAI Corp Portfolio",
+                projects_title: "Digital Products and Scaled Solutions",
+                projects_desc: "Real-world platforms developed by TCAI Corp combining practical Artificial Intelligence, modern microservices, and high operational returns.",
+                grid402_tag_infra_html: '<span class="w-2 h-2 rounded-full bg-primary-600 animate-pulse-dot mr-1.5"></span> AI Infrastructure',
+                grid402_title: "Grid402: Microservices and open data hub for autonomous AI agents",
+                grid402_desc_html: "<strong>Grid402</strong>, engineered and operated by TCAI Corp, is a high-performance infrastructure platform providing real-time data and validation services for autonomous AI agents and intelligent systems. Featuring instant per-request settlement under the HTTP 402 standard, it delivers instant cryptographic verification, business compliance queries, financial indicators, and network intelligence with maximum privacy and high resilience.",
+                grid402_stat_1_title: "Cryptographic Verification",
+                grid402_stat_1_desc: "Stateless oracles and real-time proofs",
+                grid402_stat_2_title: "Privacy and High Resilience",
+                grid402_stat_2_desc: "Zero sensitive data retention and high throughput",
+                grid402_feat_1_html: 'Official MCP server (<code>grid402-mcp</code>) for Claude Desktop, Cursor, and LLM agents with SEP-1649 discovery.',
+                grid402_feat_2_html: 'SDKs published on PyPI (Python) and npm (TypeScript/Node.js), plus providers for Coinbase AgentKit.',
+                grid402_btn_access: "Access Grid402",
+                grid402_btn_agents: "Agents Hub",
+                peca_tag_type: "Proprietary B2B Product",
+                peca_tag_ai: "Artificial Intelligence",
+                peca_tag_sector: "Automotive Industry",
+                peca_title: "Revolutionizing heavy-duty automotive parts search with AI",
+                peca_desc_html: "<strong>Peça Match AI</strong> solves one of the largest challenges faced by commercial vehicle fleets and repair shops: high return rates and specification errors in heavy-duty components. The platform utilizes advanced AI to correlate technical catalogs with pinpoint accuracy.",
+                peca_stat_1_title: "Part Return Reduction",
+                peca_stat_1_desc: "Elimination of specification discrepancies",
+                peca_stat_2_val: "Velocity",
+                peca_stat_2_title: "Quotation Efficiency",
+                peca_stat_2_desc: "Drastic reduction in fleet downtime",
+                peca_btn_visit: "Visit Platform",
+                rankpro_tag_saas: "B2B SaaS Platform",
+                rankpro_tag_ai: "Artificial Intelligence",
+                rankpro_tag_seo: "SEO and Ranking",
+                rankpro_title: "SEO + AI that sells: Conquering top Google rankings with algorithmic precision",
+                rankpro_desc_html: "<strong>RankPro SEO</strong> is an intelligent SaaS platform designed to transform organic search volume into enterprise clients and recurring revenue. By uniting generative AI, semantic mining, and high-conversion SEO strategies, it builds dominant digital authority and rankings.",
+                rankpro_stat_1_title: "Qualified Organic Traffic",
+                rankpro_stat_1_desc: "Intent-driven semantic topic clusters",
+                rankpro_stat_2_title: "Conversion and Sales",
+                rankpro_stat_2_desc: "Content calibrated for executive purchase decisions",
+                rankpro_feat_1: "Intelligent keyword discovery and search intent mapping driven by AI.",
+                rankpro_feat_2: "Automated production and optimization of structured first-page ranking assets.",
+                rankpro_btn_visit: "Visit Platform",
+                rpa_tag_lead: "Executive Leadership",
+                rpa_tag_rpa: "Robotic Automation (RPA)",
+                rpa_tag_coe: "Centers of Excellence (CoE)",
+                rpa_title: "Architecture and Leadership in RPA Centers of Excellence",
+                rpa_desc: "Extensive enterprise track record designing and leading robotic automation strategies for market leaders, guaranteeing rigorous governance, risk mitigation, and tangible operational cost reduction.",
+                rpa_item_1_html: "<strong>CoE Leader (Boa Vista):</strong> Strategic prioritization of automation backlogs, driving RPA culture, and securing measurable financial ROI.",
+                rpa_item_2_html: "<strong>Tech Lead (Wipro Limited):</strong> Enterprise architecture and implementation of scalable automation ecosystems for global clients.",
+                rpa_item_3_html: "<strong>Functional RPA Analyst (Indra):</strong> Strategic bridge between business stakeholders and engineering teams with assertive specifications.",
+                totvs_title: "Management and Deployment of Enterprise Platforms (TOTVS)",
+                totvs_desc: "Solid journey spanning technical architecture, consulting, and project management across enterprise BPM and ECM platforms (Fluig), leading squads to align IT with commercial goals.",
+                contact_badge: "TCAI Corp • Enterprise Inquiries and Partnerships",
+                contact_title: "Ready to transform your company's operational efficiency?",
+                contact_desc: "Speak with the engineering and product leadership at TCAI Corp. We develop tailored Artificial Intelligence solutions, microservices, and automations that accelerate enterprise growth and profitability.",
+                contact_wa_label: "Corporate WhatsApp",
+                contact_linkedin_label: "Corporate Channel",
+                contact_linkedin_desc: "LinkedIn Profile",
+                contact_email_label: "Corporate Email:",
+                contact_copy_feedback: "Copied!",
+                footer_mission: "High-efficiency corporate solutions powered by Artificial Intelligence, microservices for autonomous agents, and scalable B2B digital products.",
+                footer_status: "Operational Infrastructure",
+                footer_col_solutions: "Solutions and Products",
+                footer_col_gov: "Corporate and Governance",
+                footer_col_contact: "Contact Channels",
+                footer_about: "About TCAI Corp (About)",
+                footer_contact_page: "Contact Channels (Contact)",
+                footer_metrics: "Operational Impact",
+                footer_pillars: "Strategic Pillars",
+                footer_privacy: "Privacy Policy (Privacy)",
+                footer_terms: "Terms of Service (Terms)",
+                footer_linkedin_link: "Corporate LinkedIn Profile",
+                footer_contact_link: "Contact Page (Contact)",
+                footer_copyright: "© 2026 TCAI Corp. All rights reserved. Official portal at www.tcaicorp.online.",
+                footer_legal_disclaimer_html: "<strong>Legal Notice and Nominative Trademark Use:</strong> Trademarks and logos cited on this website (such as Grid402, TOTVS, Fluig, Wipro, Indra, Boa Vista, and Peça Match AI) remain the exclusive property of their respective owners. Their reference is strictly descriptive of technical history and capabilities, implying no direct sponsorship or association where not applicable.",
+                footer_lgpd_disclaimer_html: '<strong>Data Protection and Privacy:</strong> TCAI Corp respects your privacy and adheres to data protection principles without utilizing invasive third-party tracking cookies. For further details, consult our <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Privacy Notice</a>.',
+                lgpd_title: "Privacy and Data Protection",
+                lgpd_text_html: 'TCAI Corp values your privacy and designed this portal with data minimization principles, without invasive third-party tracking cookies. Learn more in our <a href="privacidade.html" class="text-primary-400 underline hover:text-primary-300">Privacy Notice</a>.',
+                lgpd_accept: "Understood"
+            }
+        };
+
+        function setLanguage(lang) {
+            if (!translations[lang]) lang = 'pt';
+            try {
+                localStorage.setItem('tc_lang', lang);
+            } catch (e) {}
+
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+            // Document Title & Description
+            document.title = translations[lang].doc_title;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', translations[lang].doc_desc);
+
+            // Text elements (data-i18n)
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key] !== undefined) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            // HTML elements (data-i18n-html)
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (translations[lang][key] !== undefined) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update Language Switcher Buttons Style
+            document.querySelectorAll('.lang-btn-pt').forEach(btn => {
+                if (lang === 'pt') {
+                    btn.className = 'lang-btn-pt px-2.5 py-1 rounded-lg transition-all duration-200 bg-white text-primary-600 shadow-sm font-extrabold';
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    btn.className = 'lang-btn-pt px-2.5 py-1 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 font-semibold';
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            });
+
+            document.querySelectorAll('.lang-btn-en').forEach(btn => {
+                if (lang === 'en') {
+                    btn.className = 'lang-btn-en px-2.5 py-1 rounded-lg transition-all duration-200 bg-white text-primary-600 shadow-sm font-extrabold';
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    btn.className = 'lang-btn-en px-2.5 py-1 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 font-semibold';
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            });
+        }
+
+        // Inicializar idioma na carga da página
+        try {
+            const savedLang = localStorage.getItem('tc_lang') || 'pt';
+            setLanguage(savedLang);
+        } catch (e) {
+            setLanguage('pt');
+        }
+
+        // 1. Banner LGPD
         const lgpdBanner = document.getElementById('lgpd-banner');
         const lgpdAcceptBtn = document.getElementById('lgpd-accept-btn');
         if (lgpdBanner && lgpdAcceptBtn) {
@@ -1675,7 +1998,7 @@
                 lgpdBanner.classList.add('hidden');
             });
         }
-        // 1. Mobile Menu Toggle
+        // 2. Mobile Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
