@@ -1,0 +1,65 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card.json",
+  "name": "tcai-corp-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP oficial da TCAI Corp fornecendo informações institucionais, catálogo de soluções em Inteligência Artificial, ferramentas de descoberta e integração B2B com ecossistema de agentes autônomos.",
+  "endpoint": "https://www.tcaicorp.online/mcp",
+  "serverInfo": {
+    "name": "tcai-corp-mcp",
+    "version": "1.0.0",
+    "description": "TCAI Corp Official Model Context Protocol Server"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://www.tcaicorp.online/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "get_tcai_corp_info",
+      "description": "Retorna informações detalhadas sobre a TCAI Corp, incluindo posicionamento, histórico de engenharia, produtos no ar (Grid402, Peça Match AI, RankPro SEO, VaiLotar) e canais executivos.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "enum": ["overview", "products", "services", "contact"],
+            "description": "Tópico de interesse a consultar"
+          }
+        }
+      }
+    },
+    {
+      "name": "get_portfolio_solution",
+      "description": "Obtém detalhes de arquitetura e acesso a uma solução do portfólio da TCAI Corp.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "product_slug": {
+            "type": "string",
+            "enum": ["grid402", "peca-match-ai", "rankpro-seo", "vailotar", "firmeza", "auditia"],
+            "description": "Identificador do produto corporativo"
+          }
+        },
+        "required": ["product_slug"]
+      }
+    }
+  ],
+  "contact": {
+    "organization": "TCAI Corp",
+    "email": "contato@tcaicorp.online",
+    "telephone": "+55-11-95832-5848",
+    "website": "https://www.tcaicorp.online"
+  }
+}

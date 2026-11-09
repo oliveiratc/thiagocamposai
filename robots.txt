@@ -1,5 +1,8 @@
 # robots.txt para TCAI Corp (www.tcaicorp.online)
-# Configurado para permitir agentes de busca, web crawlers e agentes autonomos de IA (LLMs)
+# Configurado para permitir agentes de busca, web crawlers e agentes autônomos de IA (LLMs)
+
+# Content Signals para Agentes e LLMs
+Content-Signal: search=yes, ai-train=no
 
 User-agent: *
 Allow: /

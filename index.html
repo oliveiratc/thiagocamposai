@@ -34,9 +34,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
+    <!-- Content Signals para Agentes e Modelos de IA -->
+    <meta name="content-signal" content="search=yes, ai-train=no">
+
     <!-- Descoberta e Navegação Agêntica (LLMs e Web Agents) -->
-    <link rel="alternate" type="text/markdown" href="llms.txt" title="Agentic Knowledge Base (llms.txt)">
-    <link rel="alternate" type="text/markdown" href="llms-full.txt" title="Full Agentic Knowledge Base (llms-full.txt)">
+    <link rel="alternate" type="text/markdown" href="https://www.tcaicorp.online/llms.txt" title="Agentic Knowledge Base (llms.txt)">
+    <link rel="alternate" type="text/markdown" href="https://www.tcaicorp.online/llms-full.txt" title="Full Agentic Knowledge Base (llms-full.txt)">
+    <link rel="service-desc" type="application/json" href="https://www.tcaicorp.online/.well-known/mcp/server-card.json" title="MCP Server Card (SEP-1649)">
     <meta name="ai-ready" content="true">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -46,15 +50,31 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": ["Organization", "Corporation"],
           "@id": "https://www.tcaicorp.online/#organization",
           "name": "TCAI Corp",
           "legalName": "TCAI Corp",
           "url": "https://www.tcaicorp.online/",
           "logo": "https://www.tcaicorp.online/logo-tc-transparente.png",
+          "image": "https://www.tcaicorp.online/logo-tc.jpg",
           "description": "Soluções corporativas em Inteligência Artificial, arquitetura de microsserviços e desenvolvimento de produtos digitais B2B escaláveis.",
           "email": "contato@tcaicorp.online",
           "telephone": "+55-11-95832-5848",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida Paulista, 1000",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "01310-100",
+            "addressCountry": "BR"
+          },
+          "areaServed": "BR",
+          "founder": {
+            "@type": "Person",
+            "name": "Thiago Campos",
+            "jobTitle": "Fundador e Especialista em IA B2B",
+            "sameAs": "https://www.linkedin.com/in/thiagocampossp/"
+          },
           "sameAs": [
             "https://www.linkedin.com/in/thiagocampossp/"
           ],
@@ -87,6 +107,130 @@
           "publisher": {
             "@id": "https://www.tcaicorp.online/#organization"
           }
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.tcaicorp.online/#aboutpage",
+          "url": "https://www.tcaicorp.online/#sobre",
+          "name": "Sobre a TCAI Corp",
+          "description": "Trajetória corporativa, governança e liderança executiva com mais de 15 anos de excelência em tecnologia e inteligência artificial.",
+          "isPartOf": {
+            "@id": "https://www.tcaicorp.online/#website"
+          },
+          "about": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "ContactPage",
+          "@id": "https://www.tcaicorp.online/#contactpage",
+          "url": "https://www.tcaicorp.online/#contato",
+          "name": "Canais Oficiais de Contato da TCAI Corp",
+          "description": "Canais de contato corporativo, suporte executivo e novas parcerias comerciais da TCAI Corp.",
+          "isPartOf": {
+            "@id": "https://www.tcaicorp.online/#website"
+          },
+          "mainEntity": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.tcaicorp.online/#service-ai",
+          "name": "Engenharia e Consultoria em Inteligência Artificial Corporativa",
+          "serviceType": "Inteligência Artificial B2B",
+          "provider": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          },
+          "description": "Desenvolvimento de soluções preditivas, busca semântica, integração de LLMs e microsserviços para agentes autônomos sob o protocolo HTTP 402."
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.tcaicorp.online/#service-rpa",
+          "name": "Centros de Excelência (CoE) em Automação e RPA",
+          "serviceType": "Robotic Process Automation",
+          "provider": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          },
+          "description": "Estruturação ponta a ponta de Centros de Excelência em RPA, governança operacional e esteiras de automação corporativa com ERPs legados."
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tcaicorp.online/#product-grid402",
+          "name": "Grid402 Hub",
+          "url": "https://grid402.online",
+          "description": "Hub público de microsserviços e dados abertos para agentes de IA sob protocolo HTTP 402 com liquidação em USDC na rede Base.",
+          "brand": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tcaicorp.online/#product-pecamatch",
+          "name": "Peça Match AI",
+          "url": "https://www.pecamatchai.com.br/",
+          "description": "Motor de busca semântica para linha pesada automotiva com 99.4% de assertividade no match de componentes.",
+          "brand": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tcaicorp.online/#product-rankpro",
+          "name": "RankPro SEO",
+          "url": "https://www.rankproseo.com.br",
+          "description": "Plataforma SaaS B2B de automação de autoridade orgânica e SEO orientada por inteligência artificial generativa.",
+          "brand": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://www.tcaicorp.online/#product-vailotar",
+          "name": "VaiLotar",
+          "url": "https://vailotar.com.br/",
+          "description": "Plataforma SaaS de inteligência preditiva LightGBM para projeção de demanda e ocupação turística.",
+          "brand": {
+            "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.tcaicorp.online/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O que é a TCAI Corp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A TCAI Corp é uma empresa de tecnologia focada em conceber, desenvolver e escalar soluções corporativas impulsionadas por Inteligência Artificial, microsserviços para agentes autônomos, produtos digitais B2B e Centros de Excelência (CoE) em RPA."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais são os principais produtos desenvolvidos pela TCAI Corp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os principais produtos incluem o Grid402 (hub HTTP 402 para agentes de IA), Peça Match AI (motor semântico para linha pesada automotiva), RankPro SEO (SaaS de IA para autoridade orgânica) e VaiLotar (inteligência preditiva para turismo)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A TCAI Corp desenvolve servidores MCP para agentes de IA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. A TCAI Corp concebe e implementa servidores oficiais Model Context Protocol (MCP) para plataformas como Claude Desktop, Cursor e Smithery, incluindo o grid402-mcp."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como entrar em contato com a TCAI Corp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Você pode entrar em contato diretamente pelo e-mail institucional contato@tcaicorp.online ou pelo canal oficial do WhatsApp em +55 (11) 95832-5848."
+              }
+            }
+          ]
         }
       ]
     }
@@ -298,15 +442,16 @@
 
                 <!-- Links Desktop -->
                 <div class="hidden md:flex items-center space-x-1 lg:space-x-2" role="menubar">
-                    <a href="#sobre" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="sobre">A Empresa</a>
+                    <a href="#sobre" rel="about" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="sobre">Sobre Nós</a>
                     <a href="#metricas" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="metricas">Impacto Operacional</a>
                     <a href="#expertises" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="expertises">Pilares e Soluções</a>
                     <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="projetos">Produtos e Cases</a>
+                    <a href="#contato" rel="contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="contato">Contato</a>
                 </div>
 
                 <!-- CTA Contato Executivo -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a href="#contato" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary-600 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95" data-agent-action="navigate-contact" data-agent-role="contact-cta">
+                    <a href="#contato" rel="contact" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-primary-600 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95" data-agent-action="navigate-contact" data-agent-role="contact-cta">
                         <i class="fa-solid fa-paper-plane text-xs"></i>
                         <span>Falar com a TCAI Corp</span>
                     </a>
@@ -323,12 +468,13 @@
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-6 space-y-2" data-agent-role="mobile-navigation">
-            <a href="#sobre" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="sobre">A Empresa</a>
+            <a href="#sobre" rel="about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="sobre">Sobre Nós</a>
             <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="metricas">Impacto Operacional</a>
             <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="expertises">Pilares e Soluções</a>
             <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="projetos">Produtos e Cases</a>
+            <a href="#contato" rel="contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="contato">Contato</a>
             <div class="pt-2">
-                <a href="#contato" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600" data-agent-action="navigate-contact" data-agent-role="contact-cta">
+                <a href="#contato" rel="contact" class="mobile-link block text-center bg-slate-900 text-white px-5 py-3 rounded-xl font-semibold text-sm hover:bg-primary-600" data-agent-action="navigate-contact" data-agent-role="contact-cta">
                     Falar com a TCAI Corp
                 </a>
             </div>
@@ -1470,12 +1616,14 @@
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Institucional e Governança</h4>
                     <ul class="space-y-2.5 text-xs text-slate-400">
-                        <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a TCAI Corp</a></li>
+                        <li><a href="#sobre" rel="about" class="hover:text-white transition-colors">Sobre a TCAI Corp (About)</a></li>
+                        <li><a href="#contato" rel="contact" class="hover:text-white transition-colors">Canais de Contato (Contact)</a></li>
                         <li><a href="#metricas" class="hover:text-white transition-colors">Impacto Operacional</a></li>
                         <li><a href="#expertises" class="hover:text-white transition-colors">Pilares de Atuação</a></li>
-                        <li><a href="privacidade.html" class="hover:text-white transition-colors">Privacidade e LGPD</a></li>
-                        <li><a href="termos.html" class="hover:text-white transition-colors">Termos de Uso</a></li>
+                        <li><a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors">Política de Privacidade (Privacy)</a></li>
+                        <li><a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors">Termos de Uso (Terms)</a></li>
                         <li><a href="llms.txt" class="hover:text-primary-400 transition-colors font-mono">llms.txt (IA Agêntica)</a></li>
+                        <li><a href=".well-known/mcp/server-card.json" class="hover:text-primary-400 transition-colors font-mono">MCP Server Card (SEP-1649)</a></li>
                     </ul>
                 </div>
 
@@ -1485,7 +1633,7 @@
                     <ul class="space-y-3 text-xs text-slate-400">
                         <li class="flex items-start gap-2.5">
                             <i class="fa-regular fa-envelope text-primary-400 mt-0.5"></i>
-                            <a href="mailto:contato@tcaicorp.online" class="hover:text-white transition-colors font-mono break-all">contato@tcaicorp.online</a>
+                            <a href="mailto:contato@tcaicorp.online" rel="contact" class="hover:text-white transition-colors font-mono break-all">contato@tcaicorp.online</a>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-brands fa-whatsapp text-emerald-400 mt-0.5"></i>
@@ -1499,6 +1647,11 @@
                             <i class="fa-solid fa-globe text-primary-400 mt-0.5"></i>
                             <a href="https://www.tcaicorp.online" class="hover:text-white transition-colors font-mono">www.tcaicorp.online</a>
                         </li>
+                        <li class="pt-1">
+                            <a href="#contato" rel="contact" class="inline-flex items-center gap-1.5 text-xs text-primary-400 hover:text-white transition-colors font-semibold">
+                                <i class="fa-solid fa-paper-plane text-[10px]"></i> Página de Contato (Contact)
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -1508,10 +1661,14 @@
             <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 space-y-4">
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
                     <p>© 2026 TCAI Corp. Todos os direitos reservados. Portal oficial sob www.tcaicorp.online.</p>
-                    <div class="flex items-center gap-4 text-slate-400">
-                        <a href="privacidade.html" class="hover:text-white transition-colors">Privacidade</a>
+                    <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-slate-400">
+                        <a href="#sobre" rel="about" class="hover:text-white transition-colors">Sobre Nós (About)</a>
                         <span>•</span>
-                        <a href="termos.html" class="hover:text-white transition-colors">Termos</a>
+                        <a href="#contato" rel="contact" class="hover:text-white transition-colors">Contato (Contact)</a>
+                        <span>•</span>
+                        <a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors">Termos de Uso (Terms)</a>
+                        <span>•</span>
+                        <a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors">Privacidade (Privacy)</a>
                         <span>•</span>
                         <a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
                     </div>
@@ -1552,6 +1709,15 @@
     <button id="back-to-top" type="button" class="fixed bottom-6 right-6 z-40 bg-slate-900/90 hover:bg-primary-600 text-white w-12 h-12 rounded-2xl shadow-xl border border-slate-700/80 backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 cursor-pointer group focus-visible:opacity-100 focus-visible:pointer-events-auto" aria-label="Voltar ao topo da página">
         <i class="fa-solid fa-arrow-up text-sm transition-transform duration-200 group-hover:-translate-y-0.5"></i>
     </button>
+
+    <!-- WebMCP Tool Form Annotation: Acesso declarativo para agentes in-browser -->
+    <form id="webmcp-contact-form" toolname="contactTCAICorp" tooldescription="Formulário oficial para agentes e humanos entrarem em contato com a diretoria executiva da TCAI Corp sobre projetos de Inteligência Artificial e produtos digitais B2B" action="mailto:contato@tcaicorp.online" method="post" enctype="text/plain" class="sr-only" aria-hidden="true">
+        <input type="text" name="name" placeholder="Seu nome completo" required>
+        <input type="text" name="company" placeholder="Empresa ou Organização">
+        <input type="email" name="email" placeholder="E-mail corporativo" required>
+        <textarea name="message" placeholder="Como a TCAI Corp pode acelerar sua operação com IA?" required></textarea>
+        <button type="submit">Enviar Solicitação</button>
+    </form>
 
     <!-- JavaScript Interativo: 3D Tilt, Counters, Menu e E-mail -->
     <script>
@@ -1679,6 +1845,77 @@
                     behavior: 'smooth'
                 });
             });
+        }
+
+        // 6. WebMCP: Registro Dinâmico de Ferramentas para Agentes In-Browser
+        const registerWebMCPTools = () => {
+            const mc = window.navigator?.modelContext || window.modelContext;
+            if (mc && typeof mc.registerTool === 'function') {
+                try {
+                    mc.registerTool({
+                        name: 'get_tcai_corp_info',
+                        description: 'Retorna informações institucionais, catálogo de serviços de IA, portfólio de produtos e canais de contato da TCAI Corp.',
+                        inputSchema: {
+                            type: 'object',
+                            properties: {
+                                topic: {
+                                    type: 'string',
+                                    enum: ['overview', 'products', 'services', 'contact'],
+                                    description: 'Tópico de interesse sobre a TCAI Corp'
+                                }
+                            }
+                        },
+                        execute: async (params) => {
+                            const data = {
+                                organization: 'TCAI Corp',
+                                website: 'https://www.tcaicorp.online',
+                                email: 'contato@tcaicorp.online',
+                                phone: '+55 11 95832-5848',
+                                linkedin: 'https://www.linkedin.com/in/thiagocampossp/',
+                                focus: 'Soluções Corporativas em Inteligência Artificial e Produtos Digitais B2B',
+                                flagship_products: [
+                                    { name: 'Grid402 Hub', url: 'https://grid402.online', desc: 'Infraestrutura de microsserviços para agentes de IA sob HTTP 402' },
+                                    { name: 'Peça Match AI', url: 'https://www.pecamatchai.com.br/', desc: 'Motor de busca semântica para autopeças de linha pesada' },
+                                    { name: 'RankPro SEO', url: 'https://www.rankproseo.com.br', desc: 'Plataforma SaaS B2B de automação de autoridade orgânica e SEO' },
+                                    { name: 'VaiLotar', url: 'https://vailotar.com.br/', desc: 'Inteligência preditiva LightGBM para o setor de turismo' }
+                                ]
+                            };
+                            return { content: [{ type: 'text', text: JSON.stringify(data, null, 2) }] };
+                        }
+                    });
+
+                    mc.registerTool({
+                        name: 'contact_tcai_corp',
+                        description: 'Registra solicitação de atendimento corporativo com a equipe executiva da TCAI Corp.',
+                        inputSchema: {
+                            type: 'object',
+                            properties: {
+                                name: { type: 'string', description: 'Nome do solicitante' },
+                                company: { type: 'string', description: 'Empresa ou entidade' },
+                                email: { type: 'string', description: 'E-mail corporativo' },
+                                message: { type: 'string', description: 'Descrição da necessidade ou projeto' }
+                            },
+                            required: ['name', 'email', 'message']
+                        },
+                        execute: async (params) => {
+                            return {
+                                content: [{
+                                    type: 'text',
+                                    text: 'Solicitação registrada. Para contato imediato com a diretoria da TCAI Corp, acione contato@tcaicorp.online ou o WhatsApp +55 11 95832-5848.'
+                                }]
+                            };
+                        }
+                    });
+                } catch (e) {
+                    console.debug('WebMCP notice:', e);
+                }
+            }
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', registerWebMCPTools);
+        } else {
+            registerWebMCPTools();
         }
     </script>
 </body>

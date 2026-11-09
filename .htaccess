@@ -1,0 +1,43 @@
+# .htaccess para TCAI Corp (www.tcaicorp.online)
+# Otimizado para Descoberta Agêntica, Negociação de Conteúdo e Cabeçalhos RFC 8288
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 1. Negociação de Conteúdo Markdown para Agentes de IA
+# Quando um agente solicita Accept: text/markdown na homepage, serve llms.txt
+RewriteCond %{HTTP:Accept} text/markdown [NC]
+RewriteRule ^(index\.html)?$ llms.txt [L]
+
+# 2. Aliases amigáveis para rotas de descoberta de agentes
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^contact/?$ contact.html [L]
+RewriteRule ^terms/?$ termos.html [L]
+RewriteRule ^privacy/?$ privacidade.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+# 3. Cabeçalhos RFC 8288 Link para Descoberta de llms.txt e MCP Server Card
+Header set Link '<https://www.tcaicorp.online/llms.txt>; rel="alternate"; type="text/markdown", <https://www.tcaicorp.online/.well-known/mcp/server-card.json>; rel="service-desc"'
+
+# 4. Content Signals para Agentes e Rastreadores de IA
+Header set Content-Signal "search=yes, ai-train=no"
+
+# 5. Permissão de Acesso CORS para Descoberta Agêntica
+Header set Access-Control-Allow-Origin "*"
+
+# 6. Content-Type UTF-8 garantido para Markdown e JSON
+<Files "llms.txt">
+    Header set Content-Type "text/markdown; charset=utf-8"
+</Files>
+<Files "llms-full.txt">
+    Header set Content-Type "text/markdown; charset=utf-8"
+</Files>
+<Files "server-card.json">
+    Header set Content-Type "application/json; charset=utf-8"
+</Files>
+<Files "mcp.json">
+    Header set Content-Type "application/json; charset=utf-8"
+</Files>
+</IfModule>
