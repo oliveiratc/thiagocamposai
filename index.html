@@ -219,13 +219,59 @@
             color: #1d4ed8;
         }
 
-        /* Justificação rigorosa de todos os textos informativos e parágrafos */
-        p, li, article, .text-justify, .text-justify-all {
+        /* Acessibilidade: Skip Link para navegação assistiva e teclado */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: #2563eb;
+            color: #ffffff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.75rem;
+            z-index: 9999;
+            font-weight: 700;
+            font-size: 0.875rem;
+            transition: top 0.2s ease-out;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
+        }
+        .skip-link:focus {
+            top: 1rem;
+            outline: 2px solid #ffffff;
+            outline-offset: 2px;
+        }
+
+        /* Tipografia de Alta Performance e Escaneabilidade (UX) */
+        h1, h2, h3, h4 {
+            text-wrap: balance;
+            hyphens: none;
+        }
+
+        /* Justificação rigorosa de parágrafos e textos informativos */
+        p, article, .text-justify, .text-justify-all {
             text-align: justify !important;
             text-justify: inter-word;
             -webkit-hyphens: auto;
             -ms-hyphens: auto;
             hyphens: auto;
+        }
+
+        /* Botões, tags e badges mantêm alinhamento e leitura natural */
+        button, .btn, [role="button"], .badge, .badge-sapphire, nav a, footer a {
+            text-align: left;
+            hyphens: none;
+        }
+
+        /* Foco visível acessível em todos os elementos interativos (WCAG 2.1 AA) */
+        a:focus-visible, button:focus-visible, input:focus-visible {
+            outline: 2px solid #2563eb !important;
+            outline-offset: 3px !important;
+        }
+
+        /* Respeito à preferência de movimento reduzido (A11y) */
+        @media (prefers-reduced-motion: reduce) {
+            .motion-ken-burns, .ai-scanner-beam, .animate-float, .animate-pulse-dot {
+                animation: none !important;
+            }
         }
 
         /* Prevenção de overflow horizontal para responsividade perfeita em todas as telas */
@@ -237,6 +283,9 @@
     </style>
 </head>
 <body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased selection:bg-primary-100 selection:text-primary-800 bg-mesh-subtle overflow-x-hidden w-full">
+
+    <!-- Skip Link para Leitores de Tela e Navegação por Teclado -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
     <!-- Navegação Superior -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300" aria-label="Navegação Principal" data-agent-role="navigation" data-agent-name="main-nav">
@@ -287,7 +336,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-12 pb-20 md:py-24 overflow-hidden border-b border-slate-200/60 bg-gradient-to-b from-white via-[#f8fbff] to-white" data-agent-section="hero">
+    <header id="conteudo-principal" tabindex="-1" class="relative pt-12 pb-20 md:py-24 overflow-hidden border-b border-slate-200/60 bg-gradient-to-b from-white via-[#f8fbff] to-white focus:outline-none" data-agent-section="hero">
         <!-- Detalhes de Fundo Abstratos -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-primary-100/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
         
@@ -1499,6 +1548,11 @@
         </div>
     </aside>
 
+    <!-- Botão Flutuante Voltar ao Topo (A11y e Navegabilidade Assistiva) -->
+    <button id="back-to-top" type="button" class="fixed bottom-6 right-6 z-40 bg-slate-900/90 hover:bg-primary-600 text-white w-12 h-12 rounded-2xl shadow-xl border border-slate-700/80 backdrop-blur-md flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 cursor-pointer group focus-visible:opacity-100 focus-visible:pointer-events-auto" aria-label="Voltar ao topo da página">
+        <i class="fa-solid fa-arrow-up text-sm transition-transform duration-200 group-hover:-translate-y-0.5"></i>
+    </button>
+
     <!-- JavaScript Interativo: 3D Tilt, Counters, Menu e E-mail -->
     <script>
         // 0. Banner LGPD
@@ -1602,6 +1656,27 @@
                     }, 2500);
                 }).catch(() => {
                     window.location.href = `mailto:${emailText}`;
+                });
+            });
+        }
+
+        // 5. Botão Voltar ao Topo com Transição Fluida e A11y
+        const backToTopBtn = document.getElementById('back-to-top');
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+                    backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+                }
+            }, { passive: true });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
             });
         }
