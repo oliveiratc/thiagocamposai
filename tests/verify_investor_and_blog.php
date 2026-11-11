@@ -132,5 +132,19 @@ assertCheck(file_exists($rootDir . '/.env.example'), '.env.example existe na rai
 assertCheck(file_exists($rootDir . '/blog/topics_queue.json'), 'blog/topics_queue.json existe', $errors, $passed);
 assertCheck(file_exists($rootDir . '/blog/cron_publish.php'), 'blog/cron_publish.php existe', $errors, $passed);
 
+echo "\n=== Verificando Páginas Institucionais (Sobre, Contato, Termos) ===\n";
+assertCheck(stripos($indexHtml, 'href="about.html"') !== false, 'index.html linka about.html', $errors, $passed);
+assertCheck(stripos($indexHtml, 'href="contact.html"') !== false, 'index.html linka contact.html', $errors, $passed);
+assertCheck(stripos($indexHtml, 'href="termos.html"') !== false, 'index.html linka termos.html', $errors, $passed);
+foreach (['about.html', 'contact.html', 'termos.html', 'privacidade.html'] as $page) {
+    $pageHtml = (string)@file_get_contents($rootDir . '/' . $page);
+    assertCheck(
+        $pageHtml !== '' && stripos($pageHtml, 'http-equiv="refresh"') === false && stripos($pageHtml, "rel=\"canonical\" href=\"https://www.tcaicorp.online/{$page}\"") !== false,
+        "{$page} é uma página real (sem redirecionamento e com canonical próprio)",
+        $errors,
+        $passed
+    );
+}
+
 echo "\nResumo: {$passed} verificações aprovadas, " . count($errors) . " falhas.\n";
 exit(count($errors) === 0 ? 0 : 1);

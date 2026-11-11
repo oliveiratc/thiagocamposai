@@ -1,21 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós | TCAI Corp</title>
-    <meta name="description" content="Conheça a TCAI Corp: soluções corporativas em Inteligência Artificial, produtos digitais B2B, microsserviços para agentes de IA e Centros de Excelência em RPA.">
-    <link rel="canonical" href="https://www.tcaicorp.online/#sobre">
-    <meta http-equiv="refresh" content="0; url=https://www.tcaicorp.online/#sobre">
-    <script>
-        window.location.replace("https://www.tcaicorp.online/#sobre");
-    </script>
+    <title>Sobre a TCAI Corp | Inteligência Artificial e Produtos Digitais B2B</title>
+    <meta name="description" content="Conheça a TCAI Corp: empresa brasileira de tecnologia que desenvolve soluções corporativas em Inteligência Artificial, produtos digitais B2B, microsserviços para agentes de IA e Centros de Excelência em automação.">
+    <link rel="canonical" href="https://www.tcaicorp.online/about.html">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tcaicorp.online/about.html">
+    <meta property="og:title" content="Sobre a TCAI Corp">
+    <meta property="og:description" content="Empresa brasileira de tecnologia focada em Inteligência Artificial aplicada a negócios e produtos digitais B2B.">
+    <meta property="og:image" content="https://www.tcaicorp.online/logo-tc.jpg">
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="alternate" type="text/markdown" href="llms.txt" title="Agentic Knowledge Base (llms.txt)">
+    <link rel="contact" href="contact.html">
+    <link rel="terms-of-service" href="termos.html">
+    <link rel="privacy-policy" href="privacidade.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.tcaicorp.online/about.html#webpage",
+          "url": "https://www.tcaicorp.online/about.html",
+          "name": "Sobre a TCAI Corp",
+          "inLanguage": "pt-BR",
+          "about": { "@id": "https://www.tcaicorp.online/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.tcaicorp.online/#organization",
+          "name": "TCAI Corp",
+          "url": "https://www.tcaicorp.online",
+          "logo": "https://www.tcaicorp.online/logo-tc-transparente.png",
+          "email": "contato@tcaicorp.online",
+          "telephone": "+55-11-95832-5848",
+          "address": { "@type": "PostalAddress", "addressCountry": "BR" },
+          "sameAs": ["https://www.linkedin.com/in/thiagocampossp/"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.tcaicorp.online/" },
+            { "@type": "ListItem", "position": 2, "name": "Sobre", "item": "https://www.tcaicorp.online/about.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: { 50: '#eff6ff', 100: '#dbeafe', 400: '#60a5fa', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af' } },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .skip-link { position: absolute; top: -100px; left: 1rem; background: #2563eb; color: #fff; padding: 0.75rem 1.25rem; border-radius: 0.75rem; z-index: 9999; font-weight: 700; font-size: 0.875rem; transition: top 0.2s ease-out; }
+        .skip-link:focus { top: 1rem; outline: 2px solid #fff; outline-offset: 2px; }
+        h1, h2, h3 { text-wrap: balance; hyphens: none; }
+        p, main li, article, .text-justify { text-align: justify !important; text-justify: inter-word; -webkit-hyphens: auto; hyphens: auto; }
+        a:focus-visible, button:focus-visible { outline: 2px solid #2563eb !important; outline-offset: 3px !important; }
+        @media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
+    </style>
 </head>
-<body style="font-family: sans-serif; padding: 2rem; text-align: center; color: #1e293b;">
-    <h1>TCAI Corp - Sobre Nós</h1>
-    <p>Redirecionando para a seção institucional sobre a TCAI Corp...</p>
-    <p><a href="https://www.tcaicorp.online/#sobre">Clique aqui caso não seja redirecionado automaticamente</a></p>
+<body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased">
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80" aria-label="Navegação principal">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-20 items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo-tc-transparente.png" alt="TCAI Corp" class="h-10 sm:h-12 w-auto object-contain">
+            </a>
+            <div class="flex items-center gap-2 text-xs sm:text-sm font-semibold">
+                <a href="index.html" class="text-slate-600 hover:text-primary-600 px-3 py-2 rounded-lg">Início</a>
+                <a href="blog/" class="hidden sm:inline text-slate-600 hover:text-primary-600 px-3 py-2 rounded-lg">Blog</a>
+                <a href="contact.html" rel="contact" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-xl shadow-sm">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="conteudo-principal" tabindex="-1" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 focus:outline-none">
+
+        <header class="mb-12 border-b border-slate-200 pb-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">
+                <i class="fa-solid fa-building text-xs" aria-hidden="true"></i>
+                Institucional
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display mb-4">
+                Sobre a TCAI Corp
+            </h1>
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+                Somos uma empresa brasileira de tecnologia que concebe, desenvolve e escala soluções corporativas impulsionadas por Inteligência Artificial, com foco em redução de custos, previsibilidade financeira e retorno sobre investimento.
+            </p>
+        </header>
+
+        <article class="space-y-10 text-slate-700 leading-relaxed">
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900">Quem somos</h2>
+                <p>
+                    A <strong>TCAI Corp</strong> une mais de 15 anos de experiência em engenharia de software, produtos digitais e automação de processos em grandes empresas. Nossa atuação parte de dores operacionais reais e as transforma em produtos digitais que geram economia mensurável, ganho de escala e vantagem competitiva para clientes e parceiros.
+                </p>
+                <p>
+                    Acreditamos que a tecnologia só cumpre seu papel quando simplifica a operação, elimina ineficiências e entrega previsibilidade para o balanço financeiro da empresa.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900">O que fazemos</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Inteligência Artificial e agentes autônomos:</strong> microsserviços, integrações com modelos de linguagem e infraestrutura de dados para agentes de IA.</li>
+                    <li><strong>Produtos digitais B2B:</strong> concepção, arquitetura e escala de plataformas SaaS orientadas a resultado financeiro.</li>
+                    <li><strong>Automação e Centros de Excelência (CoE):</strong> estruturação de esteiras de automação de processos integradas a ERPs e sistemas legados, com governança e acordos de nível de serviço.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900">Portfólio de produtos</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><a href="https://grid402.online" class="text-primary-600 font-semibold underline" rel="noopener">Grid402</a>: central de dados oficiais sob demanda para sistemas e assistentes de IA, com cobrança por uso.</li>
+                    <li><a href="https://www.pecamatchai.com.br/" class="text-primary-600 font-semibold underline" rel="noopener">Peça Match AI</a>: busca inteligente de autopeças para a linha pesada, reduzindo devoluções e tempo de veículo parado.</li>
+                    <li><a href="https://www.rankproseo.com.br" class="text-primary-600 font-semibold underline" rel="noopener">RankPro SEO</a>: plataforma de assinatura B2B que reduz o custo de aquisição de clientes por meio de busca orgânica.</li>
+                    <li><a href="https://vailotar.com.br/" class="text-primary-600 font-semibold underline" rel="noopener">VaiLotar</a>: previsão antecipada de movimento para hotéis, parques, restaurantes e estacionamentos.</li>
+                    <li><strong>Auditia</strong>: auditoria fiscal preventiva para a Reforma Tributária (IBS e CBS), em operação piloto.</li>
+                    <li><a href="https://firmeza-parkinson.web.app/" class="text-primary-600 font-semibold underline" rel="noopener">Firmeza</a>: iniciativa social gratuita de apoio a pacientes com Parkinson e seus médicos.</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-xl font-bold text-slate-900">Indicadores institucionais</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="text-2xl font-black text-primary-600">+15</div>
+                        <div class="text-xs font-semibold text-slate-600">Anos de engenharia</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="text-2xl font-black text-primary-600">+100</div>
+                        <div class="text-xs font-semibold text-slate-600">Soluções em produção</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="text-2xl font-black text-primary-600">+R$ 10 mi</div>
+                        <div class="text-xs font-semibold text-slate-600">Economia gerada</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+                        <div class="text-2xl font-black text-primary-600">99,9%</div>
+                        <div class="text-xs font-semibold text-slate-600">Disponibilidade</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="space-y-3">
+                <h2 class="text-xl font-bold text-slate-900">Dados institucionais</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Nome:</strong> TCAI Corp</li>
+                    <li><strong>Sede operacional:</strong> Brasil</li>
+                    <li><strong>Site oficial:</strong> <a href="https://www.tcaicorp.online" class="text-primary-600 underline">www.tcaicorp.online</a></li>
+                    <li><strong>E-mail:</strong> <a href="mailto:contato@tcaicorp.online" class="text-primary-600 underline">contato@tcaicorp.online</a></li>
+                    <li><strong>Telefone e WhatsApp:</strong> <a href="https://wa.me/5511958325848" class="text-primary-600 underline" rel="noopener">+55 (11) 95832-5848</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/thiagocampossp/" class="text-primary-600 underline" rel="noopener">perfil institucional</a></li>
+                </ul>
+            </section>
+
+            <div class="p-6 rounded-2xl bg-slate-900 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                    <div class="text-lg font-bold">Quer conversar com a TCAI Corp?</div>
+                    <p class="text-sm text-slate-300">Fale com nossa liderança sobre parcerias, investimentos ou projetos.</p>
+                </div>
+                <a href="contact.html" rel="contact" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-colors">Ir para Contato</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-10 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <p>© 2026 TCAI Corp. Todos os direitos reservados.</p>
+            <nav class="flex flex-wrap items-center justify-center gap-3" aria-label="Links institucionais">
+                <a href="index.html" class="hover:text-white">Início</a>
+                <span aria-hidden="true">•</span>
+                <a href="about.html" rel="about" class="hover:text-white font-bold text-white">Sobre</a>
+                <span aria-hidden="true">•</span>
+                <a href="contact.html" rel="contact" class="hover:text-white">Contato</a>
+                <span aria-hidden="true">•</span>
+                <a href="termos.html" rel="terms-of-service" class="hover:text-white">Termos de Uso</a>
+                <span aria-hidden="true">•</span>
+                <a href="privacidade.html" rel="privacy-policy" class="hover:text-white">Privacidade</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
-
