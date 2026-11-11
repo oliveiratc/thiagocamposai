@@ -42,3 +42,9 @@ Header set Access-Control-Allow-Origin "*"
 </Files>
 </IfModule>
 
+# 7. Proteção de Arquivos Sensíveis (.env e filas internas)
+<FilesMatch "^\.env|topics_queue\.json$">
+    Require all denied
+</FilesMatch>
+
+

@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "o-que-e-backtest-e-precisao-preditiva-em-ia-para-negocios",
+    "title": "O que é Backtest e Precisão Preditiva (F1-Score): Como saber se uma IA realmente acerta o futuro do seu negócio",
+    "excerpt": "Sem 'economês' ou jargões de TI: entenda como validamos modelos de Inteligência Artificial usando dados reais do passado para garantir 92,4% de acerto na lotação de hotéis, parques e restaurantes.",
+    "category": "Previsão de Demanda & Turismo",
+    "category_slug": "previsao-demanda",
+    "funnel_stage": "Meio de Funil",
+    "funnel_slug": "meio",
+    "published_at": "2026-11-11",
+    "read_time": "5 min de leitura",
+    "related_product": "VaiLotar",
+    "related_url": "https://vailotar.com.br/",
+    "keywords": ["backtest", "precisão preditiva", "f1 score em negócios", "previsão de demanda com ia", "vailotar"]
+  },
+  {
+    "slug": "como-prever-demanda-hoteleira-e-turistica-com-antecedencia",
+    "title": "Como prever o movimento de hotéis, parques e restaurantes com 60 dias de antecedência",
+    "excerpt": "Descubra como gestores de hospitalidade e turismo estão trocando o 'achismo' por previsão antecipada de ocupação para comprar insumos melhor, escalar equipes sem ociosidade e proteger a margem de lucro.",
+    "category": "Previsão de Demanda & Turismo",
+    "category_slug": "previsao-demanda",
+    "funnel_stage": "Topo de Funil",
+    "funnel_slug": "topo",
+    "published_at": "2026-11-11",
+    "read_time": "6 min de leitura",
+    "related_product": "VaiLotar",
+    "related_url": "https://vailotar.com.br/",
+    "keywords": ["previsão de demanda hoteleira", "ocupação turística", "gestão de restaurantes e parques", "ia para turismo"]
+  },
+  {
+    "slug": "reforma-tributaria-ibs-cbs-como-evitar-perda-de-creditos-fiscais",
+    "title": "Reforma Tributária (IBS e CBS): Como evitar a perda silenciosa de créditos fiscais na sua empresa",
+    "excerpt": "A transição para o novo sistema tributário brasileiro exige conferência nota a nota. Veja como a auditoria preventiva automática evita pagamentos indevidos e protege o caixa de médias empresas e contabilidades.",
+    "category": "Inteligência Fiscal & Reforma Tributária",
+    "category_slug": "inteligencia-fiscal",
+    "funnel_stage": "Topo de Funil",
+    "funnel_slug": "topo",
+    "published_at": "2026-11-11",
+    "read_time": "6 min de leitura",
+    "related_product": "Auditia",
+    "related_url": "https://www.tcaicorp.online/#projetos",
+    "keywords": ["reforma tributária ibs cbs", "créditos fiscais", "auditoria fiscal com ia", "escritórios de contabilidade"]
+  },
+  {
+    "slug": "como-reduzir-devolucao-e-erro-na-compra-de-autopecas-pesadas",
+    "title": "Quanto custa um caminhão parado? Como eliminar 70% das devoluções na compra de autopeças pesadas",
+    "excerpt": "Comprar a peça errada para um caminhão gera frete reverso, retrabalho administrativo e dias de faturamento perdidos. Entenda como a busca inteligente por IA resolve as divergências de catálogo em segundos.",
+    "category": "Eficiência em Frotas & Autopeças",
+    "category_slug": "frotas-autopecas",
+    "funnel_stage": "Topo de Funil",
+    "funnel_slug": "topo",
+    "published_at": "2026-11-11",
+    "read_time": "5 min de leitura",
+    "related_product": "Peça Match AI",
+    "related_url": "https://www.pecamatchai.com.br/",
+    "keywords": ["devolução de autopeças", "caminhão parado", "catálogo linha pesada", "peça match ai"]
+  },
+  {
+    "slug": "seo-com-ia-generativa-como-transformar-buscas-em-receita-b2b",
+    "title": "SEO com Inteligência Artificial: Como atrair clientes B2B todos os dias reduzindo o gasto com anúncios",
+    "excerpt": "Depender exclusivamente de mídia paga encarece o Custo de Aquisição de Clientes (CAC). Aprenda como estruturar conteúdos de topo e meio de funil que transformam pesquisas no Google em oportunidades reais de venda.",
+    "category": "SEO & Crescimento B2B",
+    "category_slug": "seo-crescimento",
+    "funnel_stage": "Meio de Funil",
+    "funnel_slug": "meio",
+    "published_at": "2026-11-11",
+    "read_time": "5 min de leitura",
+    "related_product": "RankPro SEO",
+    "related_url": "https://www.rankproseo.com.br",
+    "keywords": ["seo b2b", "reduzir cac", "conteúdo topo e meio de funil", "rankpro seo"]
+  },
+  {
+    "slug": "economia-de-agentes-de-ia-e-micropagamentos-m2m-nas-empresas",
+    "title": "A Economia dos Agentes de IA: Como softwares autônomos consultam dados oficiais pagando centavos por uso",
+    "excerpt": "Por que assinar pacotes caros de dados se a sua IA pode pagar apenas frações de centavo por consulta realizada? Conheça o modelo de negócios por trás dos serviços sob demanda para assistentes inteligentes.",
+    "category": "IA Corporativa & Agentes Autônomos",
+    "category_slug": "ia-agentes",
+    "funnel_stage": "Meio de Funil",
+    "funnel_slug": "meio",
+    "published_at": "2026-11-11",
+    "read_time": "5 min de leitura",
+    "related_product": "Grid402",
+    "related_url": "https://grid402.online",
+    "keywords": ["agentes de ia", "pay per use b2b", "dados empresariais em tempo real", "grid402"]
+  }
+]
+
