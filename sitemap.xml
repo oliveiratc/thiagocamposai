@@ -67,8 +67,14 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.tcaicorp.online/terms.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.tcaicorp.online/termos.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

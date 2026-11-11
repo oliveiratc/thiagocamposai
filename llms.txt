@@ -11,7 +11,7 @@ A TCAI Corp desenvolve soluções B2B com foco em Inteligência Artificial corpo
 - [Sobre a Empresa](https://www.tcaicorp.online/about.html): História institucional, trajetória executiva de +15 anos em engenharia, portfólio e dados da empresa.
 - [Canais de Contato](https://www.tcaicorp.online/contact.html): Canais oficiais para atendimento executivo, suporte e novas parcerias estratégicas.
 - [Aviso de Privacidade e LGPD](https://www.tcaicorp.online/privacidade.html): Diretrizes de governança, proteção de dados pessoais e conformidade estrita com a LGPD (Lei nº 13.709/2018).
-- [Termos de Uso e Condições Gerais](https://www.tcaicorp.online/termos.html): Termos legais de navegação, propriedade intelectual e diretrizes de uso nominativo de marcas.
+- [Termos de Uso e Condições Gerais (Terms)](https://www.tcaicorp.online/terms.html): Termos legais de navegação, propriedade intelectual e diretrizes de uso nominativo de marcas.
 - [MCP Server Card](https://www.tcaicorp.online/.well-known/mcp/server-card.json): Ficha de especificação SEP-1649 com capacidades e endpoints do servidor Model Context Protocol da TCAI Corp.
 - [Mapa do Site](https://www.tcaicorp.online/sitemap.xml): Índice XML com todas as URLs canônicas indexadas do domínio.
 

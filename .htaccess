@@ -13,7 +13,8 @@ RewriteRule ^(index\.html)?$ llms.txt [L]
 # 2. Aliases amigáveis para rotas de descoberta de agentes
 RewriteRule ^about/?$ about.html [L]
 RewriteRule ^contact/?$ contact.html [L]
-RewriteRule ^terms/?$ termos.html [L]
+RewriteRule ^terms/?$ terms.html [L]
+RewriteRule ^termos/?$ terms.html [L]
 RewriteRule ^privacy/?$ privacidade.html [L]
 </IfModule>
 

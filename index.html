@@ -43,7 +43,7 @@
     <link rel="service-desc" type="application/json" href="https://www.tcaicorp.online/.well-known/mcp/server-card.json" title="MCP Server Card (SEP-1649)">
     <link rel="about" href="https://www.tcaicorp.online/about.html" title="Sobre a TCAI Corp">
     <link rel="contact" href="https://www.tcaicorp.online/contact.html" title="Contato">
-    <link rel="terms-of-service" href="https://www.tcaicorp.online/termos.html" title="Termos de Uso">
+    <link rel="terms-of-service" href="https://www.tcaicorp.online/terms.html" title="Termos de Uso (Terms of Service)">
     <link rel="privacy-policy" href="https://www.tcaicorp.online/privacidade.html" title="Aviso de Privacidade">
     <meta name="ai-ready" content="true">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -100,7 +100,8 @@
             "Product Management B2B",
             "Busca Semântica e LLMs",
             "Eficiência Operacional"
-          ]
+          ],
+          "termsOfService": "https://www.tcaicorp.online/terms.html"
         },
         {
           "@type": "WebSite",
@@ -110,6 +111,16 @@
           "description": "Portal corporativo oficial da TCAI Corp: soluções em inteligência artificial aplicada, microsserviços para agentes de IA e plataformas B2B escaláveis.",
           "publisher": {
             "@id": "https://www.tcaicorp.online/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.tcaicorp.online/#termspage",
+          "url": "https://www.tcaicorp.online/terms.html",
+          "name": "Termos de Uso e Condições Gerais (Terms of Service)",
+          "description": "Termos de uso, limites de responsabilidade e governança legal da TCAI Corp.",
+          "isPartOf": {
+            "@id": "https://www.tcaicorp.online/#website"
           }
         },
         {
@@ -1791,7 +1802,7 @@
                         <li><a href="#metricas" class="hover:text-white transition-colors" data-i18n="footer_metrics">Impacto Operacional</a></li>
                         <li><a href="#expertises" class="hover:text-white transition-colors" data-i18n="footer_pillars">Pilares de Atuação</a></li>
                         <li><a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors" data-i18n="footer_privacy">Política de Privacidade</a></li>
-                        <li><a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso</a></li>
+                        <li><a href="terms.html" rel="terms-of-service" aria-label="Termos de Uso (Terms of Service)" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso</a></li>
                         <li><a href="llms.txt" class="hover:text-primary-400 transition-colors font-mono" data-i18n="footer_llms">llms.txt (IA Agêntica)</a></li>
                         <li><a href=".well-known/mcp/server-card.json" class="hover:text-primary-400 transition-colors font-mono">MCP Server Card (SEP-1649)</a></li>
                     </ul>
@@ -1836,7 +1847,7 @@
                         <span>•</span>
                         <a href="contact.html" rel="contact" class="hover:text-white transition-colors" data-i18n="footer_bottom_contact">Contato</a>
                         <span>•</span>
-                        <a href="termos.html" rel="terms-of-service" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso</a>
+                        <a href="terms.html" rel="terms-of-service" aria-label="Termos de Uso (Terms of Service)" class="hover:text-white transition-colors" data-i18n="footer_terms">Termos de Uso</a>
                         <span>•</span>
                         <a href="privacidade.html" rel="privacy-policy" class="hover:text-white transition-colors" data-i18n="footer_bottom_privacy">Privacidade</a>
                         <span>•</span>
