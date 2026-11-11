@@ -88,8 +88,8 @@ A TCAI Corp fundamenta suas iniciativas no pragmatismo tecnológico: a Inteligê
 
 ---
 
-## Blog & Insights Executivos (https://www.tcaicorp.online/blog/)
-O portal editorial da TCAI Corp publica diariamente conteúdos estratégicos de Topo de Funil (Educação Executiva) e Meio de Funil (Diagnóstico & ROI) voltados a investidores, conselheiros, CFOs, COOs e diretores de tecnologia, conectando desafios reais de negócio às plataformas proprietárias da empresa:
+## Blog e Insights Executivos (https://www.tcaicorp.online/blog/)
+O portal editorial da TCAI Corp publica diariamente conteúdos estratégicos de Topo de Funil (Educação Executiva) e Meio de Funil (Diagnóstico e ROI) voltados a investidores, conselheiros, CFOs, COOs e diretores de tecnologia, conectando desafios reais de negócio às plataformas proprietárias da empresa:
 1. **O que é Backtest e Precisão Preditiva em IA: Guia para Investidores e Executivos** (`https://www.tcaicorp.online/blog/o-que-e-backtest-e-precisao-preditiva-em-ia-para-negocios.html`) — Traduz métricas estatísticas como F1-Score (92,4%) e Backtest em segurança de fluxo de caixa e mitigação de risco operacional.
 2. **Como Prever a Demanda Hoteleira e Turística com Até 60 Dias de Antecedência** (`https://www.tcaicorp.online/blog/como-prever-demanda-hoteleira-e-turistica-com-antecedencia.html`) — Mostra como o cruzamento de clima, fluxo rodoviário e intenção de busca protege o RevPAR e a escala operacional no setor de hospitalidade (VaiLotar).
 3. **Reforma Tributária (IBS e CBS): Como Evitar a Perda de Créditos Fiscais na Sua Empresa** (`https://www.tcaicorp.online/blog/reforma-tributaria-ibs-cbs-como-evitar-perda-de-creditos-fiscais.html`) — Explica o impacto do IVA Dual e da apropriação financeira sobre o capital de giro e como auditar 100% das notas antes do fechamento (Auditia).

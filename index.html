@@ -390,8 +390,8 @@
             hyphens: none;
         }
 
-        /* Justificação rigorosa de parágrafos e textos informativos */
-        p, article, .text-justify, .text-justify-all {
+        /* Justificação rigorosa de todos os textos, parágrafos, listas e fichas técnicas */
+        p, main li, article, details div, .prose p, .prose li, .text-justify, .text-justify-all {
             text-align: justify !important;
             text-justify: inter-word;
             -webkit-hyphens: auto;
@@ -403,13 +403,6 @@
         button, .btn, [role="button"], .badge, .badge-sapphire, nav a, footer a {
             text-align: left;
             hyphens: none;
-        }
-
-        /* Cartões, blocos e destaques mantêm fluxo natural de leitura corporativa */
-        .tilt-card p, .tilt-card li, .card p, header p {
-            text-align: left;
-            hyphens: none !important;
-            -webkit-hyphens: none !important;
         }
 
         /* Foco visível acessível em todos os elementos interativos (WCAG 2.1 AA) */
@@ -455,7 +448,7 @@
                     <a href="#projetos" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="projetos" data-i18n="nav_projects">Produtos e Cases</a>
                     <a href="blog/" class="px-3 py-2 rounded-lg text-sm font-semibold text-primary-700 bg-primary-50/70 hover:bg-primary-100/80 transition-colors flex items-center gap-1.5" data-agent-action="navigate-blog">
                         <i class="fa-solid fa-newspaper text-xs text-primary-600"></i>
-                        <span data-i18n="nav_blog">Blog & Insights</span>
+                        <span data-i18n="nav_blog">Blog e Insights</span>
                     </a>
                     <a href="#contato" rel="contact" class="px-3 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-primary-600 hover:bg-slate-50 transition-colors" data-agent-action="navigate-section" data-agent-target="contato" data-i18n="nav_contact">Contato</a>
                 </div>
@@ -490,7 +483,7 @@
             <a href="#metricas" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="metricas" data-i18n="nav_metrics">Impacto Operacional</a>
             <a href="#expertises" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="expertises" data-i18n="nav_pillars">Pilares e Soluções</a>
             <a href="#projetos" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="projetos" data-i18n="nav_projects">Produtos e Cases</a>
-            <a href="blog/" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-bold text-primary-700 bg-primary-50/70 hover:bg-primary-100" data-agent-action="navigate-blog" data-i18n="nav_blog">Blog & Insights</a>
+            <a href="blog/" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-bold text-primary-700 bg-primary-50/70 hover:bg-primary-100" data-agent-action="navigate-blog" data-i18n="nav_blog">Blog e Insights</a>
             <a href="#contato" rel="contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50" data-agent-action="navigate-section" data-agent-target="contato" data-i18n="nav_contact">Contato</a>
         </div>
     </nav>
@@ -645,7 +638,7 @@
                             <i class="fa-solid fa-microchip"></i>
                         </div>
                         <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_1_title">Inteligência Artificial e Agentes Autônomos</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_1_desc">
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-justify" data-i18n="pillar_1_desc">
                             Desenvolvimento de microsserviços corporativos, integração de modelos de linguagem e agentes inteligentes projetados para automatizar fluxos complexos e conectar ecossistemas de negócios com alta segurança e disponibilidade.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
@@ -663,7 +656,7 @@
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
                         <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_2_title">Produtos Digitais B2B Escaláveis</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_2_desc">
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-justify" data-i18n="pillar_2_desc">
                             Concepção, arquitetura e escala de plataformas SaaS e produtos digitais orientados a valor, transformando desafios operacionais complexos em soluções corporativas robustas com alto retorno sobre investimento.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
@@ -681,7 +674,7 @@
                             <i class="fa-solid fa-gears"></i>
                         </div>
                         <h4 class="text-xl font-extrabold text-slate-900 mb-4 text-center" data-i18n="pillar_3_title">Automação e Centros de Excelência (CoE)</h4>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-left" data-i18n="pillar_3_desc">
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-justify" data-i18n="pillar_3_desc">
                             Estruturação completa de Centros de Excelência (CoE) em automação de processos (RPA), integrando esteiras inteligentes a sistemas legados e ERPs corporativos com governança contínua.
                         </p>
                         <ul class="space-y-2.5 text-xs font-semibold text-slate-600">
@@ -714,39 +707,43 @@
                     <div class="tilt-card-inner p-8 sm:p-12">
                         <div class="flex flex-col lg:flex-row items-center gap-12">
                             
-                            <!-- Imagem e Visual Tecnológico do Grid402 com Feixe Laser -->
+                            <!-- Imagem Cinematográfica e Visual Tecnológico do Grid402 com Feixe Laser -->
                             <div class="lg:w-5/12 w-full">
-                                <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 aspect-video group flex flex-col justify-between p-6">
+                                <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 aspect-video group flex flex-col justify-between p-5">
                                     <!-- Feixe Laser de Escaneamento Animado -->
                                     <div class="ai-scanner-beam"></div>
 
-                                    <!-- Fundo em Gradiente Mesh Cyber -->
-                                    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/40 via-slate-950 to-slate-950 pointer-events-none"></div>
+                                    <!-- Imagem do Case Grid402 com Movimento Ken Burns -->
+                                    <img src="case-grid402.jpg" alt="Central holográfica de dados em tempo real e economia de agentes de IA do Grid402" width="560" height="315" class="absolute inset-0 w-full h-full object-cover motion-ken-burns">
 
-                                    <!-- Topbar do Visual Grid402 -->
-                                    <div class="relative z-10 flex items-center justify-between">
-                                        <div class="bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-slate-200/80 shadow-md flex items-center gap-2">
-                                            <img src="logo-grid402-horizontal.png" alt="Logo Grid402" class="h-4 sm:h-5 w-auto object-contain">
+                                    <!-- Overlay de Profundidade para Leitura Nitida -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/55 to-slate-950/40 pointer-events-none"></div>
+
+                                    <!-- Topbar do Visual Grid402 com Contraste Corrigido para Logo Branca -->
+                                    <div class="relative z-10 flex items-center justify-between gap-2">
+                                        <div class="bg-slate-950/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-cyan-500/40 shadow-lg flex items-center gap-2">
+                                            <img src="logo-grid402-icon.png" alt="Ícone Grid402" class="h-5 w-5 object-contain">
+                                            <span class="text-xs sm:text-sm font-black tracking-wide text-white font-display">Grid<span class="text-cyan-400">402</span></span>
                                         </div>
-                                        <span class="text-[10px] font-mono bg-blue-950 text-cyan-300 border border-blue-800 px-2 py-0.5 rounded" data-i18n="grid402_vis_badge">RECEITA EM DÓLAR • 24/7</span>
+                                        <span class="text-[10px] font-mono font-bold bg-blue-950/90 text-cyan-300 border border-cyan-500/40 px-2.5 py-1 rounded-lg shadow-md" data-i18n="grid402_vis_badge">RECEITA EM DÓLAR • 24/7</span>
                                     </div>
 
-                                    <!-- Centro Simulado de Oráculos e Microsserviços -->
+                                    <!-- Centro com Destaque Executivo Legível sobre o Holograma -->
                                     <div class="relative z-10 my-auto py-2">
-                                        <div class="text-xs font-mono text-cyan-400 font-semibold mb-1 flex items-center gap-2">
-                                            <i class="fa-solid fa-network-wired text-xs"></i>
+                                        <div class="inline-flex items-center gap-2 text-[11px] font-mono text-cyan-300 font-bold mb-1.5 bg-slate-950/75 px-2.5 py-0.5 rounded-md border border-cyan-500/30">
+                                            <i class="fa-solid fa-network-wired text-xs text-cyan-400"></i>
                                             <span data-i18n="grid402_vis_protocol">ECONOMIA DE AGENTES DE IA</span>
                                         </div>
-                                        <div class="text-xl sm:text-2xl font-black text-white tracking-tight" data-i18n="grid402_vis_sub">
+                                        <div class="text-lg sm:text-xl font-black text-white tracking-tight drop-shadow-md" data-i18n="grid402_vis_sub">
                                             Consultas Oficiais Pagas por Uso
                                         </div>
-                                        <p class="text-[11px] text-slate-400 font-mono mt-1" data-i18n="grid402_vis_features">
+                                        <p class="text-[11px] text-slate-200 font-mono mt-0.5 drop-shadow" data-i18n="grid402_vis_features">
                                             Sem Assinatura Fixa • Liquidação Instantânea • Privacidade Total
                                         </p>
                                     </div>
 
                                     <!-- Rodapé do Visual com Status de Produção -->
-                                    <div class="relative z-10 flex items-center justify-between text-[11px] font-mono text-emerald-300 bg-slate-900/85 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-700/60">
+                                    <div class="relative z-10 flex items-center justify-between text-[11px] font-mono text-emerald-300 bg-slate-950/90 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-700/80 shadow-lg">
                                         <span class="flex items-center gap-1.5" data-i18n-html="grid402_vis_verifier_html"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot"></span> RESPOSTA EM &lt; 1ms</span>
                                         <span class="text-white font-bold" data-i18n="grid402_vis_network">Escala Global</span>
                                     </div>
@@ -809,7 +806,7 @@
                                         <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-open:rotate-180"></i>
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
-                                        <div data-i18n-html="grid402_tech_1_html"><strong class="text-white">Protocolo & Liquidação:</strong> HTTP 402 (Payment Required) com liquidação on-chain M2M em USDC na rede Base (Chain ID 8453) e suporte a Coinbase AgentKit.</div>
+                                        <div data-i18n-html="grid402_tech_1_html"><strong class="text-white">Protocolo e Liquidação:</strong> HTTP 402 (Payment Required) com liquidação on-chain M2M em USDC na rede Base (Chain ID 8453) e suporte a Coinbase AgentKit.</div>
                                         <div data-i18n-html="grid402_tech_2_html"><strong class="text-white">Arquitetura Zero-DB:</strong> Armazenamento flat-file atômico (<code>flock</code>) sem sobrecarga de banco SQL, verificação de oráculos criptográficos em &lt; 1ms.</div>
                                         <div data-i18n-html="grid402_tech_3_html"><strong class="text-white">Ecossistema Agêntico:</strong> Servidor MCP oficial (<code>grid402-mcp</code> no Smithery/npm/PyPI), descoberta SEP-1649 e especificação OpenAPI 3.1.</div>
                                     </div>
@@ -868,7 +865,7 @@
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
                                     <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase" data-i18n="peca_tag_type">Produto Próprio B2B</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-bold uppercase" data-i18n="peca_tag_biz">Modelo: SaaS B2B & Catálogo Inteligente</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-bold uppercase" data-i18n="peca_tag_biz">Modelo: SaaS B2B e Catálogo Inteligente</span>
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold" data-i18n="peca_tag_sector">Setor Automotivo Pesado</span>
                                 </div>
 
@@ -1006,7 +1003,7 @@
                                         <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-open:rotate-180"></i>
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
-                                        <div data-i18n-html="rankpro_tech_1_html"><strong class="text-white">Engenharia Semântica & NLP:</strong> Clusterização automatizada de intenção de busca (ToFu/MoFu/BoFu), análise de entidades SERP e geração estruturada com Schema.org JSON-LD.</div>
+                                        <div data-i18n-html="rankpro_tech_1_html"><strong class="text-white">Engenharia Semântica e NLP:</strong> Clusterização automatizada de intenção de busca (ToFu/MoFu/BoFu), análise de entidades SERP e geração estruturada com Schema.org JSON-LD.</div>
                                         <div data-i18n-html="rankpro_tech_2_html"><strong class="text-white">Arquitetura SaaS:</strong> Pipelines assíncronos de auditoria on-page, otimização de Core Web Vitals e indexação programática.</div>
                                     </div>
                                 </details>
@@ -1059,7 +1056,7 @@
                             <!-- Texto e Detalhes do Produto -->
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
-                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100/80 text-emerald-800 text-xs font-bold uppercase" data-i18n="firmeza_tag_nonprofit">Iniciativa ESG & Impacto Social</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100/80 text-emerald-800 text-xs font-bold uppercase" data-i18n="firmeza_tag_nonprofit">Iniciativa ESG e Impacto Social</span>
                                     <span class="px-2.5 py-1 rounded-md bg-sky-100/80 text-sky-800 text-xs font-bold uppercase" data-i18n="firmeza_tag_public">Gratuito e Aberto ao Público</span>
                                     <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase" data-i18n="firmeza_tag_ai">Saúde Digital com IA</span>
                                 </div>
@@ -1119,8 +1116,8 @@
                                         <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-open:rotate-180"></i>
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
-                                        <div data-i18n-html="firmeza_tech_1_html"><strong class="text-white">IA & Telemetria Funcional:</strong> Integração com Google Gemini API (Firebase AI Logic) para sumarização de relatos clínicos, análise acústica/vocal e testes motores digitais de Finger Tapping.</div>
-                                        <div data-i18n-html="firmeza_tech_2_html"><strong class="text-white">Stack & Acessibilidade:</strong> Progressive Web App (PWA) em Firebase Hosting/Firestore com alto contraste e alvos de toque adaptados para tremor motor.</div>
+                                        <div data-i18n-html="firmeza_tech_1_html"><strong class="text-white">IA e Telemetria Funcional:</strong> Integração com Google Gemini API (Firebase AI Logic) para sumarização de relatos clínicos, análise acústica/vocal e testes motores digitais de Finger Tapping.</div>
+                                        <div data-i18n-html="firmeza_tech_2_html"><strong class="text-white">Stack e Acessibilidade:</strong> Progressive Web App (PWA) em Firebase Hosting/Firestore com alto contraste e alvos de toque adaptados para tremor motor.</div>
                                     </div>
                                 </details>
 
@@ -1221,7 +1218,7 @@
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
                                         <div data-i18n-html="auditia_tech_1_html"><strong class="text-white">Motor de Consenso Dual-IA:</strong> Cruzamento simultâneo de regras determinísticas tributárias (NCM/CFOP/CST/IBS/CBS) com extração multimodal de documentos (XML, PDF e DANFE via OCR/Vision).</div>
-                                        <div data-i18n-html="auditia_tech_2_html"><strong class="text-white">Segurança & Integração Fiscal:</strong> Cofre digital criptografado para Certificado A1, comunicação direta com WebServices SEFAZ (DistDFe) e trilhas completas de auditoria.</div>
+                                        <div data-i18n-html="auditia_tech_2_html"><strong class="text-white">Segurança e Integração Fiscal:</strong> Cofre digital criptografado para Certificado A1, comunicação direta com WebServices SEFAZ (DistDFe) e trilhas completas de auditoria.</div>
                                     </div>
                                 </details>
 
@@ -1466,7 +1463,7 @@
                                         <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-open:rotate-180"></i>
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
-                                        <div data-i18n-html="rpa_tech_1_html"><strong class="text-white">Orquestração & Governança CoE:</strong> Arquitetura de esteiras RPA atendidas e não-atendidas (45+ bots em produção com 99.8% de uptime), controle de filas, credenciais em cofre e telemetria de SLA.</div>
+                                        <div data-i18n-html="rpa_tech_1_html"><strong class="text-white">Orquestração e Governança CoE:</strong> Arquitetura de esteiras RPA atendidas e não-atendidas (45+ bots em produção com 99.8% de uptime), controle de filas, credenciais em cofre e telemetria de SLA.</div>
                                         <div data-i18n-html="rpa_tech_2_html"><strong class="text-white">Integrações Enterprise:</strong> Conectores para ERPs legados (SAP, TOTVS, mainframes), APIs REST/SOAP e automação cognitiva com OCR/NLP.</div>
                                     </div>
                                 </details>
@@ -1537,7 +1534,7 @@
                             <div class="lg:w-7/12 w-full">
                                 <div class="flex flex-wrap items-center gap-2 mb-3">
                                     <span class="px-2.5 py-1 rounded-md bg-blue-100/70 text-primary-700 text-xs font-bold uppercase" data-i18n="totvs_tag_mgmt">Gestão e Sistemas</span>
-                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-bold uppercase" data-i18n="totvs_tag_biz">Impacto: Governança & Eficiência Enterprise</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-bold uppercase" data-i18n="totvs_tag_biz">Impacto: Governança e Eficiência Enterprise</span>
                                     <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-600 text-xs font-semibold" data-i18n="totvs_tag_eco">Ecossistema TOTVS</span>
                                 </div>
 
@@ -1580,7 +1577,7 @@
                                         <i class="fa-solid fa-chevron-down text-xs transition-transform duration-200 group-open:rotate-180"></i>
                                     </summary>
                                     <div class="px-5 pb-5 pt-2 border-t border-slate-800/80 text-xs space-y-2.5 font-mono text-slate-300">
-                                        <div data-i18n-html="totvs_tech_1_html"><strong class="text-white">Plataformas BPM & ECM:</strong> Modelagem BPMN 2.0, desenvolvimento de workflows complexos, widgets WCM e gestão eletrônica de documentos (GED) no TOTVS Fluig.</div>
+                                        <div data-i18n-html="totvs_tech_1_html"><strong class="text-white">Plataformas BPM e ECM:</strong> Modelagem BPMN 2.0, desenvolvimento de workflows complexos, widgets WCM e gestão eletrônica de documentos (GED) no TOTVS Fluig.</div>
                                         <div data-i18n-html="totvs_tech_2_html"><strong class="text-white">Integração de Sistemas:</strong> Barramento de serviços (SOAP/REST Datasets) integrando Fluig aos ERPs Protheus, RM e Datasul com controle de alçadas e auditoria.</div>
                                     </div>
                                 </details>
@@ -1595,13 +1592,13 @@
         </div>
     </section>
 
-    <!-- Seção Blog & Insights Executivos (Topo e Meio de Funil SEO) -->
+    <!-- Seção Blog e Insights Executivos (Topo e Meio de Funil SEO) -->
     <section id="blog-insights" class="py-20 lg:py-24 bg-slate-50 border-t border-slate-200/80" data-agent-section="blog-insights">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
                 <div class="max-w-2xl">
                     <span class="text-primary-600 font-extrabold text-xs uppercase tracking-widest block mb-2" data-i18n="blog_sec_badge">Central de Inteligência e Negócios B2B</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3" data-i18n="blog_sec_title">Artigos Executivos & Guias de Eficiência</h2>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3" data-i18n="blog_sec_title">Artigos Executivos e Guias de Eficiência</h2>
                     <p class="text-slate-600 text-base leading-relaxed text-justify" data-i18n="blog_sec_desc">
                         Conteúdos práticos sem jargões técnicos sobre como aplicar Inteligência Artificial para prever receita, blindar impostos, reduzir custos em frotas e escalar vendas B2B.
                     </p>
@@ -1628,7 +1625,7 @@
                                 O que é "Backtest" e Precisão Preditiva: Como saber se uma IA realmente acerta o futuro do seu negócio
                             </a>
                         </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-left" data-i18n="blog_card1_desc">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-justify" data-i18n="blog_card1_desc">
                             Sem "economês" ou termos de TI: entenda como validamos modelos de Inteligência Artificial usando dados reais do passado para garantir 92,4% de acerto na lotação de hotéis, parques e restaurantes.
                         </p>
                     </div>
@@ -1652,7 +1649,7 @@
                                 Reforma Tributária (IBS e CBS): Como evitar a perda silenciosa de créditos fiscais na sua empresa
                             </a>
                         </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-left" data-i18n="blog_card2_desc">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-justify" data-i18n="blog_card2_desc">
                             Descubra por que a conferência manual de notas fiscais não dará conta da transição tributária e como a auditoria preventiva automática protege o caixa de médias empresas e escritórios contábeis.
                         </p>
                     </div>
@@ -1676,7 +1673,7 @@
                                 Quanto custa um caminhão parado? Como eliminar 70% das devoluções na compra de autopeças pesadas
                             </a>
                         </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-left" data-i18n="blog_card3_desc">
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 text-justify" data-i18n="blog_card3_desc">
                             Erros de catálogo na linha pesada geram prejuízos milionários em frete reverso e frota parada. Veja como a Inteligência Artificial identifica a peça exata em segundos.
                         </p>
                     </div>
@@ -1784,7 +1781,7 @@
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4" data-i18n="footer_col_gov">Institucional e Governança</h4>
                     <ul class="space-y-2.5 text-xs text-slate-400">
-                        <li><a href="blog/" class="hover:text-primary-400 text-white font-semibold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-newspaper text-[10px] text-primary-400"></i> <span data-i18n="nav_blog">Blog & Insights Executivos</span></a></li>
+                        <li><a href="blog/" class="hover:text-primary-400 text-white font-semibold transition-colors flex items-center gap-1.5"><i class="fa-solid fa-newspaper text-[10px] text-primary-400"></i> <span data-i18n="nav_blog">Blog e Insights Executivos</span></a></li>
                         <li><a href="#sobre" rel="about" class="hover:text-white transition-colors" data-i18n="footer_about">Sobre a TCAI Corp</a></li>
                         <li><a href="#contato" rel="contact" class="hover:text-white transition-colors" data-i18n="footer_contact_page">Canais de Contato</a></li>
                         <li><a href="#metricas" class="hover:text-white transition-colors" data-i18n="footer_metrics">Impacto Operacional</a></li>
@@ -1901,7 +1898,7 @@
                 nav_metrics: "Impacto Operacional",
                 nav_pillars: "Pilares e Soluções",
                 nav_projects: "Produtos e Cases",
-                nav_blog: "Blog & Insights",
+                nav_blog: "Blog e Insights",
                 nav_contact: "Contato",
                 nav_cta: "Falar com a TCAI Corp",
                 hero_badge: "TCAI Corp • Soluções Corporativas e Produtos B2B",
@@ -1968,7 +1965,7 @@
                 grid402_stat_2_desc: "Processamento instantâneo sem risco de vazamento",
                 grid402_feat_1_html: "Conexão pronta em 1 clique com os principais assistentes de IA do mercado corporativo.",
                 grid402_feat_2_html: "Amostra grátis automática do resultado antes da confirmação de cada microtransação.",
-                grid402_tech_1_html: '<strong class="text-white">Protocolo & Liquidação:</strong> HTTP 402 (Payment Required) com liquidação on-chain M2M em USDC na rede Base (Chain ID 8453) e suporte a Coinbase AgentKit.',
+                grid402_tech_1_html: '<strong class="text-white">Protocolo e Liquidação:</strong> HTTP 402 (Payment Required) com liquidação on-chain M2M em USDC na rede Base (Chain ID 8453) e suporte a Coinbase AgentKit.',
                 grid402_tech_2_html: '<strong class="text-white">Arquitetura Zero-DB:</strong> Armazenamento flat-file atômico (<code>flock</code>) sem sobrecarga de banco SQL, verificação de oráculos criptográficos em &lt; 1ms.',
                 grid402_tech_3_html: '<strong class="text-white">Ecossistema Agêntico:</strong> Servidor MCP oficial (<code>grid402-mcp</code> no Smithery/npm/PyPI), descoberta SEP-1649 e especificação OpenAPI 3.1.',
                 grid402_btn_access: "Acessar o Grid402",
@@ -1977,7 +1974,7 @@
                 peca_vis_scan_html: "<span class=\"w-2 h-2 rounded-full bg-cyan-400 animate-pulse-dot\"></span> SCAN ATIVO DE PEÇAS",
                 peca_vis_match: "99.4% Match",
                 peca_tag_type: "Produto Próprio B2B",
-                peca_tag_biz: "Modelo: SaaS B2B & Catálogo Inteligente",
+                peca_tag_biz: "Modelo: SaaS B2B e Catálogo Inteligente",
                 peca_tag_sector: "Setor Automotivo Pesado",
                 peca_title: "Peça Match AI: Eliminando devoluções e caminhão parado na compra de autopeças",
                 peca_desc_html: "A <strong>Peça Match AI</strong> resolve um dos maiores gargalos financeiros de transportadoras, frotas e distribuidoras do Brasil: a compra errada e a devolução de componentes para caminhões e ônibus. Nossa inteligência artificial entende o pedido mesmo com nomes populares ou códigos incompletos e aponta a peça exata em segundos, reduzindo o tempo de veículo parado na oficina.",
@@ -2004,13 +2001,13 @@
                 rankpro_stat_2_desc: "Conteúdo de topo e meio de funil focado em conversão",
                 rankpro_feat_1: "Mapeamento automático das dúvidas e problemas que seu público pesquisa antes de comprar.",
                 rankpro_feat_2: "Criação e publicação contínua de artigos otimizados para conquistar a primeira página.",
-                rankpro_tech_1_html: '<strong class="text-white">Engenharia Semântica & NLP:</strong> Clusterização automatizada de intenção de busca (ToFu/MoFu/BoFu), análise de entidades SERP e geração estruturada com Schema.org JSON-LD.',
+                rankpro_tech_1_html: '<strong class="text-white">Engenharia Semântica e NLP:</strong> Clusterização automatizada de intenção de busca (ToFu/MoFu/BoFu), análise de entidades SERP e geração estruturada com Schema.org JSON-LD.',
                 rankpro_tech_2_html: '<strong class="text-white">Arquitetura SaaS:</strong> Pipelines assíncronos de auditoria on-page, otimização de Core Web Vitals e indexação programática.',
                 rankpro_btn_visit: "Acessar a Plataforma",
                 rankpro_btn_article: "Como Funciona o Funil SEO",
                 firmeza_vis_status: "TELEMETRIA E IA ATIVA",
                 firmeza_vis_acc: "100% Acessível",
-                firmeza_tag_nonprofit: "Iniciativa ESG & Impacto Social",
+                firmeza_tag_nonprofit: "Iniciativa ESG e Impacto Social",
                 firmeza_tag_public: "Gratuito e Aberto ao Público",
                 firmeza_tag_ai: "Saúde Digital com IA",
                 firmeza_title: "Firmeza: Apoio diário e relatórios claros para pacientes com Parkinson e seus médicos",
@@ -2025,8 +2022,8 @@
                 firmeza_stat_2_desc: "Controle de horários e carteirinha SOS rápida",
                 firmeza_feat_1: "Diário simples de medicação, registro de sintomas por voz e exercícios rápidos na tela.",
                 firmeza_feat_2: "Carteirinha de emergência digital acessível com informações vitais para socorristas.",
-                firmeza_tech_1_html: '<strong class="text-white">IA & Telemetria Funcional:</strong> Integração com Google Gemini API (Firebase AI Logic) para sumarização de relatos clínicos, análise acústica/vocal e testes motores digitais de Finger Tapping.',
-                firmeza_tech_2_html: '<strong class="text-white">Stack & Acessibilidade:</strong> Progressive Web App (PWA) em Firebase Hosting/Firestore com alto contraste e alvos de toque adaptados para tremor motor.',
+                firmeza_tech_1_html: '<strong class="text-white">IA e Telemetria Funcional:</strong> Integração com Google Gemini API (Firebase AI Logic) para sumarização de relatos clínicos, análise acústica/vocal e testes motores digitais de Finger Tapping.',
+                firmeza_tech_2_html: '<strong class="text-white">Stack e Acessibilidade:</strong> Progressive Web App (PWA) em Firebase Hosting/Firestore com alto contraste e alvos de toque adaptados para tremor motor.',
                 firmeza_btn_visit: "Acessar a Aplicação",
                 auditia_vis_status: "AUDITORIA AUTOMÁTICA SEFAZ",
                 auditia_vis_sub: "Créditos IBS/CBS Protegidos",
@@ -2043,7 +2040,7 @@
                 auditia_feat_1: "Captura automática de notas fiscais direto na Receita/SEFAZ sem digitação manual.",
                 auditia_feat_2: "Auditoria preventiva que alerta divergências de alíquotas e garante o aproveitamento de créditos.",
                 auditia_tech_1_html: '<strong class="text-white">Motor de Consenso Dual-IA:</strong> Cruzamento simultâneo de regras determinísticas tributárias (NCM/CFOP/CST/IBS/CBS) com extração multimodal de documentos (XML, PDF e DANFE via OCR/Vision).',
-                auditia_tech_2_html: '<strong class="text-white">Segurança & Integração Fiscal:</strong> Cofre digital criptografado para Certificado A1, comunicação direta com WebServices SEFAZ (DistDFe) e trilhas completas de auditoria.',
+                auditia_tech_2_html: '<strong class="text-white">Segurança e Integração Fiscal:</strong> Cofre digital criptografado para Certificado A1, comunicação direta com WebServices SEFAZ (DistDFe) e trilhas completas de auditoria.',
                 auditia_btn_pilot: "Em Operação Piloto / Alta Tração",
                 auditia_btn_demo: "Solicitar Apresentação",
                 auditia_btn_article: "Guia IBS e CBS",
@@ -2084,7 +2081,7 @@
                 rpa_item_1_html: "<strong>Liderança de Centro de Excelência (Boa Vista):</strong> Priorização executiva de processos com maior retorno financeiro (ROI) e governança corporativa.",
                 rpa_item_2_html: "<strong>Liderança Técnica (Wipro Limited):</strong> Implantação de malhas de automação de alta disponibilidade para grandes clientes globais.",
                 rpa_item_3_html: "<strong>Engenharia de Processos (Indra):</strong> Tradução de necessidades de diretoria e áreas de negócio em automações seguras e mensuráveis.",
-                rpa_tech_1_html: '<strong class="text-white">Orquestração & Governança CoE:</strong> Arquitetura de esteiras RPA atendidas e não-atendidas (45+ bots em produção com 99.8% de uptime), controle de filas, credenciais em cofre e telemetria de SLA.',
+                rpa_tech_1_html: '<strong class="text-white">Orquestração e Governança CoE:</strong> Arquitetura de esteiras RPA atendidas e não-atendidas (45+ bots em produção com 99.8% de uptime), controle de filas, credenciais em cofre e telemetria de SLA.',
                 rpa_tech_2_html: '<strong class="text-white">Integrações Enterprise:</strong> Conectores para ERPs legados (SAP, TOTVS, mainframes), APIs REST/SOAP e automação cognitiva com OCR/NLP.',
                 totvs_vis_title: "Workflow Enterprise ECM",
                 totvs_step1_title: "Mapeamento de Processo",
@@ -2099,17 +2096,17 @@
                 totvs_stat_reach: "Projetos em Nível Nacional",
                 totvs_stat_exp: "+10 Anos de Experiência",
                 totvs_tag_mgmt: "Gestão e Sistemas",
-                totvs_tag_biz: "Impacto: Governança & Eficiência Enterprise",
+                totvs_tag_biz: "Impacto: Governança e Eficiência Enterprise",
                 totvs_tag_eco: "Ecossistema TOTVS",
                 totvs_title: "Digitalização de Processos e Implantação de Plataformas Corporativas (TOTVS)",
                 totvs_desc: "Mais de uma década de experiência liderando a digitalização de fluxos de trabalho, aprovações corporativas e gestão de documentos em grandes empresas, conectando o sistema de gestão (ERP) aos objetivos financeiros e comerciais da diretoria.",
                 totvs_item_1_html: "<strong>Coordenação Executiva de Projetos:</strong> Gestão de prazos, orçamentos e equipes multidisciplinares em entregas corporativas de missão crítica.",
                 totvs_item_2_html: "<strong>Arquitetura de Soluções de Negócio:</strong> Desenho de fluxos digitais sob medida que eliminam papel, retrabalho e gargalos de aprovação.",
                 totvs_item_3_html: "<strong>Implantação em Escala Nacional:</strong> Padronização e rastreabilidade de processos corporativos em operações por todo o Brasil.",
-                totvs_tech_1_html: '<strong class="text-white">Plataformas BPM & ECM:</strong> Modelagem BPMN 2.0, desenvolvimento de workflows complexos, widgets WCM e gestão eletrônica de documentos (GED) no TOTVS Fluig.',
+                totvs_tech_1_html: '<strong class="text-white">Plataformas BPM e ECM:</strong> Modelagem BPMN 2.0, desenvolvimento de workflows complexos, widgets WCM e gestão eletrônica de documentos (GED) no TOTVS Fluig.',
                 totvs_tech_2_html: '<strong class="text-white">Integração de Sistemas:</strong> Barramento de serviços (SOAP/REST Datasets) integrando Fluig aos ERPs Protheus, RM e Datasul com controle de alçadas e auditoria.',
                 blog_sec_badge: "Central de Inteligência e Negócios B2B",
-                blog_sec_title: "Artigos Executivos & Guias de Eficiência",
+                blog_sec_title: "Artigos Executivos e Guias de Eficiência",
                 blog_sec_desc: "Conteúdos práticos sem jargões técnicos sobre como aplicar Inteligência Artificial para prever receita, blindar impostos, reduzir custos em frotas e escalar vendas B2B.",
                 blog_sec_btn_all: "Acessar Todos os Artigos",
                 blog_card1_funnel: "Meio de Funil • Guia Executivo",
@@ -2172,7 +2169,7 @@
                 nav_metrics: "Operational Impact",
                 nav_pillars: "Pillars and Solutions",
                 nav_projects: "Products and Cases",
-                nav_blog: "Blog & Insights",
+                nav_blog: "Blog and Insights",
                 nav_contact: "Contact",
                 nav_cta: "Talk to TCAI Corp",
                 hero_badge: "TCAI Corp • Enterprise AI and B2B Products",
@@ -2219,7 +2216,7 @@
                 projects_badge: "TCAI Corp Portfolio",
                 projects_title: "Digital Products and Scaled Solutions",
                 projects_desc: "Real-world platforms developed by TCAI Corp combining practical Artificial Intelligence, scalable business models, and high operational returns.",
-                tech_drawer_btn: "View Technical Specs & Architecture (For IT / Devs)",
+                tech_drawer_btn: "View Technical Specs and Architecture (For IT / Devs)",
                 grid402_vis_badge: "USD REVENUE • 24/7",
                 grid402_vis_protocol: "AI AGENT ECONOMY",
                 grid402_vis_sub: "Pay-per-Use Official Data Queries",
@@ -2239,7 +2236,7 @@
                 grid402_stat_2_desc: "Stateless processing with zero data leak liability",
                 grid402_feat_1_html: "One-click native integration with leading enterprise AI assistants and IDEs.",
                 grid402_feat_2_html: "Automated free teaser sample before confirming each micro-transaction.",
-                grid402_tech_1_html: '<strong class="text-white">Protocol & Settlement:</strong> HTTP 402 (Payment Required) with on-chain M2M settlement in USDC on Base Network (Chain ID 8453) and Coinbase AgentKit support.',
+                grid402_tech_1_html: '<strong class="text-white">Protocol and Settlement:</strong> HTTP 402 (Payment Required) with on-chain M2M settlement in USDC on Base Network (Chain ID 8453) and Coinbase AgentKit support.',
                 grid402_tech_2_html: '<strong class="text-white">Zero-DB Architecture:</strong> Atomic flat-file storage (<code>flock</code>) with zero SQL overhead and cryptographic oracle verification in &lt; 1ms.',
                 grid402_tech_3_html: '<strong class="text-white">Agentic Ecosystem:</strong> Official MCP server (<code>grid402-mcp</code> on Smithery/npm/PyPI), SEP-1649 discovery, and OpenAPI 3.1 spec.',
                 grid402_btn_access: "Access Grid402",
@@ -2248,7 +2245,7 @@
                 peca_vis_scan_html: "<span class=\"w-2 h-2 rounded-full bg-cyan-400 animate-pulse-dot\"></span> ACTIVE PARTS SCAN",
                 peca_vis_match: "99.4% Match",
                 peca_tag_type: "Proprietary B2B Product",
-                peca_tag_biz: "Model: B2B SaaS & Smart Catalog",
+                peca_tag_biz: "Model: B2B SaaS and Smart Catalog",
                 peca_tag_sector: "Heavy-Duty Automotive",
                 peca_title: "Peça Match AI: Eliminating returns and fleet downtime in heavy-duty parts purchasing",
                 peca_desc_html: "<strong>Peça Match AI</strong> solves a major financial bottleneck for fleets, repair shops, and distributors: wrong part purchases and returns for trucks and buses. Our AI understands requests even with informal names or incomplete codes and pinpoints the exact component in seconds, keeping trucks on the road.",
@@ -2265,7 +2262,7 @@
                 rankpro_vis_top: "Top 1 Google",
                 rankpro_tag_saas: "Model: Recurring B2B SaaS",
                 rankpro_tag_ai: "Client Acquisition",
-                rankpro_tag_seo: "CAC Reduction & SEO",
+                rankpro_tag_seo: "CAC Reduction and SEO",
                 rankpro_title: "RankPro SEO: Turning Google searches into enterprise clients and recurring revenue",
                 rankpro_desc_html: "<strong>RankPro SEO</strong> is a B2B subscription platform that drastically lowers Customer Acquisition Cost (CAC) by positioning companies at the top of Google without relying solely on paid ads. It automatically identifies what your ideal buyers are searching for (top and middle of funnel) and publishes strategic content designed to attract, educate, and convert.",
                 rankpro_stat_1_title: "Qualified Traffic Growth",
@@ -2275,13 +2272,13 @@
                 rankpro_stat_2_desc: "Top and mid-funnel content calibrated for conversion",
                 rankpro_feat_1: "Automated mapping of the exact questions and pain points your audience searches before buying.",
                 rankpro_feat_2: "Continuous creation and publishing of optimized articles built to rank on page one.",
-                rankpro_tech_1_html: '<strong class="text-white">Semantic Engineering & NLP:</strong> Automated search intent clustering (ToFu/MoFu/BoFu), SERP entity analysis, and structured Schema.org JSON-LD generation.',
+                rankpro_tech_1_html: '<strong class="text-white">Semantic Engineering and NLP:</strong> Automated search intent clustering (ToFu/MoFu/BoFu), SERP entity analysis, and structured Schema.org JSON-LD generation.',
                 rankpro_tech_2_html: '<strong class="text-white">SaaS Architecture:</strong> Asynchronous on-page audit pipelines, Core Web Vitals optimization, and programmatic indexing.',
                 rankpro_btn_visit: "Visit Platform",
                 rankpro_btn_article: "How the SEO Funnel Works",
                 firmeza_vis_status: "ACTIVE TELEMETRY AND AI",
                 firmeza_vis_acc: "100% Accessible",
-                firmeza_tag_nonprofit: "ESG & Social Impact Initiative",
+                firmeza_tag_nonprofit: "ESG and Social Impact Initiative",
                 firmeza_tag_public: "Free and Open to the Public",
                 firmeza_tag_ai: "AI Digital Health",
                 firmeza_title: "Firmeza: Daily support and clear clinical reports for Parkinson's patients and doctors",
@@ -2296,13 +2293,13 @@
                 firmeza_stat_2_desc: "Schedule tracking and instant SOS card",
                 firmeza_feat_1: "Simple medication diary, voice symptom logging, and quick on-screen motor exercises.",
                 firmeza_feat_2: "Accessible digital emergency card with vital clinical information for first responders.",
-                firmeza_tech_1_html: '<strong class="text-white">AI & Functional Telemetry:</strong> Integration with Google Gemini API (Firebase AI Logic) for clinical report summarization, acoustic/vocal analysis, and digital Finger Tapping motor tests.',
-                firmeza_tech_2_html: '<strong class="text-white">Stack & Accessibility:</strong> Progressive Web App (PWA) on Firebase Hosting/Firestore with high contrast and tremor-adapted touch targets.',
+                firmeza_tech_1_html: '<strong class="text-white">AI and Functional Telemetry:</strong> Integration with Google Gemini API (Firebase AI Logic) for clinical report summarization, acoustic/vocal analysis, and digital Finger Tapping motor tests.',
+                firmeza_tech_2_html: '<strong class="text-white">Stack and Accessibility:</strong> Progressive Web App (PWA) on Firebase Hosting/Firestore with high contrast and tremor-adapted touch targets.',
                 firmeza_btn_visit: "Open Application",
                 auditia_vis_status: "AUTOMATED SEFAZ AUDIT",
                 auditia_vis_sub: "Protected IBS/CBS Credits",
                 auditia_tag_progress_html: "<span class=\"w-2 h-2 rounded-full bg-amber-500 animate-pulse-dot\"></span> Pilot Operation • High Traction",
-                auditia_tag_traction: "Model: B2B SaaS for Accounting & Enterprises",
+                auditia_tag_traction: "Model: B2B SaaS for Accounting and Enterprises",
                 auditia_tag_taxtech: "Tax Reform Compliance",
                 auditia_title: "Auditia: Automated tax credit protection and penalty prevention in the Tax Reform",
                 auditia_desc_html: "<strong>Auditia</strong> is a B2B platform for accounting firms and mid-sized companies that prevents tax overpayments and loss of tax credits during the transition to Brazil's new tax system (IBS and CBS). The system automatically fetches all electronic invoices issued against the company's tax ID and performs a dual AI verification before monthly closing.",
@@ -2314,15 +2311,15 @@
                 auditia_feat_1: "Automated invoice capture directly from tax authorities (SEFAZ) with zero manual typing.",
                 auditia_feat_2: "Preventive audit alerting rate discrepancies and securing full tax credit utilization.",
                 auditia_tech_1_html: '<strong class="text-white">Dual-AI Consensus Engine:</strong> Simultaneous cross-checking of deterministic tax rules (NCM/CFOP/CST/IBS/CBS) with multimodal document extraction (XML, PDF, and DANFE via OCR/Vision).',
-                auditia_tech_2_html: '<strong class="text-white">Security & Tax Integration:</strong> Encrypted digital vault for A1 Certificates, direct communication with SEFAZ WebServices (DistDFe), and full audit trails.',
+                auditia_tech_2_html: '<strong class="text-white">Security and Tax Integration:</strong> Encrypted digital vault for A1 Certificates, direct communication with SEFAZ WebServices (DistDFe), and full audit trails.',
                 auditia_btn_pilot: "In Pilot Operation / High Traction",
                 auditia_btn_demo: "Request Presentation",
-                auditia_btn_article: "IBS & CBS Guide",
+                auditia_btn_article: "IBS and CBS Guide",
                 vailotar_vis_status_html: "<span class=\"w-2 h-2 rounded-full bg-emerald-400 animate-pulse-dot\"></span> EARLY OCCUPANCY FORECAST",
                 vailotar_vis_sub: "92.4% Proven Accuracy",
                 vailotar_tag_live_html: "<span class=\"w-2 h-2 rounded-full bg-emerald-500 animate-pulse-dot mr-1.5\"></span> Live Platform",
                 vailotar_tag_saas: "Model: Subscription B2B SaaS",
-                vailotar_tag_ai: "Tourism, Hospitality & Food Service",
+                vailotar_tag_ai: "Tourism, Hospitality and Food Service",
                 vailotar_title: "VaiLotar: Early foot-traffic and occupancy forecasting for hotels, parks, and restaurants",
                 vailotar_desc_html: "<strong>VaiLotar</strong> (\"The certainty of full bookings.\") is a B2B subscription platform that alerts managers 7 to 60 days in advance about exact demand levels for hotels, restaurants, theme parks, and parking across regional tourism corridors. By combining weather forecasts, school holidays, online travel searches, and highway traffic, it enables precise inventory purchasing, staffing, and pricing without waste.",
                 vailotar_stat_1_title: "Proven Real-World Accuracy",
@@ -2355,7 +2352,7 @@
                 rpa_item_1_html: "<strong>Center of Excellence Leadership (Boa Vista):</strong> Executive prioritization of high-ROI processes and corporate governance.",
                 rpa_item_2_html: "<strong>Technical Leadership (Wipro Limited):</strong> Deployment of high-availability automation meshes for global enterprise clients.",
                 rpa_item_3_html: "<strong>Process Engineering (Indra):</strong> Translating board-level and business requirements into secure, measurable automations.",
-                rpa_tech_1_html: '<strong class="text-white">CoE Orchestration & Governance:</strong> Attended and unattended RPA pipeline architecture (45+ production bots with 99.8% uptime), queue management, credential vaults, and SLA telemetry.',
+                rpa_tech_1_html: '<strong class="text-white">CoE Orchestration and Governance:</strong> Attended and unattended RPA pipeline architecture (45+ production bots with 99.8% uptime), queue management, credential vaults, and SLA telemetry.',
                 rpa_tech_2_html: '<strong class="text-white">Enterprise Integrations:</strong> Connectors for legacy ERPs (SAP, TOTVS, mainframes), REST/SOAP APIs, and cognitive automation with OCR/NLP.',
                 totvs_vis_title: "Workflow Enterprise ECM",
                 totvs_step1_title: "Process Mapping",
@@ -2370,17 +2367,17 @@
                 totvs_stat_reach: "Nationwide Projects",
                 totvs_stat_exp: "+10 Years Experience",
                 totvs_tag_mgmt: "Management and Systems",
-                totvs_tag_biz: "Impact: Enterprise Governance & Efficiency",
+                totvs_tag_biz: "Impact: Enterprise Governance and Efficiency",
                 totvs_tag_eco: "TOTVS Ecosystem",
                 totvs_title: "Process Digitization and Enterprise Platform Deployment (TOTVS)",
                 totvs_desc: "Over a decade of experience leading workflow digitization, corporate approvals, and document management across large enterprises, connecting ERP systems to executive financial and commercial goals.",
                 totvs_item_1_html: "<strong>Executive Project Coordination:</strong> Managing timelines, budgets, and cross-functional teams in mission-critical corporate deliveries.",
                 totvs_item_2_html: "<strong>Business Solutions Architecture:</strong> Designing tailored digital workflows that eliminate paper, rework, and approval bottlenecks.",
                 totvs_item_3_html: "<strong>Nationwide Rollout:</strong> Standardizing and ensuring full traceability of corporate processes across operations throughout Brazil.",
-                totvs_tech_1_html: '<strong class="text-white">BPM & ECM Platforms:</strong> BPMN 2.0 modeling, complex workflow engineering, WCM widgets, and Electronic Document Management (EDM) on TOTVS Fluig.',
+                totvs_tech_1_html: '<strong class="text-white">BPM and ECM Platforms:</strong> BPMN 2.0 modeling, complex workflow engineering, WCM widgets, and Electronic Document Management (EDM) on TOTVS Fluig.',
                 totvs_tech_2_html: '<strong class="text-white">Systems Integration:</strong> Enterprise service bus (SOAP/REST Datasets) integrating Fluig with Protheus, RM, and Datasul ERPs with approval hierarchies and auditing.',
-                blog_sec_badge: "B2B Intelligence & Business Hub",
-                blog_sec_title: "Executive Articles & Efficiency Guides",
+                blog_sec_badge: "B2B Intelligence and Business Hub",
+                blog_sec_title: "Executive Articles and Efficiency Guides",
                 blog_sec_desc: "Practical, jargon-free insights on applying Artificial Intelligence to forecast revenue, shield tax credits, cut fleet costs, and scale B2B sales.",
                 blog_sec_btn_all: "View All Articles",
                 blog_card1_funnel: "Mid-Funnel • Executive Guide",
@@ -2389,10 +2386,10 @@
                 blog_card1_desc: "Without data-science jargon: understand how we validate Artificial Intelligence models against real historical data to guarantee 92.4% accuracy in hotel, park, and restaurant occupancy.",
                 blog_card2_funnel: "Top-of-Funnel • Tax Management",
                 blog_card2_cat: "Tax Reform",
-                blog_card2_title: "Brazil's Tax Reform (IBS & CBS): How to prevent silent tax credit losses in your company",
+                blog_card2_title: "Brazil's Tax Reform (IBS and CBS): How to prevent silent tax credit losses in your company",
                 blog_card2_desc: "Discover why manual invoice checking cannot handle the tax transition and how automated preventive auditing protects cash flow for mid-sized firms and accounting offices.",
                 blog_card3_funnel: "Top-of-Funnel • B2B Efficiency",
-                blog_card3_cat: "Fleets & Auto Parts",
+                blog_card3_cat: "Fleets and Auto Parts",
                 blog_card3_title: "What does a grounded truck cost? How to eliminate 70% of returns in heavy-duty parts purchasing",
                 blog_card3_desc: "Catalog errors in heavy-duty vehicles cause massive losses in reverse freight and downtime. See how AI pinpoints the exact component in seconds.",
                 blog_read_more_html: 'Read full article <i class="fa-solid fa-arrow-right text-[10px]"></i>',
@@ -2446,7 +2443,7 @@
 
             document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
 
-            // Document Title & Description
+            // Document Title e Description
             document.title = translations[lang].doc_title;
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) metaDesc.setAttribute('content', translations[lang].doc_desc);

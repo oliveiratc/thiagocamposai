@@ -5,8 +5,8 @@
 - [x] 1.4 Atualizar todo o dicionário bilíngue (`translations.pt` e `translations.en`) no `index.html` para refletir a nova camada executiva, os badges de modelo de negócio, as fichas técnicas e os links para o Blog.
 
 ## 2. Seção de Insights na Home e Portal `/blog/`
-- [x] 2.1 Adicionar o item `"Blog & Insights"` no menu de navegação principal (desktop e mobile) e no rodapé de `index.html`, `about.html` e `contact.html`.
-- [x] 2.2 Criar a seção `"Insights Executivos & Inteligência de Mercado"` na Home (`index.html` antes da seção de contato) exibindo os artigos em destaque de Topo e Meio de Funil com link para `/blog/`.
+- [x] 2.1 Adicionar o item `"Blog e Insights"` no menu de navegação principal (desktop e mobile) e no rodapé de `index.html`, `about.html` e `contact.html`.
+- [x] 2.2 Criar a seção `"Insights Executivos e Inteligência de Mercado"` na Home (`index.html` antes da seção de contato) exibindo os artigos em destaque de Topo e Meio de Funil com link para `/blog/`.
 - [x] 2.3 Criar a página principal `/blog/index.html` com design alinhado à identidade TCAI Corp, busca em tempo real, filtro por Estágio de Funil (*Topo de Funil* e *Meio de Funil*) e pelas 5 categorias de negócio, consumindo `blog/posts.json` e exibindo os cards pré-renderizados para SEO.
 
 ## 3. Artigos-Pilar Iniciais (Topo e Meio de Funil)

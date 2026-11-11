@@ -51,6 +51,16 @@
             }
         }
     </script>
+    <style>
+        /* Justificação rigorosa de todos os textos e parágrafos */
+        p, main li, article, .prose p, .prose li, .text-justify {
+            text-align: justify !important;
+            text-justify: inter-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
 </head>
 <body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased">
 
@@ -69,7 +79,7 @@
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div class="flex flex-wrap items-center gap-2 text-xs font-bold mb-4">
             <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 uppercase">Meio de Funil • Aquisição e Crescimento</span>
-            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700">SEO & Crescimento B2B</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700">SEO e Crescimento B2B</span>
             <span class="text-slate-400 font-medium ml-auto">Leitura: 5 min</span>
         </div>
 
@@ -81,12 +91,12 @@
             <h2 class="text-xs font-extrabold uppercase tracking-wider text-primary-800 mb-2 flex items-center gap-2">
                 <i class="fa-solid fa-briefcase"></i> Resumo Executivo (Para Diretores Comerciais, CMOs e Investidores)
             </h2>
-            <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+            <p class="text-sm sm:text-base text-slate-700 leading-relaxed text-justify">
                 Quando uma empresa depende 100% de anúncios pagos, suas vendas param no minuto em que o orçamento de marketing é cortado. Construir um ativo de <strong>conteúdo de Topo e Meio de Funil</strong> atualizado diariamente permite capturar clientes no exato momento em que pesquisam seus problemas no Google — reduzindo o Custo de Aquisição de Clientes (CAC) mês após mês.
             </p>
         </div>
 
-        <div class="prose prose-slate max-w-none space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+        <div class="prose prose-slate max-w-none space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed text-justify">
             <p>
                 Um erro muito comum em empresas de tecnologia e serviços B2B é ter um site que fala apenas sobre as características técnicas do próprio produto (Fundo de Funil). O problema é que <strong>90% dos seus potenciais compradores ainda não conhecem o nome da sua ferramenta</strong> — eles estão pesquisando no Google como resolver uma dor operacional.
             </p>
@@ -121,7 +131,7 @@
     </main>
 
     <footer class="bg-slate-900 text-white py-10 border-t border-slate-800 mt-16 text-center text-xs text-slate-400">
-        <p>© 2026 TCAI Corp • <a href="index.html" class="text-primary-400 hover:underline">Voltar para Blog & Insights</a> • <a href="../index.html" class="text-primary-400 hover:underline">Portal Institucional</a></p>
+        <p>© 2026 TCAI Corp • <a href="index.html" class="text-primary-400 hover:underline">Voltar para Blog e Insights</a> • <a href="../index.html" class="text-primary-400 hover:underline">Portal Institucional</a></p>
     </footer>
 </body>
 </html>

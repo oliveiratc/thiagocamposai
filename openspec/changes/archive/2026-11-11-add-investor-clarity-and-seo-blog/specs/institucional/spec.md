@@ -19,10 +19,10 @@ O website MUST apresentar todos os produtos e cases na camada principal de leitu
 O website MUST disponibilizar uma secao de destaque na pagina inicial e uma central dedicada em `/blog/` com artigos educativos e comparativos de Topo e Meio de Funil conectados as verticais de negocio da TCAI Corp.
 
 #### Scenario: Navegacao e filtragem na Central do Blog
-- GIVEN que um visitante acessa `https://www.tcaicorp.online/blog/` ou clica em "Blog & Insights" no menu principal
+- GIVEN que um visitante acessa `https://www.tcaicorp.online/blog/` ou clica em "Blog e Insights" no menu principal
 - WHEN a pagina do blog for carregada
 - THEN o sistema MUST listar os artigos publicados com indicacao de estágio do funil ("Topo de Funil" ou "Meio de Funil"), categoria de negocio e tempo de leitura
-- AND o usuario MUST poder filtrar os artigos por estágio do funil e pelas 5 categorias estrategicas (Previsao de Demanda & Turismo, Inteligencia Fiscal & Reforma Tributaria, Eficiencia em Frotas & Autopecas, SEO & Crescimento B2B, IA Corporativa & Agentes Autonomos)
+- AND o usuario MUST poder filtrar os artigos por estágio do funil e pelas 5 categorias estrategicas (Previsao de Demanda e Turismo, Inteligencia Fiscal e Reforma Tributaria, Eficiencia em Frotas e Autopecas, SEO e Crescimento B2B, IA Corporativa e Agentes Autonomos)
 
 #### Scenario: Leitura de artigo pilar desmistificando termos técnicos e gerando conversao
 - GIVEN que um visitante ou investidor acessa um artigo do blog (incluindo o artigo sobre Previsao de Demanda, Backtest e Precisao Preditiva)

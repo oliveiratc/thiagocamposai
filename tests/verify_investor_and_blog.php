@@ -53,6 +53,18 @@ assertCheck(
     $passed
 );
 assertCheck(
+    stripos($primaryVisibleHtml, ' & ') === false && stripos($primaryVisibleHtml, ' &amp; ') === false,
+    'Conteúdo visível de index.html NÃO utiliza o símbolo "&"',
+    $errors,
+    $passed
+);
+assertCheck(
+    stripos($indexHtml, 'text-align: justify !important;') !== false && stripos($indexHtml, '.tilt-card p, .tilt-card li, .card p, header p') === false,
+    'Todos os textos e cards de index.html possuem justificação rigorosa ativa',
+    $errors,
+    $passed
+);
+assertCheck(
     stripos($indexHtml, 'id="blog-insights"') !== false,
     'Seção #blog-insights presente na página inicial index.html',
     $errors,
@@ -63,6 +75,7 @@ echo "\n=== Verificando Portal /blog/ e Catálogo posts.json ===\n";
 $blogIndex = file_get_contents($rootDir . '/blog/index.html');
 assertCheck($blogIndex !== false, 'Existência de blog/index.html', $errors, $passed);
 assertCheck(stripos($blogIndex, '"@type": "Blog"') !== false, 'Schema.org Blog em blog/index.html', $errors, $passed);
+assertCheck(stripos($blogIndex, ' & ') === false && stripos($blogIndex, ' &amp; ') === false, 'Conteúdo de blog/index.html NÃO utiliza o símbolo "&"', $errors, $passed);
 
 $postsJsonRaw = file_get_contents($rootDir . '/blog/posts.json');
 $postsData = json_decode((string)$postsJsonRaw, true);
@@ -87,6 +100,18 @@ foreach ($postsList as $post) {
             $errors,
             $passed
         );
+        assertCheck(
+            stripos($artHtml, ' & ') === false && stripos($artHtml, ' &amp; ') === false,
+            "Conteúdo de {$post['slug']}.html NÃO utiliza o símbolo \"&\"",
+            $errors,
+            $passed
+        );
+        assertCheck(
+            stripos($artHtml, 'text-align: justify !important;') !== false,
+            "Justificação CSS ativa em {$post['slug']}.html",
+            $errors,
+            $passed
+        );
     }
 }
 
@@ -101,7 +126,7 @@ assertCheck(
 );
 
 $llmsTxt = (string)file_get_contents($rootDir . '/llms.txt');
-assertCheck(stripos($llmsTxt, 'https://www.tcaicorp.online/blog/') !== false, 'llms.txt referencia o Blog & Insights', $errors, $passed);
+assertCheck(stripos($llmsTxt, 'https://www.tcaicorp.online/blog/') !== false, 'llms.txt referencia o Blog e Insights', $errors, $passed);
 
 assertCheck(file_exists($rootDir . '/.env.example'), '.env.example existe na raiz', $errors, $passed);
 assertCheck(file_exists($rootDir . '/blog/topics_queue.json'), 'blog/topics_queue.json existe', $errors, $passed);

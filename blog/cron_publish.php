@@ -105,7 +105,7 @@ if ($selectedTopic === null) {
         'slug'            => 'panorama-executiva-ia-e-eficiencia-b2b-' . $dateSuffix,
         'title'           => 'Panorama Executivo (' . date('d/m/Y') . '): Como empresas B2B estão protegendo margens com Inteligência Artificial prática',
         'excerpt'         => 'Análise atualizada sobre redução de custos operacionais, previsão antecipada de receitas e blindagem fiscal sem jargões técnicos.',
-        'category'        => 'IA Corporativa & Agentes Autônomos',
+        'category'        => 'IA Corporativa e Agentes Autônomos',
         'category_slug'   => 'ia-agentes',
         'funnel_stage'    => 'Topo de Funil',
         'funnel_slug'     => 'topo',
@@ -122,7 +122,7 @@ if ($selectedTopic === null) {
 function tcai_generate_article_body(array $topic, string $apiKey): string
 {
     if ($apiKey !== '' && function_exists('curl_init')) {
-        $prompt = "Você é um conselheiro executivo B2B da TCAI Corp escrevendo para investidores, CEOs, diretores financeiros e gestores (evite jargões técnicos sem explicação).\n"
+        $prompt = "Você é um conselheiro executivo B2B da TCAI Corp escrevendo para investidores, CEOs, diretores financeiros e gestores (evite jargões técnicos sem explicação e nunca utilize o símbolo '&' no texto; use sempre a conjunção 'e').\n"
             . "Escreva o conteúdo interno em HTML semântico (apenas tags <p>, <h2 class=\"text-2xl font-black text-slate-900 pt-4\">, <ul class=\"list-disc pl-6 space-y-2 text-base\">, <li>, <strong>) para o artigo:\n"
             . "Título: {$topic['title']}\n"
             . "Categoria: {$topic['category']} ({$topic['funnel_stage']})\n"
@@ -156,6 +156,7 @@ function tcai_generate_article_body(array $topic, string $apiKey): string
             $json = json_decode($resp, true);
             $text = $json['candidates'][0]['content']['parts'][0]['text'] ?? '';
             $text = trim(preg_replace('/^```html|```$/m', '', (string) $text));
+            $text = str_replace([' e ', ' e '], ' e ', $text);
             if (strlen($text) > 300) {
                 return $text;
             }
@@ -277,6 +278,16 @@ $articleHtml = <<<HTML
             }
         }
     </script>
+    <style>
+        /* Justificação rigorosa de todos os textos e parágrafos */
+        p, main li, article, .prose p, .prose li, .text-justify {
+            text-align: justify !important;
+            text-justify: inter-word;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+        }
+    </style>
 </head>
 <body class="bg-[#fcfdfe] text-slate-800 font-sans antialiased">
 
@@ -312,7 +323,7 @@ $articleHtml = <<<HTML
             </p>
         </div>
 
-        <div class="prose prose-slate max-w-none space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed">
+        <div class="prose prose-slate max-w-none space-y-6 text-slate-700 text-base sm:text-lg leading-relaxed text-justify">
 {$bodyContent}
         </div>
 
@@ -333,7 +344,7 @@ $articleHtml = <<<HTML
     </main>
 
     <footer class="bg-slate-900 text-white py-10 border-t border-slate-800 mt-16 text-center text-xs text-slate-400">
-        <p>© 2026 TCAI Corp • <a href="index.html" class="text-primary-400 hover:underline">Voltar para Blog & Insights</a> • <a href="../index.html" class="text-primary-400 hover:underline">Portal Institucional</a></p>
+        <p>© 2026 TCAI Corp • <a href="index.html" class="text-primary-400 hover:underline">Voltar para Blog e Insights</a> • <a href="../index.html" class="text-primary-400 hover:underline">Portal Institucional</a></p>
     </footer>
 </body>
 </html>

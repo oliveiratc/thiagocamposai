@@ -7,7 +7,7 @@ A TCAI Corp desenvolve soluções B2B com foco em Inteligência Artificial corpo
 ## Páginas Principais e Governança
 
 - [Portal Oficial TCAI Corp](https://www.tcaicorp.online/): Página inicial institucional da TCAI Corp com visão executiva de retorno financeiro (ROI), modelos de monetização SaaS B2B e fichas técnicas de engenharia para TI.
-- [Blog & Insights Executivos](https://www.tcaicorp.online/blog/): Portal editorial de conteúdo diário de Topo e Meio de Funil sobre IA preditiva, Reforma Tributária, logística automotiva, SEO B2B e economia de agentes.
+- [Blog e Insights Executivos](https://www.tcaicorp.online/blog/): Portal editorial de conteúdo diário de Topo e Meio de Funil sobre IA preditiva, Reforma Tributária, logística automotiva, SEO B2B e economia de agentes.
 - [Sobre a Empresa](https://www.tcaicorp.online/#sobre): História institucional, trajetória executiva de +15 anos em engenharia e posicionamento corporativo.
 - [Canais de Contato](https://www.tcaicorp.online/#contato): Canais oficiais para atendimento executivo, suporte e novas parcerias estratégicas.
 - [Aviso de Privacidade e LGPD](https://www.tcaicorp.online/privacidade.html): Diretrizes de governança, proteção de dados pessoais e conformidade estrita com a LGPD (Lei nº 13.709/2018).
@@ -29,7 +29,7 @@ A TCAI Corp desenvolve soluções B2B com foco em Inteligência Artificial corpo
 - [Engenharia de Produtos Digitais B2B](https://www.tcaicorp.online/#expertises): Concepção e escala de plataformas SaaS corporativas alinhadas a alto retorno sobre investimento.
 - [Centros de Excelência RPA](https://www.tcaicorp.online/#expertises): Estruturação ponta a ponta de CoE RPA, integração com ERPs legados e governança operacional de automação.
 
-## Artigos e Guias Executivos (Blog & Insights)
+## Artigos e Guias Executivos (Blog e Insights)
 
 - [O que é Backtest e Precisão Preditiva em IA: Guia para Investidores e Executivos](https://www.tcaicorp.online/blog/o-que-e-backtest-e-precisao-preditiva-em-ia-para-negocios.html): Como traduzir indicadores matemáticos como F1-Score e Backtest em segurança operacional e previsibilidade de caixa.
 - [Como Prever a Demanda Hoteleira e Turística com Até 60 Dias de Antecedência](https://www.tcaicorp.online/blog/como-prever-demanda-hoteleira-e-turistica-com-antecedencia.html): Estratégias de Revenue Management preditivo para redes hoteleiras, parques e destinos turísticos.

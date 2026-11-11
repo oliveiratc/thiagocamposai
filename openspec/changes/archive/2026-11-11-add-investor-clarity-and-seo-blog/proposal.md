@@ -9,7 +9,7 @@ A partir do feedback de um potencial investidor sobre o portal `www.tcaicorp.onl
   - Adição de badges de **Modelo de Negócio / Monetização** em cada case (ex.: *SaaS B2B Recorrente*, *Pay-per-Use em Dólar (USDC)*, *Redução Direta de OPEX*).
 - **Gaveta Expansível `"Ver Ficha Técnica e Arquitetura (Para TI / Devs)"` (`index.html`):**
   - Inclusão de um acordeão interativo e acessível (`<details>/<summary>`) em cada um dos 6 cases contendo as especificações profundas de engenharia, algoritmos (`LightGBM`, `F1-Score 92.4% em Backtest`), protocolos (`HTTP 402`, `MCP`, `SEP-1649`, `OpenAPI 3.1`) e arquitetura (`Zero-DB`, `Consenso Dual-IA`).
-- **Portal de Blog & Insights Executivos (`/blog/`):**
+- **Portal de Blog e Insights Executivos (`/blog/`):**
   - Nova seção na Home (`#blog`) destacando os últimos artigos executivos e link no menu/rodapé para `/blog/`.
   - Portal `/blog/index.html` com filtragem por etapa do funil (*Topo de Funil* e *Meio de Funil*) e pelas 5 categorias estratégicas conectadas aos produtos da TCAI Corp.
   - Publicação imediata de **6 artigos-pilar iniciais** em HTML5 estático com `Schema.org/BlogPosting`, `BreadcrumbList`, tempo de leitura e CTAs contextuais (incluindo o artigo que explica *Previsão de Demanda, Backtest e Precisão Preditiva* para executivos e investidores).
