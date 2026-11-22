@@ -1,3 +1,8 @@
+# Segredos e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
 # Ignorar snapshots locais de backup gerados pelo script
 backups/
 *.zip

@@ -13,7 +13,8 @@ RewriteRule ^(index\.html)?$ llms.txt [L]
 # 2. Aliases amigáveis para rotas de descoberta de agentes
 RewriteRule ^about/?$ about.html [L]
 RewriteRule ^contact/?$ contact.html [L]
-RewriteRule ^terms/?$ termos.html [L]
+RewriteRule ^terms/?$ terms.html [L]
+RewriteRule ^termos/?$ terms.html [L]
 RewriteRule ^privacy/?$ privacidade.html [L]
 </IfModule>
 
@@ -41,4 +42,10 @@ Header set Access-Control-Allow-Origin "*"
     Header set Content-Type "application/json; charset=utf-8"
 </Files>
 </IfModule>
+
+# 7. Proteção de Arquivos Sensíveis (.env e filas internas)
+<FilesMatch "^\.env|topics_queue\.json$">
+    Require all denied
+</FilesMatch>
+
 
